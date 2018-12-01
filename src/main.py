@@ -45,6 +45,31 @@ from markdownwriter import *
 
 #target_exercise_inol = 0.6
 
+
+def pick_best_training_option(training_options, target_exercise_inol):
+    
+    best_training_option = None
+    
+    for training_option in training_options:
+    
+        if best_training_option is None:
+            best_training_option = training_option
+        else:
+
+            best_difference = getInolDifference(target_exercise_inol, best_training_option['exercise_inol']);
+
+            training_option_difference = getInolDifference(target_exercise_inol, training_option['exercise_inol']);
+            
+            if training_option_difference < best_difference:
+                logging.info("Option {2} is better {1} < {0}: ".format(str(best_difference),str(training_option_difference),str(training_option['scheme'])))
+                best_training_option = training_option
+            else:
+                logging.info("Option {2} is worse {1} > {0}: ".format(str(best_difference),str(training_option_difference),str(training_option['scheme'])))
+            
+    return best_training_option         
+        
+
+
 def generate_training_options(current_max, max_reps, intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol):
     training_options = []
     for r in range(1, max_reps + 1):
@@ -96,11 +121,6 @@ def main():
     
     
     parser = OptionParser()
-    #parser.add_option("--intensity",  type=int, default="80", help="% intensity")
-    #parser.add_option("--inol",  type=float, default="0.8", help="target exercise inol")
-    #parser.add_option("--max",  type=int, default="10", help="max reps")
-    #parser.add_option("--sets",  type=int, default="10", help="max sets")
-    #parser.add_option("--weeks",  type=int, default="6", help="training weeks")
     parser.add_option("--verbose",action="store_true", dest="verbose", help="turn on verbose output")
     parser.add_option("--output", help="where to write the versions")
     parser.add_option("--config", help="config file to use in yaml format")
@@ -134,13 +154,6 @@ def main():
     
 
     logging.info('this=' + this)
-    #logging.info("PLATFORM: " + this_platform)
-    #logging.info('INTENSITY=' +  str(options.intensity))
-    #logging.info('MAX=' +  str(options.max))
-    #logging.info('SETS=' +  str(options.sets))
-    #logging.info('WEEKS=' +  str(options.weeks))
-    #logging.info('OUTPUT_DIR=' +options.output)
-
 
     if not ensureDir(options.output):
         logging.fatal("{0} does not exist and could not be created".format(options.output))
@@ -156,19 +169,6 @@ def main():
     logging.info("weight: " + str(config["weight"]))
     plan = config["plan"]
     logging.info(plan)
-#     logging.info("target_exercise_inol: " + str(config["target_exercise_inol"]))  
-#     logging.info("min_set_inol: " + str(config["min_set_inol"]))
-#     logging.info("current_max: " + str(config["current_max"]))
-#     logging.info("max_exercise_inol: " + str(config["max_exercise_inol"]))
-#     logging.info("max_set_inol: " + str(config["max_set_inol"]))
-#     logging.info("min_set_inol: " + str(config["min_set_inol"]))
-#     logging.info("intensity_increment: " + str(config["intensity_increment"]))
-#     logging.info("max_intensity: " + str(config["max_intensity"]))        
-#     logging.info("max_reps: " + str(config["max_reps"]))   
-#     logging.info("min_sets: " + str(config["min_sets"]))   
-#     logging.info("min_reps: " + str(config["min_reps"]))
-#     if 'training_day' in config:
-#         logging.info("training_day" +  str(config["training_day"]))
 
     full_training_plan = []
     
@@ -209,31 +209,13 @@ def main():
             
             training_options = generate_training_options(current_max, merged_week["max_reps"], merged_week["intensity"], merged_week["min_sets"], merged_week["max_sets"], merged_week["min_set_inol"], merged_week["max_set_inol"], merged_week["min_exercise_inol"], merged_week["max_exercise_inol"])
             
-            sorted_training_options = sorted(training_options, key=lambda k: (k['exercise_inol'],k['set_inol'],k['volume'] ))
+            #sorted_training_options = sorted(training_options, key=lambda k: (k['exercise_inol'],k['set_inol'],k['volume'] ))
        
             logging.info(training_options)
-            logging.info(sorted_training_options)
+            #logging.info(sorted_training_options)
                     #We pick a training option 
-            best_training_option = None
-            for training_option in training_options:
-                
-                #print training_option['exercise_inol']
-                
-                if best_training_option is None:
-                    best_training_option = training_option
-                else:
-                    #print training_option
-                    #print best_training_option
-                    best_difference = getInolDifference(merged_week["target_exercise_inol"], best_training_option['exercise_inol']);
-                    training_option_difference = getInolDifference(merged_week["target_exercise_inol"], training_option['exercise_inol']);
-                    
-                    if training_option_difference < best_difference:
-                        logging.info("Option {2} is better {1} < {0}: ".format(str(best_difference),str(training_option_difference),str(training_option['scheme'])))
-                        best_training_option = training_option
-                    else:
-                        logging.info("Option {2} is worse {1} > {0}: ".format(str(best_difference),str(training_option_difference),str(training_option['scheme'])))
-                    
-                
+            best_training_option = pick_best_training_option(training_options,merged_week["target_exercise_inol"])
+            
             logging.info("found best training {0} option for week {1}s".format(str(best_training_option),str(week)))
             
             best_training_option["week"] = merged_week["week"]
@@ -324,13 +306,13 @@ def main():
     
     md = MarkdownWriter()
     
-    ### HEADER ###
-    for i in range(1,7):
-        md.addHeader( "Header " + str(i), i)
+    #Title
+    md.addHeader(str(config["name"]),1)
     
-    ### PARAGRAPH ###
-    paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    md.addSimpleLineBreak()
     
+    paragraph = "TODO"
+     
     md.addParagraph( paragraph, 0 )
     md.addParagraph( paragraph, 1, 'italic' )
     md.addParagraph( paragraph, 2, 'bold' )
@@ -533,7 +515,6 @@ def calculate_target_amrap(current_max,intensity):
     return int(round(reps))
 
     
-
 def ensureDir(path):
     
     if os.path.isdir(path):

@@ -2,3 +2,4 @@
 /.pydevproject
 /plan.yml
 **/training_options_*
+**/venv

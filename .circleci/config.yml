@@ -58,7 +58,7 @@ jobs:
               git config --global user.email "circleci@circleci.com"
               git config --global user.name "circleci"
               git checkout -b plans
-              git add .
+              git add plans/*
               git commit -m "Circle CI build ${CIRCLE_BUILD_NUM}"
               git push origin plans
 

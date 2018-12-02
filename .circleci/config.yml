@@ -51,4 +51,21 @@ jobs:
       - store_artifacts:
           path: plans
           destination: plans
-          
+         
+      - deploy:
+          name: Deploy to github
+          command: |
+              git checkout -b plans
+              git add .
+              git commit "Circle CI build ${CIRCLE_BUILD_NUM}"
+              git push origin plans
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:  # using regex filters requires the entire branch to match
+            branches:
+              only:  #only run the build on master
+                - master

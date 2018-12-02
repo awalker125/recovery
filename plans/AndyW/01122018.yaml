@@ -1,0 +1,82 @@
+---
+
+name: Andy Walker
+weight: 127.5
+age: 36
+training_days:
+  1: Monday
+  2: Tuesday
+  3: Wednesday
+  4: Thursday
+  5: Friday
+  6: Saturday
+  7: Sunday
+plan:
+  - name: Bench
+    training_day: 1
+    category: bench
+    current_max: 192
+    defaults:
+      target_exercise_inol: 0.6
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 1
+      min_sets: 1
+      max_sets: 5
+      go_hard: 0
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 0.6
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.5
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.6
+        go_hard: 0
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.5
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.45
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - pause everything
+      - dont panic
+      - Heavy double before sets +1kg each week starting at 67 (inol 0.2)
+
+  - name: Close Grip
+    training_day: 3
+    category: bench
+    current_max: 200
+    defaults:
+      target_exercise_inol: 0.8
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 1
+      min_sets: 1
+      max_sets: 5
+      go_hard: 0
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 1.0
+      - week: 2
+        intensity: 70
+      - week: 3
+        intensity: 80
+      - week: 4
+        intensity: 90
+    notes:
+      - pause everything
+      - dont panic

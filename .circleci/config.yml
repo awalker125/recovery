@@ -51,7 +51,9 @@ jobs:
       - store_artifacts:
           path: plans
           destination: plans
-         
+      - add_ssh_keys:
+          fingerprints:
+            - "e3:f5:9a:d2:8c:76:f8:0b:ee:8b:92:7c:d6:d8:5a:00"         
       - deploy:
           name: Deploy to github
           command: |
@@ -60,10 +62,12 @@ jobs:
                 echo "Nothing to push"
               else 
               # Uncommitted changes
+                git config credential.helper 'cache --timeout=120'
                 git config --global user.name "circleci"
+                git config user.email "circleci@circleci.com"
                 git checkout -b plans
                 git add plans/*
-                git commit -m "Circle CI build ${CIRCLE_BUILD_NUM}"
+                git commit --allow-empty -m "Circle CI build ${CIRCLE_BUILD_NUM}"
                 git push origin plans
               fi
               

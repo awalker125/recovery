@@ -43,6 +43,8 @@ jobs:
           name: generate plans
           command: |
             . venv/bin/activate
+            pwd
+            find .
             generate_all.sh
 
       - store_artifacts:

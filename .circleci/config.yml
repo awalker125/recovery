@@ -46,8 +46,8 @@ jobs:
             #pwd
             #find .
             
-            #Add here to enable different subdirs for ci
-            ./generate_all.sh Andyw
+            #Add here to enable different subdirs for ci. These are case sensitive
+            ./generate_all.sh AndyW
       - store_artifacts:
           path: plans
           destination: plans

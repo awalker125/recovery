@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 export NOW=$(date +%Y%m%d%H%M%S)
 export THIS=$(basename $0)
 export RUNAS=$(whoami)
@@ -19,6 +21,7 @@ then
 	echo "found subdir ${PLANS}/${SUBDIR}"
 else
 	echo "could not find subdir ${PLANS}/${SUBDIR}"
+	exit 666
 fi
 
 #echo "# ${SUBDIR^}" > ${WHEREAMI}/${SUBDIR}/README.md

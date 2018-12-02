@@ -57,7 +57,7 @@ jobs:
           command: |
               git checkout -b plans
               git add .
-              git commit "Circle CI build ${CIRCLE_BUILD_NUM}"
+              git commit -m "Circle CI build ${CIRCLE_BUILD_NUM}"
               git push origin plans
 
 workflows:

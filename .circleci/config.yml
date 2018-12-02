@@ -61,6 +61,7 @@ jobs:
               git config --global user.name "circleci"
               git config user.email "circleci@circleci.com"
               git checkout -b plans
+             
               
               if output=$(git status --porcelain) && [ -z "$output" ]; then
               # Working directory clean
@@ -69,7 +70,7 @@ jobs:
               # Uncommitted changes
                 git add plans/*
                 git commit --allow-empty -m "Circle CI build ${CIRCLE_BUILD_NUM}"
-                git push origin plans
+                git push -f origin plans
               fi
               
 workflows:

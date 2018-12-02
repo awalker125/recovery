@@ -55,13 +55,17 @@ jobs:
       - deploy:
           name: Deploy to github
           command: |
-              git config --global user.email "circleci@circleci.com"
-              git config --global user.name "circleci"
-              git checkout -b plans
-              git add plans/*
-              git commit -m "Circle CI build ${CIRCLE_BUILD_NUM}"
-              git push origin plans
-
+              if git diff --exit-code plans/*
+              then
+                git config --global user.email "circleci@circleci.com"
+                git config --global user.name "circleci"
+                git checkout -b plans
+                git add plans/*
+                git commit -m "Circle CI build ${CIRCLE_BUILD_NUM}"
+                git push origin plans
+              else
+                echo "Nothing to push"
+              fi
 workflows:
   version: 2
   build:

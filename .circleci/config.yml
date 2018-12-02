@@ -45,8 +45,9 @@ jobs:
             . venv/bin/activate
             #pwd
             #find .
-            ./generate_all.sh
-
+            
+            #Add here to enable different subdirs for ci
+            ./generate_all.sh Andyw
       - store_artifacts:
           path: plans
           destination: plans

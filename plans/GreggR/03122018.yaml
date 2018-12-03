@@ -47,7 +47,7 @@ plan:
   - name: Bench (Volume)
     training_day: 1
     category: bench
-    current_max: 193
+    current_max: 117.5
     defaults:
       target_exercise_inol: 0.6
       max_exercise_inol: 2
@@ -94,10 +94,10 @@ plan:
       min_exercise_inol: 0.3
       max_set_inol: 0.4
       min_set_inol: 0.05
-      max_reps: 10
+      max_reps: 3
       min_reps: 1
       min_sets: 1
-      max_sets: 5
+      max_sets: 6
       go_hard: 0
     weeks:
       - week: 1
@@ -123,16 +123,16 @@ plan:
     category: bench
     current_max: 100
     defaults:
-      target_exercise_inol: 0.2
+      target_exercise_inol: 0.1
       max_exercise_inol: 2
-      min_exercise_inol: 0.3
+      min_exercise_inol: 0.1
       max_set_inol: 0.4
       min_set_inol: 0.05
       max_reps: 2
       min_reps: 2
       min_sets: 1
-      max_sets: 5
-      go_hard: 0
+      max_sets: 1
+      go_hard: 1
     weeks:
       - week: 1
         intensity: 85

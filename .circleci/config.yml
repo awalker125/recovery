@@ -48,6 +48,7 @@ jobs:
             
             #Add here to enable different subdirs for ci. These are case sensitive
             ./generate_all.sh AndyW
+            ./generate_all.sh GreggR
       - store_artifacts:
           path: plans
           destination: plans

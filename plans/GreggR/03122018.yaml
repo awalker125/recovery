@@ -17,15 +17,15 @@ plan:
     category: bench
     current_max: 117.5
     defaults:
-      target_exercise_inol: 0.2
+      target_exercise_inol: 0.1
       max_exercise_inol: 2
-      min_exercise_inol: 0.3
+      min_exercise_inol: 0.1
       max_set_inol: 0.4
       min_set_inol: 0.05
       max_reps: 2
       min_reps: 2
       min_sets: 1
-      max_sets: 5
+      max_sets: 1
       go_hard: 1
     weeks:
       - week: 1

@@ -1,7 +1,7 @@
 ---
 
 name: Andy Walker
-weight: 127.5
+weight: 128
 age: 36
 training_days:
   1: Monday
@@ -12,10 +12,42 @@ training_days:
   6: Saturday
   7: Sunday
 plan:
-  - name: Bench
+  - name: Bench (Double)
     training_day: 1
     category: bench
-    current_max: 193
+    current_max: 192
+    defaults:
+      target_exercise_inol: 0.1
+      max_exercise_inol: 2
+      min_exercise_inol: 0.1
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 2
+      min_reps: 2
+      min_sets: 1
+      max_sets: 1
+      go_hard: 1
+    weeks:
+      - week: 1
+        intensity: 85
+      - week: 2
+        intensity: 86
+      - week: 3
+        intensity: 87
+      - week: 4
+        intensity: 88
+      - week: 5
+        intensity: 89
+      - week: 6
+        intensity: 90
+    notes:
+      - pause everything (mississippi style)
+      - dont panic
+
+  - name: Bench (Volume)
+    training_day: 1
+    category: bench
+    current_max: 192
     defaults:
       target_exercise_inol: 0.6
       max_exercise_inol: 2
@@ -33,10 +65,10 @@ plan:
         target_exercise_inol: 0.6
       - week: 2
         intensity: 70
-        target_exercise_inol: 0.5
+        target_exercise_inol: 0.65
       - week: 3
         intensity: 75
-        target_exercise_inol: 0.6
+        target_exercise_inol: 0.7
         go_hard: 0
       - week: 4
         intensity: 80
@@ -50,14 +82,48 @@ plan:
     notes:
       - pause everything
       - dont panic
-      - Heavy double before sets +1kg each week starting at 67 (inol 0.2)
+      - Do heavy double first
 
-  - name: Close Grip
+  - name: Bands
     training_day: 3
     category: bench
-    current_max: 200
+    current_max: 140
     defaults:
-      target_exercise_inol: 0.8
+      target_exercise_inol: 0.4
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 3
+      min_reps: 1
+      min_sets: 1
+      max_sets: 6
+      go_hard: 0
+    weeks:
+      - week: 1
+        intensity: 50
+      - week: 2
+        intensity: 51
+      - week: 3
+        intensity: 52
+      - week: 4
+        intensity: 53
+      - week: 5
+        intensity: 54
+      - week: 6
+        intensity: 55        
+    notes:
+      - pause everything
+      - dont panic
+      - Speed of the chest
+      - Squeeze triceps/try to accelerate all the way to lockout
+
+  - name: Dips 
+    training_day: 3
+    category: bench
+    current_max: 192
+    defaults:
+      target_exercise_inol: 0.6
       max_exercise_inol: 2
       min_exercise_inol: 0.3
       max_set_inol: 0.4
@@ -70,13 +136,56 @@ plan:
     weeks:
       - week: 1
         intensity: 65
-        target_exercise_inol: 1.0
+        target_exercise_inol: 0.6
       - week: 2
         intensity: 70
+        target_exercise_inol: 0.65
       - week: 3
-        intensity: 80
+        intensity: 75
+        target_exercise_inol: 0.7
+        go_hard: 0
       - week: 4
+        intensity: 80
+        target_exercise_inol: 0.5
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.45
+      - week: 6
         intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - pause everything
+      - dont panic
+      - Do heavy double first
+
+  - name: Close Grip (Max)
+    training_day: 5
+    category: bench
+    current_max: 185
+    defaults:
+      target_exercise_inol: 0.1
+      max_exercise_inol: 2
+      min_exercise_inol: 0.1
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 2
+      min_reps: 2
+      min_sets: 1
+      max_sets: 1
+      go_hard: 1
+    weeks:
+      - week: 1
+        intensity: 85
+      - week: 2
+        intensity: 86
+      - week: 3
+        intensity: 87
+      - week: 4
+        intensity: 88
+      - week: 5
+        intensity: 90
+      - week: 6
+        intensity: 92               
     notes:
       - pause everything
       - dont panic

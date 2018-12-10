@@ -77,9 +77,9 @@ def pick_best_training_option(training_options, target_exercise_inol, go_hard=0)
     return best_training_option         
         
 
-def generate_training_options(current_max, max_reps, intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol):
+def generate_training_options(current_max, min_reps, max_reps,intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol):
     training_options = []
-    for r in range(1, max_reps + 1):
+    for r in range(min_reps, max_reps + 1):
         logging.debug("using reps {0}".format(str(r)))
         set_inol = calculate_set_inol(r, intensity)
         logging.debug("set inol for {0} rep(s) @ {1} is {2}".format(str(r), str(intensity), str(set_inol)))
@@ -223,7 +223,7 @@ def main():
             logging.debug(merged_week)
             
             # Generate training options
-            training_options = generate_training_options(current_max, merged_week["max_reps"], merged_week["intensity"], merged_week["min_sets"], merged_week["max_sets"], merged_week["min_set_inol"], merged_week["max_set_inol"], merged_week["min_exercise_inol"], merged_week["max_exercise_inol"])
+            training_options = generate_training_options(current_max, merged_week["min_reps"], merged_week["max_reps"], merged_week["intensity"], merged_week["min_sets"], merged_week["max_sets"], merged_week["min_set_inol"], merged_week["max_set_inol"], merged_week["min_exercise_inol"], merged_week["max_exercise_inol"])
              
             logging.debug(training_options)
             

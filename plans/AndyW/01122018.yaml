@@ -189,3 +189,86 @@ plan:
     notes:
       - pause everything
       - dont panic
+
+  - name: Snatch
+    training_day: 1
+    category: Snatch
+    current_max: 80
+    #Pre injury
+    #current_max: 122
+    defaults:
+      go_hard: 0
+      target_exercise_inol: 0.8
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 5
+      min_reps: 1
+      min_sets: 1
+      max_sets: 8
+    weeks:
+      - week: 1
+        intensity: 70
+        target_exercise_inol: 0.6
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        go_hard: 1
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - pause at bottom
+
+  - name: Clean
+    training_day: 4
+    category: Clean
+    current_max: 82
+    #pre injury
+    #current_max: 146
+    defaults:
+      go_hard: 0
+      target_exercise_inol: 0.8
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 5
+      min_reps: 1
+      min_sets: 1
+      max_sets: 8
+    weeks:
+      - week: 1
+        intensity: 70
+        target_exercise_inol: 0.6
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        go_hard: 1
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - Smooth
+      - Straps?

@@ -3,6 +3,7 @@
 name: Gregg Robinson
 weight: 85
 age: 25
+format: power
 training_days:
   1: Monday
   2: Tuesday

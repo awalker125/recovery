@@ -3,6 +3,9 @@
 name: Erin Middleton
 weight: 53
 age: 21
+format: records
+#format: olympic
+#format: power
 training_days:
   1: Monday
   2: Tuesday
@@ -15,7 +18,7 @@ plan:
   - name: Bench (Double)
     training_day: 1
     category: bench
-    current_max: 55
+    current_max: 57
     defaults:
       target_exercise_inol: 0.1
       max_exercise_inol: 2
@@ -47,7 +50,7 @@ plan:
   - name: Bench (Volume)
     training_day: 1
     category: bench
-    current_max: 55
+    current_max: 57
     defaults:
       target_exercise_inol: 0.6
       max_exercise_inol: 2
@@ -87,7 +90,7 @@ plan:
   - name: Dips 
     training_day: 3
     category: bench
-    current_max: 55
+    current_max: 57
     defaults:
       target_exercise_inol: 0.6
       max_exercise_inol: 2

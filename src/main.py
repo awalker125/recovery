@@ -77,7 +77,7 @@ def pick_best_training_option(training_options, target_exercise_inol, go_hard=0)
     return best_training_option         
         
 
-def generate_training_options(current_max, min_reps, max_reps,intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol):
+def generate_training_options(current_max, min_reps, max_reps,intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol,rounding_format):
     training_options = []
     for r in range(min_reps, max_reps + 1):
         logging.debug("using reps {0}".format(str(r)))
@@ -87,8 +87,20 @@ def generate_training_options(current_max, min_reps, max_reps,intensity, min_set
             exercise_inol = set_inol * s
             volume = r * s
             weight = current_max * (float(intensity) / 100)
-            weight_powerlifting = roundPowerlifting(weight)
-            weight_olympic = roundOlympiclifting(weight)
+            
+            
+            weight_rounded = weight #Default to no rounding if there is no setting
+            
+            if rounding_format == "records":
+                weight_rounded = roundRecords(weight)
+            elif rounding_format == "olympic":
+                weight_rounded = roundOlympiclifting(weight)
+            elif rounding_format == "power":
+                weight_rounded = roundPowerlifting(weight)
+            else:
+                logging.warn("Unknown format {0}".format(rounding_format))
+                
+            
             scheme = str(s) + "x" + str(r) + "@" + str(intensity) + "%"
             if set_inol > min_set_inol:
                 if set_inol < max_set_inol:
@@ -101,8 +113,9 @@ def generate_training_options(current_max, min_reps, max_reps,intensity, min_set
                                     "set_inol":set_inol,
                                     "volume":str(volume),
                                     "weight": str(weight),
-                                    "weight_powerlifting": str(weight_powerlifting),
-                                    "weight_olympic": str(weight_olympic)
+                                    "weight_rounded": str(weight_rounded),
+                                    #"weight_powerlifting": str(weight_powerlifting),
+                                    #"weight_olympic": str(weight_rounded)
                                     })
     
     return training_options
@@ -223,7 +236,7 @@ def main():
             logging.debug(merged_week)
             
             # Generate training options
-            training_options = generate_training_options(current_max, merged_week["min_reps"], merged_week["max_reps"], merged_week["intensity"], merged_week["min_sets"], merged_week["max_sets"], merged_week["min_set_inol"], merged_week["max_set_inol"], merged_week["min_exercise_inol"], merged_week["max_exercise_inol"])
+            training_options = generate_training_options(current_max, merged_week["min_reps"], merged_week["max_reps"], merged_week["intensity"], merged_week["min_sets"], merged_week["max_sets"], merged_week["min_set_inol"], merged_week["max_set_inol"], merged_week["min_exercise_inol"], merged_week["max_exercise_inol"],merged_week["format"])
              
             logging.debug(training_options)
             
@@ -361,6 +374,9 @@ def main():
                 md.addSimpleLineBreak()
                 training_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL", u"AMRAP"])
                 for w in x["weeks"]:
+                    
+                    
+                    
                     training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_olympic"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["exercise_inol"]), str(w["amrap_target"])])
                 md.addTable(training_table)
 
@@ -398,12 +414,12 @@ def roundPowerlifting(x, precision=1, base=2.5):
     return round(base * round(float(x) / base), precision)
 
 #round to 0.5 kg now we have the competition disks and for Erin Bench
-def roundOlympiclifting(x, precision=1, base=0.5):
-    return round(base * round(float(x) / base), precision)    
+def roundOlympiclifting(x, precision=0, base=1):
+    return round(base * round(float(x)/base),precision)   
+
+def roundRecords(x, precision=1, base=0.5):
+    return round(base * round(float(x)/base),precision) 
  
-     
-
-
 def calculate_set_inol(reps, intensity):
     return float(reps) / (100 - intensity)
 

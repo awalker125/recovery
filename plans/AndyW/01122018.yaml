@@ -3,6 +3,7 @@
 name: Andy Walker
 weight: 128
 age: 36
+format: olympic
 training_days:
   1: Monday
   2: Tuesday

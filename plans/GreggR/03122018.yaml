@@ -3,7 +3,6 @@
 name: Gregg Robinson
 weight: 85
 age: 25
-format: power
 training_days:
   1: Monday
   2: Tuesday
@@ -18,6 +17,7 @@ plan:
     category: bench
     current_max: 117.5
     defaults:
+      format: power
       target_exercise_inol: 0.1
       max_exercise_inol: 2
       min_exercise_inol: 0.1
@@ -50,6 +50,7 @@ plan:
     category: bench
     current_max: 117.5
     defaults:
+      format: power
       target_exercise_inol: 0.6
       max_exercise_inol: 2
       min_exercise_inol: 0.3
@@ -90,6 +91,7 @@ plan:
     category: bench
     current_max: 100
     defaults:
+      format: power
       target_exercise_inol: 0.4
       max_exercise_inol: 2
       min_exercise_inol: 0.3
@@ -124,6 +126,7 @@ plan:
     category: bench
     current_max: 100
     defaults:
+      format: power
       target_exercise_inol: 0.1
       max_exercise_inol: 2
       min_exercise_inol: 0.1

@@ -3,7 +3,6 @@
 name: Andy Walker
 weight: 128
 age: 36
-format: olympic
 training_days:
   1: Monday
   2: Tuesday
@@ -18,6 +17,7 @@ plan:
     category: bench
     current_max: 192
     defaults:
+      format: olympic
       target_exercise_inol: 0.1
       max_exercise_inol: 2
       min_exercise_inol: 0.1
@@ -50,6 +50,7 @@ plan:
     category: bench
     current_max: 192
     defaults:
+      format: olympic
       target_exercise_inol: 0.6
       max_exercise_inol: 2
       min_exercise_inol: 0.3
@@ -90,6 +91,7 @@ plan:
     category: bench
     current_max: 140
     defaults:
+      format: olympic
       target_exercise_inol: 0.4
       max_exercise_inol: 2
       min_exercise_inol: 0.3
@@ -124,6 +126,7 @@ plan:
     category: bench
     current_max: 192
     defaults:
+      format: olympic
       target_exercise_inol: 0.6
       max_exercise_inol: 2
       min_exercise_inol: 0.3
@@ -164,6 +167,7 @@ plan:
     category: bench
     current_max: 185
     defaults:
+      format: olympic
       target_exercise_inol: 0.1
       max_exercise_inol: 2
       min_exercise_inol: 0.1
@@ -199,6 +203,7 @@ plan:
     #current_max: 122
     defaults:
       go_hard: 0
+      format: olympic
       target_exercise_inol: 0.8
       max_exercise_inol: 2
       min_exercise_inol: 0.3
@@ -241,6 +246,7 @@ plan:
     #pre injury
     #current_max: 146
     defaults:
+      format: olympic
       go_hard: 0
       target_exercise_inol: 0.8
       max_exercise_inol: 2

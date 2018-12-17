@@ -361,7 +361,7 @@ def main():
                 md.addSimpleLineBreak()
                 training_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL", u"AMRAP"])
                 for w in x["weeks"]:
-                    training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_olympic"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["excercise_inol"]), str(w["amrap_target"])])
+                    training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_olympic"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["exercise_inol"]), str(w["amrap_target"])])
                 md.addTable(training_table)
 
                 md.addParagraph("Notes", 1, 'italic')

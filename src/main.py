@@ -361,7 +361,7 @@ def main():
                 md.addSimpleLineBreak()
                 training_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL", u"AMRAP"])
                 for w in x["weeks"]:
-                    training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_olympic"]), str(w["set_inol"]), str(w["exercise_inol"]), str(w["amrap_target"])])
+                    training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_olympic"]), str('{0:.2f}'.format(w["set_inol"])), str('{0:.2f}'.format(w["exercise_inol"])), str(w["amrap_target"])])
                 md.addTable(training_table)
 
                 md.addParagraph("Notes", 1, 'italic')
@@ -397,9 +397,13 @@ def getInolDifference(target_exercise_inol, exercise_inol):
 def roundPowerlifting(x, precision=1, base=2.5):
     return round(base * round(float(x) / base), precision)
 
-def roundOlympiclifting(x, precision=0, base=1):
+#round to 0.5 kg now we have the competition disks and for Erin Bench
+def roundOlympiclifting(x, precision=1, base=0.5):
     return round(base * round(float(x) / base), precision)    
-    
+ 
+     
+
+
 def calculate_set_inol(reps, intensity):
     return float(reps) / (100 - intensity)
 

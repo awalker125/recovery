@@ -128,3 +128,12 @@ class MarkdownWriter():
 		if not isinstance(table, MarkdownTable):
 			raise ValueError("request a 'MarkdownTable' object")
 		self.stream += table.getTable()
+
+	def addCheckBox(self, checked ):
+		self.stream += "["
+		if checked:
+			self.stream += "X"
+		else:
+			self.stream += " "
+			
+		self.stream += "]"

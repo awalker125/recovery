@@ -401,9 +401,31 @@ def main():
         logging.debug(i)
         workload_summary_all_table.addRow([str(w), str(i)])
     md.addTable(workload_summary_all_table)
+    md.addSimpleLineBreak()
     
     md.addHeader("Category", 3)
-    md.addHeader("Exercise", 3)
+    for c in full_training_summary["workload_category"]:
+        md.addHeader(c, 4)
+        workload_summary_category_table = MarkdownTable([u"Week", u"INOL"])
+        for w, i in full_training_summary["workload_category"][c].iteritems():
+            logging.debug(w)
+            logging.debug(i)
+            workload_summary_category_table.addRow([str(w), str(i)])
+        md.addTable(workload_summary_category_table)
+        md.addSimpleLineBreak()
+        
+    md.addHeader("Daily", 3)
+    for d in full_training_summary["workload_daily"]:
+        md.addHeader(training_days[d], 4)
+        workload_summary_daily_table = MarkdownTable([u"Week", u"INOL"])
+        for w, i in full_training_summary["workload_daily"][d].iteritems():
+            logging.debug(w)
+            logging.debug(i)
+            workload_summary_daily_table.addRow([str(w), str(i)])
+        md.addTable(workload_summary_daily_table)
+        md.addSimpleLineBreak()
+    
+    
     ### OUTPUT ###
     file_md.write(md.getStream())
     file_md.close()

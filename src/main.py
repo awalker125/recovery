@@ -28,22 +28,6 @@ from markdownwriter import *
 # > 4.0 - not recommended
 
 
-# globals
-
-# current_max = 140
-
-
-
-# max_exercise_inol = 2
-# min_exercise_inol = 0.4
-# max_set_inol = 0.5
-# min_set_inol = 0.05
-
-# intensity_increment = 5
-# max_intensity = 95
-
-# target_exercise_inol = 0.6
-
 
 def pick_best_training_option(training_options, target_exercise_inol, go_hard=0):
     
@@ -76,7 +60,6 @@ def pick_best_training_option(training_options, target_exercise_inol, go_hard=0)
             
     return best_training_option         
         
-
 def generate_training_options(current_max, min_reps, max_reps,intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol,rounding_format):
     training_options = []
     for r in range(min_reps, max_reps + 1):
@@ -202,7 +185,8 @@ def main():
     full_training_summary = dict()
     full_training_summary["workload_all"] = dict()
     full_training_summary["workload_category"] = dict()
-    full_training_summary["workload_exercise"] = dict()
+    full_training_summary["workload_daily"] = dict()
+    
     full_training_plan["summary"] = full_training_summary
     
     for exercise in plan:
@@ -275,57 +259,82 @@ def main():
 
     summary_categories_search = jmespath.compile('[].category')
     summary_training_days_search = jmespath.compile('[].training_day')
+    summary_weeks_search = jmespath.compile('[].weeks[].week')
     
     summary_categories = summary_categories_search.search(full_training_plan_items)
     summary_training_days = summary_training_days_search.search(full_training_plan_items)
-    
+    summary_weeks = summary_weeks_search.search(full_training_plan_items)
     # Remove dups
     summary_categories = list(OrderedDict.fromkeys(summary_categories))
     summary_training_days = list(OrderedDict.fromkeys(summary_training_days))
+    summary_weeks = list(OrderedDict.fromkeys(summary_weeks))
+    
     # weeks= weeks_search.search(sorted_full_training_plan_items)
     # parsed = jmespath.compile('[].category')
     logging.debug(summary_categories)
     logging.debug(summary_training_days)
+    logging.debug("Weeks")
+    logging.debug(summary_weeks)
     # logging.info(weeks)
 
+    #Weekly summary of everything
+    for w in summary_weeks:
+        week_index = w - 1
+        
+        search = jmespath.compile("[].weeks[{0}].exercise_inol".format(week_index))
+        results = search.search(full_training_plan_items)
+        logging.debug("all results")
+        logging.debug(results)
+        
+        if not w in full_training_summary["workload_all"]:
+            full_training_summary["workload_all"][w] = 0
+        #else:
+        #    logging.debug("Already init")
+        
+        for result in results:
+            full_training_summary["workload_all"][w] += result
+            logging.debug(full_training_summary["workload_all"][w])
+
+    #Weekly summary broken into categories
     for c in summary_categories:
-        summary_exercises_search = jmespath.compile("[?category=='{0}'].name[]".format(c))
-        summary_exercises = summary_exercises_search.search(full_training_plan_items)
+        for w in summary_weeks:
+            week_index = w - 1
         
-        summary_exercises = list(OrderedDict.fromkeys(summary_exercises))
+            search = jmespath.compile("[?category=='{0}'].weeks[{1}].exercise_inol".format(c,week_index))
+            results = search.search(full_training_plan_items)
+            logging.debug("category results")
+            logging.debug(results)
         
-        logging.debug(summary_exercises)
+            if not c in full_training_summary["workload_category"]:
+                full_training_summary["workload_category"][c] = dict()
+            
+            if not w in full_training_summary["workload_category"][c]:
+                full_training_summary["workload_category"][c][w] = 0
         
-        for e in summary_exercises:
+            for result in results:
+                full_training_summary["workload_category"][c][w] += result
+                logging.debug(full_training_summary["workload_category"][c][w])
+
+    #Weekly summary broken into days
+    for d in summary_training_days:
+        for w in summary_weeks:
+            week_index = w - 1
+        
+            search = jmespath.compile("[?training_day==`{0}`].weeks[{1}].exercise_inol".format(d,week_index))
+            results = search.search(full_training_plan_items)
+            logging.debug("daily results")
+            logging.debug(results)
+        
+            if not d in full_training_summary["workload_daily"]:
+                full_training_summary["workload_daily"][d] = dict()
             
-            weeks_search = jmespath.compile("[?category=='{0}' && name=='{1}'].weeks[].week".format(c, e))
-            weeks = weeks_search.search(full_training_plan_items)
-            # remove dups
-            weeks = list(OrderedDict.fromkeys(weeks))
-            logging.debug(weeks)
-            
-            for w in weeks:
-                # we write weeks in yaml as 1 2 3 4 5 etc
-                week_index = w - 1
-                summary_excercise_inol_search = jmespath.compile("[?category=='{0}' && name=='{1}'].weeks[{2}].exercise_inol".format(c, e, week_index))
-                summary_excercise_inol = summary_excercise_inol_search.search(full_training_plan_items)
-                
-                logging.debug(summary_excercise_inol)
-                logging.debug(type(summary_excercise_inol))
-                # logging.info(len(summary_excercise_inol))
-                # full_training_summary["workload_all"][w] = "test"
-                if not w in full_training_summary["workload_all"]:
-                    # we should only ever get one inol back per excercise
-                    logging.debug(summary_excercise_inol[0])
-                    full_training_summary["workload_all"][w] = summary_excercise_inol[0]
-                    logging.debug(full_training_summary["workload_all"][w])
-                else:
-                    # we should only ever get one inol back per excercise
-                    logging.debug(summary_excercise_inol[0])
-                    full_training_summary["workload_all"][w] += summary_excercise_inol[0]
-                    logging.debug(full_training_summary["workload_all"][w])
-                # full_training_summary["workload_all"][w][e] = "test"
-            
+            if not w in full_training_summary["workload_daily"][d]:
+                full_training_summary["workload_daily"][d][w] = 0
+        
+            for result in results:
+                full_training_summary["workload_daily"][d][w] += result
+                logging.debug(full_training_summary["workload_daily"][d][w])
+
 
     logging.debug(full_training_summary)           
 
@@ -405,8 +414,6 @@ def main():
     
     logging.info("Created plan {0} in {1}s".format(outputfile, elapse))
     
-    
-     
 def getInolDifference(target_exercise_inol, exercise_inol):
     return math.fabs(target_exercise_inol - exercise_inol)
     

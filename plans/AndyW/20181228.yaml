@@ -239,6 +239,78 @@ plan:
     notes:
       - pause at bottom
 
+  - name: Front Squat
+    training_day: 1
+    category: Squat
+    current_max: 80
+    defaults:
+      go_hard: 0
+      format: olympic
+      target_exercise_inol: 0.6
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 2
+      min_sets: 1
+      max_sets: 6
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 0.6
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        go_hard: 1
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - Use straps
+
+  - name: Overhead Squat
+    training_day: 3
+    category: Squat
+    current_max: 60
+    defaults:
+      go_hard: 0
+      format: olympic
+      target_exercise_inol: 0.4
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 2
+      min_sets: 1
+      max_sets: 6
+    weeks:
+      - week: 1
+        intensity: 65
+      - week: 2
+        intensity: 70
+        go_hard: 1
+      - week: 3
+        intensity: 75
+      - week: 4
+        intensity: 80
+        go_hard: 1
+      - week: 5
+        intensity: 85
+      - week: 6
+        intensity: 90
+
   - name: Clean
     training_day: 4
     category: Clean
@@ -283,3 +355,43 @@ plan:
     notes:
       - Smooth
       - Straps?
+
+  - name: Squat
+    training_day: 4
+    category: Squat
+    current_max: 100
+    defaults:
+      go_hard: 0
+      format: olympic
+      target_exercise_inol: 0.6
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 2
+      min_sets: 1
+      max_sets: 6
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 0.6
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        go_hard: 1
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - Use straps

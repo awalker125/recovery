@@ -310,6 +310,8 @@ plan:
         intensity: 85
       - week: 6
         intensity: 90
+    notes:
+      - Paused at bottom
 
   - name: Clean
     training_day: 4

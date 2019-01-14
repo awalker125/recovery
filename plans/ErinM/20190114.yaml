@@ -20,7 +20,7 @@ plan:
       format: records
       target_exercise_inol: 0.33
       max_exercise_inol: 2
-      min_exercise_inol: 0.3
+      min_exercise_inol: 0.1
       max_set_inol: 1.2
       min_set_inol: 0.05
       max_reps: 10

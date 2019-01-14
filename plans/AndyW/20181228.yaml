@@ -317,7 +317,7 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 86
+    current_max: 90
     #pre injury
     #current_max: 146
     defaults:

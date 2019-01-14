@@ -31,11 +31,19 @@ plan:
     weeks:
       - week: 1
         intensity: 85
+        max_reps: 5
+        min_reps: 5
       - week: 2
         intensity: 88
+        max_reps: 4
+        min_reps: 4
       - week: 3
         intensity: 90
+        max_reps: 3
+        min_reps: 3
       - week: 4
         intensity: 93
+        max_reps: 2
+        min_reps: 2
     notes:
       - build up to single heavy set

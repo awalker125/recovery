@@ -1,2 +1,2 @@
 jmespath==0.9.3
-PyYAML==3.13
+pyyaml>=4.2b1

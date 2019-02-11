@@ -15,7 +15,7 @@ plan:
   - name: Bench (Davey Style)
     training_day: 1
     category: bench
-    current_max: 194
+    current_max: 192
     defaults:
       format: records
       target_exercise_inol: 0.33

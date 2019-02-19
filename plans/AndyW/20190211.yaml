@@ -192,9 +192,9 @@ plan:
       - dont panic
 
   - name: Snatch
-    training_day: 1
+    training_day: 2
     category: Snatch
-    current_max: 84
+    current_max: 88
     #Pre injury
     #current_max: 122
     defaults:
@@ -237,9 +237,9 @@ plan:
       - pause at bottom
 
   - name: Front Squat
-    training_day: 1
+    training_day: 2
     category: Squat
-    current_max: 80
+    current_max: 90
     defaults:
       go_hard: 0
       format: olympic
@@ -313,7 +313,7 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 90
+    current_max: 94
     #pre injury
     #current_max: 146
     defaults:
@@ -359,7 +359,7 @@ plan:
   - name: Squat
     training_day: 4
     category: Squat
-    current_max: 100
+    current_max: 105
     defaults:
       go_hard: 0
       format: olympic

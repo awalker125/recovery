@@ -1,0 +1,348 @@
+---
+
+name: Andy Walker
+weight: 128
+age: 36
+training_days:
+  1: Monday
+  2: Tuesday
+  3: Wednesday
+  4: Thursday
+  5: Friday
+  6: Saturday
+  7: Sunday
+plan:
+  - name: Bench (Volume)
+    training_day: 1
+    category: bench
+    current_max: 188
+    defaults:
+      format: olympic
+      target_exercise_inol: 0.8
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 1
+      min_sets: 1
+      max_sets: 5
+      go_hard: 0
+    weeks:
+      - week: 1
+        intensity: 68
+        target_exercise_inol: 0.95
+        max_reps: 10
+        min_sets: 3
+        max_sets: 3
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.97
+        max_reps: 10
+        min_sets: 3
+        max_sets: 3
+      - week: 3
+        intensity: 72
+        target_exercise_inol: 1.0
+        max_reps: 10
+        min_reps: 10
+        min_sets: 3
+        max_sets: 3
+      - week: 4
+        intensity: 78
+        target_exercise_inol: 0.7
+        max_reps: 5
+        min_sets: 3
+        max_sets: 3
+      - week: 5
+        intensity: 80
+        target_exercise_inol: 0.75
+        max_reps: 5
+        min_sets: 3
+        max_sets: 3
+      - week: 6
+        intensity: 82
+        target_exercise_inol: 0.8
+        max_reps: 5
+        min_sets: 3
+        max_sets: 3
+      - week: 7
+        intensity: 90
+        target_exercise_inol: 0.9
+        max_reps: 3
+        min_sets: 3
+        max_sets: 3
+      - week: 8
+        intensity: 92
+        target_exercise_inol: 0.9
+        max_reps: 2
+        min_sets: 3
+        max_sets: 3
+    notes:
+      - pause everything
+
+  - name: Dips 
+    training_day: 3
+    category: bench
+    current_max: 187
+    defaults:
+      format: olympic
+      target_exercise_inol: 0.6
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 12
+      min_reps: 1
+      min_sets: 1
+      max_sets: 3
+      go_hard: 1
+    weeks:
+      - week: 1
+        intensity: 70
+      - week: 2
+        intensity: 72
+      - week: 3
+        intensity: 74
+      - week: 4
+        intensity: 76
+      - week: 5
+        intensity: 78
+      - week: 6
+        intensity: 80
+      - week: 7
+        intensity: 82
+      - week: 8
+        intensity: 84
+    notes:
+      - Easy block
+
+  - name: Bench (Double)
+    training_day: 5
+    category: bench
+    current_max: 187
+    defaults:
+      format: olympic
+      target_exercise_inol: 0.1
+      max_exercise_inol: 2
+      min_exercise_inol: 0.1
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 2
+      min_reps: 2
+      min_sets: 1
+      max_sets: 1
+      go_hard: 1
+    weeks:
+      - week: 1
+        intensity: 84
+      - week: 2
+        intensity: 86
+      - week: 3
+        intensity: 88
+      - week: 4
+        intensity: 90             
+    notes:
+      - pause everything
+      - dont panic
+
+  # - name: Close Grip (Max)
+  #   training_day: 5
+  #   category: bench
+  #   current_max: 191
+  #   defaults:
+  #     format: olympic
+  #     target_exercise_inol: 0.1
+  #     max_exercise_inol: 2
+  #     min_exercise_inol: 0.1
+  #     max_set_inol: 0.4
+  #     min_set_inol: 0.05
+  #     max_reps: 2
+  #     min_reps: 2
+  #     min_sets: 1
+  #     max_sets: 1
+  #     go_hard: 1
+  #   weeks:
+  #     - week: 1
+  #       intensity: 84
+  #     - week: 2
+  #       intensity: 86
+  #     - week: 3
+  #       intensity: 88
+  #     - week: 4
+  #       intensity: 90             
+  #   notes:
+  #     - pause everything
+  #     - dont panic
+
+  - name: Snatch
+    training_day: 2
+    category: Snatch
+    current_max: 93
+    #Pre injury
+    #current_max: 122
+    defaults:
+      go_hard: 0
+      format: olympic
+      target_exercise_inol: 0.8
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 5
+      min_reps: 1
+      min_sets: 1
+      max_sets: 8
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 0.6
+        min_reps: 5
+        max_reps: 5
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        go_hard: 1
+        max_reps: 2
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - pause at bottom
+
+  - name: Front Squat
+    training_day: 2
+    category: Squat
+    current_max: 105
+    defaults:
+      go_hard: 0
+      format: olympic
+      target_exercise_inol: 0.6
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 2
+      min_sets: 1
+      max_sets: 6
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 0.6
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        go_hard: 1
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - Use straps
+
+ 
+  - name: Clean
+    training_day: 4
+    category: Clean
+    current_max: 100
+    #pre injury
+    #current_max: 146
+    defaults:
+      format: olympic
+      go_hard: 0
+      target_exercise_inol: 0.8
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 5
+      min_reps: 1
+      min_sets: 1
+      max_sets: 8
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 0.6
+        min_reps: 5
+        max_reps: 5
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        max_reps: 2
+        go_hard: 1
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - Smooth
+
+
+  - name: Squat
+    training_day: 4
+    category: Squat
+    current_max: 125
+    defaults:
+      go_hard: 0
+      format: olympic
+      target_exercise_inol: 0.6
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 10
+      min_reps: 2
+      min_sets: 1
+      max_sets: 6
+    weeks:
+      - week: 1
+        intensity: 65
+        target_exercise_inol: 0.6
+      - week: 2
+        intensity: 70
+        target_exercise_inol: 0.8
+        go_hard: 1
+      - week: 3
+        intensity: 75
+        target_exercise_inol: 0.7
+      - week: 4
+        intensity: 80
+        target_exercise_inol: 0.6
+        go_hard: 1
+      - week: 5
+        intensity: 85
+        target_exercise_inol: 0.5
+      - week: 6
+        intensity: 90
+        target_exercise_inol: 0.4
+    notes:
+      - Dont get hurt

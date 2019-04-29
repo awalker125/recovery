@@ -17,7 +17,7 @@ plan:
     category: bench
     current_max: 63
     defaults:
-      format: competition
+      format: records
       target_exercise_inol: 0.8
       max_exercise_inol: 2
       min_exercise_inol: 0.3

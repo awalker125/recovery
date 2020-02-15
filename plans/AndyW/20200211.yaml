@@ -101,37 +101,37 @@ plan:
       - if not going well just do 3-4 sets of singles doubles
 
 
-  - name: Close Grip (Max)
-    training_day: 5
-    category: bench
-    current_max: 140
-    defaults:
-      format: olympic
-      target_exercise_inol: 0.1
-      max_exercise_inol: 2
-      min_exercise_inol: 0.1
-      max_set_inol: 0.4
-      min_set_inol: 0.05
-      max_reps: 2
-      min_reps: 2
-      min_sets: 1
-      max_sets: 1
-      go_hard: 1
-    weeks:
-      - week: 1
-        intensity: 85
-      - week: 2
-        intensity: 86
-      - week: 3
-        intensity: 87
-      - week: 4
-        intensity: 88
-      - week: 5
-        intensity: 90
-      - week: 6
-        intensity: 92               
-    notes:
-      - by feel
+  # - name: Close Grip (Max)
+  #   training_day: 5
+  #   category: bench
+  #   current_max: 140
+  #   defaults:
+  #     format: olympic
+  #     target_exercise_inol: 0.1
+  #     max_exercise_inol: 2
+  #     min_exercise_inol: 0.1
+  #     max_set_inol: 0.4
+  #     min_set_inol: 0.05
+  #     max_reps: 2
+  #     min_reps: 2
+  #     min_sets: 1
+  #     max_sets: 1
+  #     go_hard: 1
+  #   weeks:
+  #     - week: 1
+  #       intensity: 85
+  #     - week: 2
+  #       intensity: 86
+  #     - week: 3
+  #       intensity: 87
+  #     - week: 4
+  #       intensity: 88
+  #     - week: 5
+  #       intensity: 90
+  #     - week: 6
+  #       intensity: 92               
+  #   notes:
+  #     - by feel
 
 
 
@@ -222,7 +222,7 @@ plan:
 
  
   - name: Clean
-    training_day: 2
+    training_day: 3
     category: Clean
     current_max: 120
     #pre injury
@@ -267,7 +267,7 @@ plan:
       - Smooth
   
   - name: Squat
-    training_day: 2
+    training_day: 3
     category: Squat
     current_max: 180
     defaults:
@@ -307,7 +307,7 @@ plan:
       - Dont get hurt
 
   - name: Hang Snatch
-    training_day: 3
+    training_day: 4
     category: Snatch
     current_max: 90
     defaults:
@@ -326,6 +326,7 @@ plan:
       - week: 1
         intensity: 65
         target_exercise_inol: 0.4
+        min_reps: 3
       - week: 2
         intensity: 70
         target_exercise_inol: 0.6
@@ -347,7 +348,7 @@ plan:
       - pause at bottom
 
   - name: Snatch Pull
-    training_day: 3
+    training_day: 4
     category: Snatch
     current_max: 105
     defaults:
@@ -366,6 +367,7 @@ plan:
       - week: 1
         intensity: 65
         target_exercise_inol: 0.4
+        min_reps: 4
       - week: 2
         intensity: 70
         target_exercise_inol: 0.6
@@ -388,7 +390,7 @@ plan:
 
 
   - name: Power Clean + Power Jerk
-    training_day: 4
+    training_day: 5
     category: Clean
     current_max: 105
     defaults:
@@ -407,6 +409,7 @@ plan:
       - week: 1
         intensity: 65
         target_exercise_inol: 0.4
+        min_reps: 3
       - week: 2
         intensity: 70
         target_exercise_inol: 0.6
@@ -428,7 +431,7 @@ plan:
       - Speed
 
   - name: RDL
-    training_day: 4
+    training_day: 5
     category: Clean
     current_max: 75
     defaults:
@@ -439,14 +442,15 @@ plan:
       min_exercise_inol: 0.3
       max_set_inol: 0.4
       min_set_inol: 0.05
-      max_reps: 3
+      max_reps: 10
       min_reps: 1
       min_sets: 1
-      max_sets: 8
+      max_sets: 5
     weeks:
       - week: 1
         intensity: 65
         target_exercise_inol: 0.4
+        min_reps: 5
       - week: 2
         intensity: 70
         target_exercise_inol: 0.6
@@ -468,7 +472,7 @@ plan:
       - Smooth
 
   - name: Sumo Pull
-    training_day: 4
+    training_day: 5
     category: Clean
     current_max: 170
     defaults:
@@ -479,14 +483,15 @@ plan:
       min_exercise_inol: 0.3
       max_set_inol: 0.4
       min_set_inol: 0.05
-      max_reps: 3
+      max_reps: 5
       min_reps: 1
       min_sets: 1
-      max_sets: 8
+      max_sets: 5
     weeks:
       - week: 1
         intensity: 65
         target_exercise_inol: 0.4
+        min_reps: 4
       - week: 2
         intensity: 70
         target_exercise_inol: 0.6

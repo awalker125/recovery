@@ -144,7 +144,7 @@ plan:
     #current_max: 122
     defaults:
       go_hard: 0
-      format: power
+      format: olympic
       target_exercise_inol: 0.8
       max_exercise_inol: 2
       min_exercise_inol: 0.3
@@ -270,7 +270,7 @@ plan:
     #pre injury
     #current_max: 146
     defaults:
-      format: power
+      format: olympic
       go_hard: 0
       target_exercise_inol: 0.8
       max_exercise_inol: 2
@@ -476,7 +476,7 @@ plan:
     category: Clean
     current_max: 170
     defaults:
-      format: power
+      format: olympic
       go_hard: 0
       target_exercise_inol: 0.8
       max_exercise_inol: 2

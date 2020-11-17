@@ -181,34 +181,34 @@ plan:
   #     - pause everything
   #     - dont panic
 
-  - name: Close Grip + Red band (Max)
-    training_day: 5
-    category: bench
-    current_max: 125
-    defaults:
-      format: olympic
-      target_exercise_inol: 0.1
-      max_exercise_inol: 2
-      min_exercise_inol: 0.1
-      max_set_inol: 0.4
-      min_set_inol: 0.05
-      max_reps: 2
-      min_reps: 2
-      min_sets: 1
-      max_sets: 1
-      go_hard: 1
-    weeks:
-      - week: 1
-        intensity: 84
-      - week: 2
-        intensity: 86
-      - week: 3
-        intensity: 88
-      - week: 4
-        intensity: 90             
-    notes:
-      - pause everything
-      - dont panic
+  # - name: Close Grip + Red band (Max)
+  #   training_day: 5
+  #   category: bench
+  #   current_max: 125
+  #   defaults:
+  #     format: olympic
+  #     target_exercise_inol: 0.1
+  #     max_exercise_inol: 2
+  #     min_exercise_inol: 0.1
+  #     max_set_inol: 0.4
+  #     min_set_inol: 0.05
+  #     max_reps: 2
+  #     min_reps: 2
+  #     min_sets: 1
+  #     max_sets: 1
+  #     go_hard: 1
+  #   weeks:
+  #     - week: 1
+  #       intensity: 84
+  #     - week: 2
+  #       intensity: 86
+  #     - week: 3
+  #       intensity: 88
+  #     - week: 4
+  #       intensity: 90             
+  #   notes:
+  #     - pause everything
+  #     - dont panic
 
   # - name: Snatch
   #   training_day: 2

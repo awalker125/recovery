@@ -1,0 +1,250 @@
+plan:
+- category: bench
+  current_max: 130
+  name: Bench (Volume)
+  notes:
+  - Week 3 Try to hit a 10 rep max on the last set if you feel good.
+  - Week 6 Try to hit a 5 rep max on the last set if you feel good.
+  - Week 8 If you feel good on first double then go up and try for a single PB
+  training_day: 1
+  weeks:
+  - amrap_target: 14
+    exercise_inol: 0.9375
+    scheme: 3x10@68%
+    set_inol: 0.3125
+    volume: '30'
+    week: 1
+    weight: '88.4'
+    weight_rounded: '87.5'
+  - amrap_target: 13
+    exercise_inol: 1.0
+    scheme: 3x10@70%
+    set_inol: 0.3333333333333333
+    volume: '30'
+    week: 2
+    weight: '91.0'
+    weight_rounded: '90.0'
+  - amrap_target: 12
+    exercise_inol: 1.0714285714285714
+    scheme: 3x10@72%
+    set_inol: 0.35714285714285715
+    volume: '30'
+    week: 3
+    weight: '93.6'
+    weight_rounded: '92.5'
+  - amrap_target: 8
+    exercise_inol: 0.6818181818181818
+    scheme: 3x5@78%
+    set_inol: 0.22727272727272727
+    volume: '15'
+    week: 4
+    weight: '101.4'
+    weight_rounded: '102.5'
+  - amrap_target: 8
+    exercise_inol: 0.75
+    scheme: 3x5@80%
+    set_inol: 0.25
+    volume: '15'
+    week: 5
+    weight: '104.0'
+    weight_rounded: '105.0'
+  - amrap_target: 7
+    exercise_inol: 0.8333333333333334
+    scheme: 3x5@82%
+    set_inol: 0.2777777777777778
+    volume: '15'
+    week: 6
+    weight: '106.6'
+    weight_rounded: '107.5'
+  - amrap_target: 3
+    exercise_inol: 0.8999999999999999
+    scheme: 3x3@90%
+    set_inol: 0.3
+    volume: '9'
+    week: 7
+    weight: '117.0'
+    weight_rounded: '117.5'
+  - amrap_target: 3
+    exercise_inol: 0.75
+    scheme: 3x2@92%
+    set_inol: 0.25
+    volume: '6'
+    week: 8
+    weight: '119.6'
+    weight_rounded: '120.0'
+- category: squat
+  current_max: 205
+  name: Squat (Volume)
+  notes:
+  - full range
+  training_day: 2
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '133.25'
+    weight_rounded: '132.5'
+  - amrap_target: 13
+    exercise_inol: 0.8333333333333333
+    scheme: 5x5@70%
+    set_inol: 0.16666666666666666
+    volume: '25'
+    week: 2
+    weight: '143.5'
+    weight_rounded: '142.5'
+  - amrap_target: 10
+    exercise_inol: 0.96
+    scheme: 4x6@75%
+    set_inol: 0.24
+    volume: '24'
+    week: 3
+    weight: '153.75'
+    weight_rounded: '155.0'
+  - amrap_target: 8
+    exercise_inol: 0.75
+    scheme: 5x3@80%
+    set_inol: 0.15
+    volume: '15'
+    week: 4
+    weight: '164.0'
+    weight_rounded: '165.0'
+  - amrap_target: 5
+    exercise_inol: 0.6666666666666666
+    scheme: 5x2@85%
+    set_inol: 0.13333333333333333
+    volume: '10'
+    week: 5
+    weight: '174.25'
+    weight_rounded: '175.0'
+  - amrap_target: 3
+    exercise_inol: 0.5
+    scheme: 5x1@90%
+    set_inol: 0.1
+    volume: '5'
+    week: 6
+    weight: '184.5'
+    weight_rounded: '185.0'
+- category: deadlift
+  current_max: 242.5
+  name: Deadlift
+  notes:
+  - Go easy
+  training_day: 4
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.7999999999999999
+    scheme: 7x4@65%
+    set_inol: 0.11428571428571428
+    volume: '28'
+    week: 1
+    weight: '157.625'
+    weight_rounded: '157.5'
+  - amrap_target: 13
+    exercise_inol: 0.8333333333333333
+    scheme: 5x5@70%
+    set_inol: 0.16666666666666666
+    volume: '25'
+    week: 2
+    weight: '169.75'
+    weight_rounded: '170.0'
+  - amrap_target: 10
+    exercise_inol: 0.96
+    scheme: 8x3@75%
+    set_inol: 0.12
+    volume: '24'
+    week: 3
+    weight: '181.875'
+    weight_rounded: '182.5'
+  - amrap_target: 8
+    exercise_inol: 0.7000000000000001
+    scheme: 7x2@80%
+    set_inol: 0.1
+    volume: '14'
+    week: 4
+    weight: '194.0'
+    weight_rounded: '195.0'
+  - amrap_target: 5
+    exercise_inol: 0.6666666666666666
+    scheme: 10x1@85%
+    set_inol: 0.06666666666666667
+    volume: '10'
+    week: 5
+    weight: '206.125'
+    weight_rounded: '205.0'
+  - amrap_target: 3
+    exercise_inol: 0.5
+    scheme: 5x1@90%
+    set_inol: 0.1
+    volume: '5'
+    week: 6
+    weight: '218.25'
+    weight_rounded: '217.5'
+summary:
+  workload_all:
+    1: 2.5375
+    2: 2.6666666666666665
+    3: 2.991428571428571
+    4: 2.131818181818182
+    5: 2.083333333333333
+    6: 1.8333333333333335
+    7: 0.8999999999999999
+    8: 0.75
+  workload_category:
+    bench:
+      1: 0.9375
+      2: 1.0
+      3: 1.0714285714285714
+      4: 0.6818181818181818
+      5: 0.75
+      6: 0.8333333333333334
+      7: 0.8999999999999999
+      8: 0.75
+    deadlift:
+      1: 0.7999999999999999
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.7000000000000001
+      5: 0.6666666666666666
+      6: 0.5
+      7: 0
+      8: 0
+    squat:
+      1: 0.8
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.75
+      5: 0.6666666666666666
+      6: 0.5
+      7: 0
+      8: 0
+  workload_daily:
+    1:
+      1: 0.9375
+      2: 1.0
+      3: 1.0714285714285714
+      4: 0.6818181818181818
+      5: 0.75
+      6: 0.8333333333333334
+      7: 0.8999999999999999
+      8: 0.75
+    2:
+      1: 0.8
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.75
+      5: 0.6666666666666666
+      6: 0.5
+      7: 0
+      8: 0
+    4:
+      1: 0.7999999999999999
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.7000000000000001
+      5: 0.6666666666666666
+      6: 0.5
+      7: 0
+      8: 0

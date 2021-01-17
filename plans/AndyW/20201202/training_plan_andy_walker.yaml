@@ -1,0 +1,162 @@
+plan:
+- category: bench
+  current_max: 155
+  name: Bench (Volume)
+  notes:
+  - week 7 is max out
+  training_day: 2
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '100.75'
+    weight_rounded: '101.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 4x6@70%
+    set_inol: 0.2
+    volume: '24'
+    week: 2
+    weight: '108.5'
+    weight_rounded: '109.0'
+  - amrap_target: 10
+    exercise_inol: 0.8
+    scheme: 5x4@75%
+    set_inol: 0.16
+    volume: '20'
+    week: 3
+    weight: '116.25'
+    weight_rounded: '116.0'
+  - amrap_target: 7
+    exercise_inol: 0.8
+    scheme: 4x4@80%
+    set_inol: 0.2
+    volume: '16'
+    week: 4
+    weight: '124.0'
+    weight_rounded: '124.0'
+  - amrap_target: 5
+    exercise_inol: 0.8
+    scheme: 4x3@85%
+    set_inol: 0.2
+    volume: '12'
+    week: 5
+    weight: '131.75'
+    weight_rounded: '132.0'
+  - amrap_target: 3
+    exercise_inol: 0.8
+    scheme: 4x2@90%
+    set_inol: 0.2
+    volume: '8'
+    week: 6
+    weight: '139.5'
+    weight_rounded: '140.0'
+  - amrap_target: 3
+    exercise_inol: 0.75
+    scheme: 3x2@92%
+    set_inol: 0.25
+    volume: '6'
+    week: 7
+    weight: '142.6'
+    weight_rounded: '143.0'
+- category: bench
+  current_max: 100
+  name: Strict Press
+  notes:
+  - week 7 is max out
+  training_day: 6
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '65.0'
+    weight_rounded: '65.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 4x6@70%
+    set_inol: 0.2
+    volume: '24'
+    week: 2
+    weight: '70.0'
+    weight_rounded: '70.0'
+  - amrap_target: 10
+    exercise_inol: 0.8
+    scheme: 5x4@75%
+    set_inol: 0.16
+    volume: '20'
+    week: 3
+    weight: '75.0'
+    weight_rounded: '75.0'
+  - amrap_target: 8
+    exercise_inol: 0.8
+    scheme: 4x4@80%
+    set_inol: 0.2
+    volume: '16'
+    week: 4
+    weight: '80.0'
+    weight_rounded: '80.0'
+  - amrap_target: 5
+    exercise_inol: 0.8
+    scheme: 4x3@85%
+    set_inol: 0.2
+    volume: '12'
+    week: 5
+    weight: '85.0'
+    weight_rounded: '85.0'
+  - amrap_target: 3
+    exercise_inol: 0.8
+    scheme: 4x2@90%
+    set_inol: 0.2
+    volume: '8'
+    week: 6
+    weight: '90.0'
+    weight_rounded: '90.0'
+  - amrap_target: 3
+    exercise_inol: 0.75
+    scheme: 3x2@92%
+    set_inol: 0.25
+    volume: '6'
+    week: 7
+    weight: '92.0'
+    weight_rounded: '92.0'
+summary:
+  workload_all:
+    1: 1.6
+    2: 1.6
+    3: 1.6
+    4: 1.6
+    5: 1.6
+    6: 1.6
+    7: 1.5
+  workload_category:
+    bench:
+      1: 1.6
+      2: 1.6
+      3: 1.6
+      4: 1.6
+      5: 1.6
+      6: 1.6
+      7: 1.5
+  workload_daily:
+    2:
+      1: 0.8
+      2: 0.8
+      3: 0.8
+      4: 0.8
+      5: 0.8
+      6: 0.8
+      7: 0.75
+    6:
+      1: 0.8
+      2: 0.8
+      3: 0.8
+      4: 0.8
+      5: 0.8
+      6: 0.8
+      7: 0.75

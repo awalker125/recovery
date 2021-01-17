@@ -1,0 +1,448 @@
+plan:
+- category: bench
+  current_max: 125
+  name: Bench (Volume)
+  notes:
+  - pause everything
+  - dont panic
+  training_day: 1
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '81.25'
+    weight_rounded: '82.5'
+  - amrap_target: 13
+    exercise_inol: 0.8333333333333333
+    scheme: 5x5@70%
+    set_inol: 0.16666666666666666
+    volume: '25'
+    week: 2
+    weight: '87.5'
+    weight_rounded: '87.5'
+  - amrap_target: 10
+    exercise_inol: 0.96
+    scheme: 4x6@75%
+    set_inol: 0.24
+    volume: '24'
+    week: 3
+    weight: '93.75'
+    weight_rounded: '95.0'
+  - amrap_target: 8
+    exercise_inol: 0.75
+    scheme: 5x3@80%
+    set_inol: 0.15
+    volume: '15'
+    week: 4
+    weight: '100.0'
+    weight_rounded: '100.0'
+  - amrap_target: 5
+    exercise_inol: 0.6666666666666666
+    scheme: 5x2@85%
+    set_inol: 0.13333333333333333
+    volume: '10'
+    week: 5
+    weight: '106.25'
+    weight_rounded: '107.5'
+  - amrap_target: 3
+    exercise_inol: 0.2
+    scheme: 1x2@90%
+    set_inol: 0.2
+    volume: '2'
+    week: 6
+    weight: '112.5'
+    weight_rounded: '112.5'
+- category: bench
+  current_max: 125
+  name: Dips
+  notes:
+  - Full range
+  - 2x10 Tricep push downs. 1 x AMRAP at rpe 8 e.g 6x10,7x10,8x4
+  - Each week try to add 1 rep to final set e.g 6x10,7x10,8x5, 6x10,7x10,8x6, 6x10,7x10,8x7
+    until you get 8x10. Then all weights go up e.g 7x10,8x10,9x2..
+  training_day: 3
+  weeks:
+  - amrap_target: 14
+    exercise_inol: 0.6153846153846154
+    scheme: 4x5@67.5%
+    set_inol: 0.15384615384615385
+    volume: '20'
+    week: 1
+    weight: '84.375'
+    weight_rounded: '85.0'
+  - amrap_target: 13
+    exercise_inol: 0.6
+    scheme: 2x9@70%
+    set_inol: 0.3
+    volume: '18'
+    week: 2
+    weight: '87.5'
+    weight_rounded: '87.5'
+  - amrap_target: 10
+    exercise_inol: 0.6
+    scheme: 5x3@75%
+    set_inol: 0.12
+    volume: '15'
+    week: 3
+    weight: '93.75'
+    weight_rounded: '95.0'
+  - amrap_target: 8
+    exercise_inol: 0.6
+    scheme: 4x3@80%
+    set_inol: 0.15
+    volume: '12'
+    week: 4
+    weight: '100.0'
+    weight_rounded: '100.0'
+  - amrap_target: 5
+    exercise_inol: 0.5333333333333333
+    scheme: 4x2@85%
+    set_inol: 0.13333333333333333
+    volume: '8'
+    week: 5
+    weight: '106.25'
+    weight_rounded: '107.5'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 4x1@90%
+    set_inol: 0.1
+    volume: '4'
+    week: 6
+    weight: '112.5'
+    weight_rounded: '112.5'
+- category: power
+  current_max: 125
+  name: Bench (Double)
+  notes:
+  - pause everything
+  - dont panic
+  training_day: 5
+  weeks:
+  - amrap_target: 6
+    exercise_inol: 0.125
+    scheme: 1x2@84%
+    set_inol: 0.125
+    volume: '2'
+    week: 1
+    weight: '105.0'
+    weight_rounded: '105.0'
+  - amrap_target: 5
+    exercise_inol: 0.14285714285714285
+    scheme: 1x2@86%
+    set_inol: 0.14285714285714285
+    volume: '2'
+    week: 2
+    weight: '107.5'
+    weight_rounded: '108.0'
+  - amrap_target: 4
+    exercise_inol: 0.16666666666666666
+    scheme: 1x2@88%
+    set_inol: 0.16666666666666666
+    volume: '2'
+    week: 3
+    weight: '110.0'
+    weight_rounded: '110.0'
+  - amrap_target: 3
+    exercise_inol: 0.2
+    scheme: 1x2@90%
+    set_inol: 0.2
+    volume: '2'
+    week: 4
+    weight: '112.5'
+    weight_rounded: '113.0'
+- category: squat
+  current_max: 192.5
+  name: Squat (Volume)
+  notes:
+  - full range
+  training_day: 2
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '125.125'
+    weight_rounded: '125.0'
+  - amrap_target: 13
+    exercise_inol: 0.8333333333333333
+    scheme: 5x5@70%
+    set_inol: 0.16666666666666666
+    volume: '25'
+    week: 2
+    weight: '134.75'
+    weight_rounded: '135.0'
+  - amrap_target: 10
+    exercise_inol: 0.96
+    scheme: 4x6@75%
+    set_inol: 0.24
+    volume: '24'
+    week: 3
+    weight: '144.375'
+    weight_rounded: '145.0'
+  - amrap_target: 7
+    exercise_inol: 0.75
+    scheme: 5x3@80%
+    set_inol: 0.15
+    volume: '15'
+    week: 4
+    weight: '154.0'
+    weight_rounded: '155.0'
+  - amrap_target: 5
+    exercise_inol: 0.6666666666666666
+    scheme: 5x2@85%
+    set_inol: 0.13333333333333333
+    volume: '10'
+    week: 5
+    weight: '163.625'
+    weight_rounded: '162.5'
+  - amrap_target: 3
+    exercise_inol: 0.5
+    scheme: 5x1@90%
+    set_inol: 0.1
+    volume: '5'
+    week: 6
+    weight: '173.25'
+    weight_rounded: '172.5'
+- category: squat
+  current_max: 175
+  name: Squat (Volume)
+  notes:
+  - Pauses/tempos what ever variation you fancy. Adjust load to suit
+  training_day: 5
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.4
+    scheme: 2x7@65%
+    set_inol: 0.2
+    volume: '14'
+    week: 1
+    weight: '113.75'
+    weight_rounded: '115.0'
+  - amrap_target: 13
+    exercise_inol: 0.4
+    scheme: 4x3@70%
+    set_inol: 0.1
+    volume: '12'
+    week: 2
+    weight: '122.5'
+    weight_rounded: '122.5'
+  - amrap_target: 10
+    exercise_inol: 0.4
+    scheme: 5x2@75%
+    set_inol: 0.08
+    volume: '10'
+    week: 3
+    weight: '131.25'
+    weight_rounded: '132.5'
+  - amrap_target: 7
+    exercise_inol: 0.4
+    scheme: 4x2@80%
+    set_inol: 0.1
+    volume: '8'
+    week: 4
+    weight: '140.0'
+    weight_rounded: '140.0'
+  - amrap_target: 7
+    exercise_inol: 0.42105263157894735
+    scheme: 4x2@81%
+    set_inol: 0.10526315789473684
+    volume: '8'
+    week: 5
+    weight: '141.75'
+    weight_rounded: '142.5'
+  - amrap_target: 7
+    exercise_inol: 0.3888888888888889
+    scheme: 1x7@82%
+    set_inol: 0.3888888888888889
+    volume: '7'
+    week: 6
+    weight: '143.5'
+    weight_rounded: '142.5'
+- category: deadlift
+  current_max: 230
+  name: Deadlift
+  notes:
+  - full range
+  training_day: 4
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.7999999999999999
+    scheme: 7x4@65%
+    set_inol: 0.11428571428571428
+    volume: '28'
+    week: 1
+    weight: '149.5'
+    weight_rounded: '150.0'
+  - amrap_target: 13
+    exercise_inol: 0.8333333333333333
+    scheme: 5x5@70%
+    set_inol: 0.16666666666666666
+    volume: '25'
+    week: 2
+    weight: '161.0'
+    weight_rounded: '160.0'
+  - amrap_target: 10
+    exercise_inol: 0.96
+    scheme: 8x3@75%
+    set_inol: 0.12
+    volume: '24'
+    week: 3
+    weight: '172.5'
+    weight_rounded: '172.5'
+  - amrap_target: 7
+    exercise_inol: 0.7000000000000001
+    scheme: 7x2@80%
+    set_inol: 0.1
+    volume: '14'
+    week: 4
+    weight: '184.0'
+    weight_rounded: '185.0'
+  - amrap_target: 5
+    exercise_inol: 0.6666666666666666
+    scheme: 10x1@85%
+    set_inol: 0.06666666666666667
+    volume: '10'
+    week: 5
+    weight: '195.5'
+    weight_rounded: '195.0'
+  - amrap_target: 3
+    exercise_inol: 0.5
+    scheme: 5x1@90%
+    set_inol: 0.1
+    volume: '5'
+    week: 6
+    weight: '207.0'
+    weight_rounded: '207.5'
+- category: deadlift
+  current_max: 90
+  name: RDL
+  notes:
+  - slow and controlled. Feel stretch in hamstrings.
+  training_day: 4
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.5142857142857142
+    scheme: 3x6@65%
+    set_inol: 0.17142857142857143
+    volume: '18'
+    week: 1
+    weight: '58.5'
+    weight_rounded: '57.5'
+  - amrap_target: 13
+    exercise_inol: 0.5
+    scheme: 3x5@70%
+    set_inol: 0.16666666666666666
+    volume: '15'
+    week: 2
+    weight: '63.0'
+    weight_rounded: '62.5'
+  - amrap_target: 10
+    exercise_inol: 0.48
+    scheme: 4x3@75%
+    set_inol: 0.12
+    volume: '12'
+    week: 3
+    weight: '67.5'
+    weight_rounded: '67.5'
+  - amrap_target: 8
+    exercise_inol: 0.44999999999999996
+    scheme: 3x3@80%
+    set_inol: 0.15
+    volume: '9'
+    week: 4
+    weight: '72.0'
+    weight_rounded: '72.5'
+  - amrap_target: 5
+    exercise_inol: 0.5333333333333333
+    scheme: 4x2@85%
+    set_inol: 0.13333333333333333
+    volume: '8'
+    week: 5
+    weight: '76.5'
+    weight_rounded: '77.5'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 4x1@90%
+    set_inol: 0.1
+    volume: '4'
+    week: 6
+    weight: '81.0'
+    weight_rounded: '80.0'
+summary:
+  workload_all:
+    1: 4.05467032967033
+    2: 4.142857142857142
+    3: 4.526666666666667
+    4: 3.8499999999999996
+    5: 3.4877192982456138
+    6: 2.388888888888889
+  workload_category:
+    bench:
+      1: 1.4153846153846155
+      2: 1.4333333333333331
+      3: 1.56
+      4: 1.35
+      5: 1.2
+      6: 0.6000000000000001
+    deadlift:
+      1: 1.314285714285714
+      2: 1.3333333333333333
+      3: 1.44
+      4: 1.15
+      5: 1.2
+      6: 0.9
+    power:
+      1: 0.125
+      2: 0.14285714285714285
+      3: 0.16666666666666666
+      4: 0.2
+      5: 0
+      6: 0
+    squat:
+      1: 1.2000000000000002
+      2: 1.2333333333333334
+      3: 1.3599999999999999
+      4: 1.15
+      5: 1.0877192982456139
+      6: 0.8888888888888888
+  workload_daily:
+    1:
+      1: 0.8
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.75
+      5: 0.6666666666666666
+      6: 0.2
+    2:
+      1: 0.8
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.75
+      5: 0.6666666666666666
+      6: 0.5
+    3:
+      1: 0.6153846153846154
+      2: 0.6
+      3: 0.6
+      4: 0.6
+      5: 0.5333333333333333
+      6: 0.4
+    4:
+      1: 1.314285714285714
+      2: 1.3333333333333333
+      3: 1.44
+      4: 1.15
+      5: 1.2
+      6: 0.9
+    5:
+      1: 0.525
+      2: 0.5428571428571429
+      3: 0.5666666666666667
+      4: 0.6000000000000001
+      5: 0.42105263157894735
+      6: 0.3888888888888889

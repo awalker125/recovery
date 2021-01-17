@@ -1,0 +1,627 @@
+plan:
+- category: bench
+  current_max: 193
+  name: Bench (Double)
+  notes:
+  - pause everything (mississippi style)
+  - dont panic
+  training_day: 1
+  weeks:
+  - amrap_target: 5
+    exercise_inol: 0.13333333333333333
+    scheme: 1x2@85%
+    set_inol: 0.13333333333333333
+    volume: '2'
+    week: 1
+    weight: '164.05'
+    weight_rounded: '164.0'
+  - amrap_target: 5
+    exercise_inol: 0.14285714285714285
+    scheme: 1x2@86%
+    set_inol: 0.14285714285714285
+    volume: '2'
+    week: 2
+    weight: '165.98'
+    weight_rounded: '166.0'
+  - amrap_target: 4
+    exercise_inol: 0.15384615384615385
+    scheme: 1x2@87%
+    set_inol: 0.15384615384615385
+    volume: '2'
+    week: 3
+    weight: '167.91'
+    weight_rounded: '168.0'
+  - amrap_target: 4
+    exercise_inol: 0.16666666666666666
+    scheme: 1x2@88%
+    set_inol: 0.16666666666666666
+    volume: '2'
+    week: 4
+    weight: '169.84'
+    weight_rounded: '170.0'
+  - amrap_target: 4
+    exercise_inol: 0.18181818181818182
+    scheme: 1x2@89%
+    set_inol: 0.18181818181818182
+    volume: '2'
+    week: 5
+    weight: '171.77'
+    weight_rounded: '172.0'
+  - amrap_target: 3
+    exercise_inol: 0.2
+    scheme: 1x2@90%
+    set_inol: 0.2
+    volume: '2'
+    week: 6
+    weight: '173.7'
+    weight_rounded: '174.0'
+- category: bench
+  current_max: 193
+  name: Bench (Volume)
+  notes:
+  - pause everything
+  - dont panic
+  - Do heavy double first
+  training_day: 1
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.6000000000000001
+    scheme: 3x7@65%
+    set_inol: 0.2
+    volume: '21'
+    week: 1
+    weight: '125.45'
+    weight_rounded: '125.0'
+  - amrap_target: 13
+    exercise_inol: 0.6666666666666666
+    scheme: 5x4@70%
+    set_inol: 0.13333333333333333
+    volume: '20'
+    week: 2
+    weight: '135.1'
+    weight_rounded: '135.0'
+  - amrap_target: 10
+    exercise_inol: 0.72
+    scheme: 3x6@75%
+    set_inol: 0.24
+    volume: '18'
+    week: 3
+    weight: '144.75'
+    weight_rounded: '145.0'
+  - amrap_target: 7
+    exercise_inol: 0.5
+    scheme: 5x2@80%
+    set_inol: 0.1
+    volume: '10'
+    week: 4
+    weight: '154.4'
+    weight_rounded: '154.0'
+  - amrap_target: 5
+    exercise_inol: 0.4
+    scheme: 3x2@85%
+    set_inol: 0.13333333333333333
+    volume: '6'
+    week: 5
+    weight: '164.05'
+    weight_rounded: '164.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 4x1@90%
+    set_inol: 0.1
+    volume: '4'
+    week: 6
+    weight: '173.7'
+    weight_rounded: '174.0'
+- category: bench
+  current_max: 140
+  name: Bands
+  notes:
+  - pause everything
+  - dont panic
+  - Speed of the chest
+  - Squeeze triceps/try to accelerate all the way to lockout
+  training_day: 3
+  weeks:
+  - amrap_target: 30
+    exercise_inol: 0.36
+    scheme: 6x3@50%
+    set_inol: 0.06
+    volume: '18'
+    week: 1
+    weight: '70.0'
+    weight_rounded: '70.0'
+  - amrap_target: 29
+    exercise_inol: 0.36734693877551017
+    scheme: 6x3@51%
+    set_inol: 0.061224489795918366
+    volume: '18'
+    week: 2
+    weight: '71.4'
+    weight_rounded: '71.0'
+  - amrap_target: 28
+    exercise_inol: 0.375
+    scheme: 6x3@52%
+    set_inol: 0.0625
+    volume: '18'
+    week: 3
+    weight: '72.8'
+    weight_rounded: '73.0'
+  - amrap_target: 27
+    exercise_inol: 0.3829787234042553
+    scheme: 6x3@53%
+    set_inol: 0.06382978723404255
+    volume: '18'
+    week: 4
+    weight: '74.2'
+    weight_rounded: '74.0'
+  - amrap_target: 26
+    exercise_inol: 0.3913043478260869
+    scheme: 6x3@54%
+    set_inol: 0.06521739130434782
+    volume: '18'
+    week: 5
+    weight: '75.6'
+    weight_rounded: '76.0'
+  - amrap_target: 25
+    exercise_inol: 0.4
+    scheme: 6x3@55%
+    set_inol: 0.06666666666666667
+    volume: '18'
+    week: 6
+    weight: '77.0'
+    weight_rounded: '77.0'
+- category: bench
+  current_max: 193
+  name: Dips
+  notes:
+  - pause everything
+  - dont panic
+  - Do heavy double first
+  training_day: 3
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.6000000000000001
+    scheme: 3x7@65%
+    set_inol: 0.2
+    volume: '21'
+    week: 1
+    weight: '125.45'
+    weight_rounded: '125.0'
+  - amrap_target: 13
+    exercise_inol: 0.6666666666666666
+    scheme: 5x4@70%
+    set_inol: 0.13333333333333333
+    volume: '20'
+    week: 2
+    weight: '135.1'
+    weight_rounded: '135.0'
+  - amrap_target: 10
+    exercise_inol: 0.72
+    scheme: 3x6@75%
+    set_inol: 0.24
+    volume: '18'
+    week: 3
+    weight: '144.75'
+    weight_rounded: '145.0'
+  - amrap_target: 7
+    exercise_inol: 0.5
+    scheme: 5x2@80%
+    set_inol: 0.1
+    volume: '10'
+    week: 4
+    weight: '154.4'
+    weight_rounded: '154.0'
+  - amrap_target: 5
+    exercise_inol: 0.4
+    scheme: 3x2@85%
+    set_inol: 0.13333333333333333
+    volume: '6'
+    week: 5
+    weight: '164.05'
+    weight_rounded: '164.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 4x1@90%
+    set_inol: 0.1
+    volume: '4'
+    week: 6
+    weight: '173.7'
+    weight_rounded: '174.0'
+- category: bench
+  current_max: 186
+  name: Close Grip (Max)
+  notes:
+  - pause everything
+  - dont panic
+  training_day: 5
+  weeks:
+  - amrap_target: 5
+    exercise_inol: 0.13333333333333333
+    scheme: 1x2@85%
+    set_inol: 0.13333333333333333
+    volume: '2'
+    week: 1
+    weight: '158.1'
+    weight_rounded: '158.0'
+  - amrap_target: 5
+    exercise_inol: 0.14285714285714285
+    scheme: 1x2@86%
+    set_inol: 0.14285714285714285
+    volume: '2'
+    week: 2
+    weight: '159.96'
+    weight_rounded: '160.0'
+  - amrap_target: 4
+    exercise_inol: 0.15384615384615385
+    scheme: 1x2@87%
+    set_inol: 0.15384615384615385
+    volume: '2'
+    week: 3
+    weight: '161.82'
+    weight_rounded: '162.0'
+  - amrap_target: 4
+    exercise_inol: 0.16666666666666666
+    scheme: 1x2@88%
+    set_inol: 0.16666666666666666
+    volume: '2'
+    week: 4
+    weight: '163.68'
+    weight_rounded: '164.0'
+  - amrap_target: 3
+    exercise_inol: 0.2
+    scheme: 1x2@90%
+    set_inol: 0.2
+    volume: '2'
+    week: 5
+    weight: '167.4'
+    weight_rounded: '167.0'
+  - amrap_target: 3
+    exercise_inol: 0.25
+    scheme: 1x2@92%
+    set_inol: 0.25
+    volume: '2'
+    week: 6
+    weight: '171.12'
+    weight_rounded: '171.0'
+- category: Snatch
+  current_max: 84
+  name: Snatch
+  notes:
+  - pause at bottom
+  training_day: 1
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.5714285714285714
+    scheme: 4x5@65%
+    set_inol: 0.14285714285714285
+    volume: '20'
+    week: 1
+    weight: '54.6'
+    weight_rounded: '55.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 8x3@70%
+    set_inol: 0.1
+    volume: '24'
+    week: 2
+    weight: '58.8'
+    weight_rounded: '59.0'
+  - amrap_target: 10
+    exercise_inol: 0.72
+    scheme: 6x3@75%
+    set_inol: 0.12
+    volume: '18'
+    week: 3
+    weight: '63.0'
+    weight_rounded: '63.0'
+  - amrap_target: 7
+    exercise_inol: 0.6000000000000001
+    scheme: 6x2@80%
+    set_inol: 0.1
+    volume: '12'
+    week: 4
+    weight: '67.2'
+    weight_rounded: '67.0'
+  - amrap_target: 5
+    exercise_inol: 0.4666666666666667
+    scheme: 7x1@85%
+    set_inol: 0.06666666666666667
+    volume: '7'
+    week: 5
+    weight: '71.4'
+    weight_rounded: '71.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 4x1@90%
+    set_inol: 0.1
+    volume: '4'
+    week: 6
+    weight: '75.6'
+    weight_rounded: '76.0'
+- category: Squat
+  current_max: 80
+  name: Front Squat
+  notes:
+  - Use straps
+  training_day: 1
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.6000000000000001
+    scheme: 3x7@65%
+    set_inol: 0.2
+    volume: '21'
+    week: 1
+    weight: '52.0'
+    weight_rounded: '52.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 6x4@70%
+    set_inol: 0.13333333333333333
+    volume: '24'
+    week: 2
+    weight: '56.0'
+    weight_rounded: '56.0'
+  - amrap_target: 10
+    exercise_inol: 0.72
+    scheme: 6x3@75%
+    set_inol: 0.12
+    volume: '18'
+    week: 3
+    weight: '60.0'
+    weight_rounded: '60.0'
+  - amrap_target: 8
+    exercise_inol: 0.6
+    scheme: 4x3@80%
+    set_inol: 0.15
+    volume: '12'
+    week: 4
+    weight: '64.0'
+    weight_rounded: '64.0'
+  - amrap_target: 5
+    exercise_inol: 0.5333333333333333
+    scheme: 4x2@85%
+    set_inol: 0.13333333333333333
+    volume: '8'
+    week: 5
+    weight: '68.0'
+    weight_rounded: '68.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 2x2@90%
+    set_inol: 0.2
+    volume: '4'
+    week: 6
+    weight: '72.0'
+    weight_rounded: '72.0'
+- category: Squat
+  current_max: 60
+  name: Overhead Squat
+  notes:
+  - Paused at bottom
+  training_day: 3
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.4
+    scheme: 2x7@65%
+    set_inol: 0.2
+    volume: '14'
+    week: 1
+    weight: '39.0'
+    weight_rounded: '39.0'
+  - amrap_target: 13
+    exercise_inol: 0.4
+    scheme: 6x2@70%
+    set_inol: 0.06666666666666667
+    volume: '12'
+    week: 2
+    weight: '42.0'
+    weight_rounded: '42.0'
+  - amrap_target: 10
+    exercise_inol: 0.4
+    scheme: 5x2@75%
+    set_inol: 0.08
+    volume: '10'
+    week: 3
+    weight: '45.0'
+    weight_rounded: '45.0'
+  - amrap_target: 8
+    exercise_inol: 0.4
+    scheme: 4x2@80%
+    set_inol: 0.1
+    volume: '8'
+    week: 4
+    weight: '48.0'
+    weight_rounded: '48.0'
+  - amrap_target: 5
+    exercise_inol: 0.4
+    scheme: 3x2@85%
+    set_inol: 0.13333333333333333
+    volume: '6'
+    week: 5
+    weight: '51.0'
+    weight_rounded: '51.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 2x2@90%
+    set_inol: 0.2
+    volume: '4'
+    week: 6
+    weight: '54.0'
+    weight_rounded: '54.0'
+- category: Clean
+  current_max: 90
+  name: Clean
+  notes:
+  - Smooth
+  - Straps?
+  training_day: 4
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.5714285714285714
+    scheme: 4x5@65%
+    set_inol: 0.14285714285714285
+    volume: '20'
+    week: 1
+    weight: '58.5'
+    weight_rounded: '59.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 8x3@70%
+    set_inol: 0.1
+    volume: '24'
+    week: 2
+    weight: '63.0'
+    weight_rounded: '63.0'
+  - amrap_target: 10
+    exercise_inol: 0.72
+    scheme: 6x3@75%
+    set_inol: 0.12
+    volume: '18'
+    week: 3
+    weight: '67.5'
+    weight_rounded: '68.0'
+  - amrap_target: 8
+    exercise_inol: 0.6000000000000001
+    scheme: 6x2@80%
+    set_inol: 0.1
+    volume: '12'
+    week: 4
+    weight: '72.0'
+    weight_rounded: '72.0'
+  - amrap_target: 5
+    exercise_inol: 0.4666666666666667
+    scheme: 7x1@85%
+    set_inol: 0.06666666666666667
+    volume: '7'
+    week: 5
+    weight: '76.5'
+    weight_rounded: '77.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 4x1@90%
+    set_inol: 0.1
+    volume: '4'
+    week: 6
+    weight: '81.0'
+    weight_rounded: '81.0'
+- category: Squat
+  current_max: 100
+  name: Squat
+  notes:
+  - Use straps
+  training_day: 4
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.6000000000000001
+    scheme: 3x7@65%
+    set_inol: 0.2
+    volume: '21'
+    week: 1
+    weight: '65.0'
+    weight_rounded: '65.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 6x4@70%
+    set_inol: 0.13333333333333333
+    volume: '24'
+    week: 2
+    weight: '70.0'
+    weight_rounded: '70.0'
+  - amrap_target: 10
+    exercise_inol: 0.72
+    scheme: 6x3@75%
+    set_inol: 0.12
+    volume: '18'
+    week: 3
+    weight: '75.0'
+    weight_rounded: '75.0'
+  - amrap_target: 8
+    exercise_inol: 0.6
+    scheme: 4x3@80%
+    set_inol: 0.15
+    volume: '12'
+    week: 4
+    weight: '80.0'
+    weight_rounded: '80.0'
+  - amrap_target: 5
+    exercise_inol: 0.5333333333333333
+    scheme: 4x2@85%
+    set_inol: 0.13333333333333333
+    volume: '8'
+    week: 5
+    weight: '85.0'
+    weight_rounded: '85.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 2x2@90%
+    set_inol: 0.2
+    volume: '4'
+    week: 6
+    weight: '90.0'
+    weight_rounded: '90.0'
+summary:
+  workload_all:
+    1: 4.56952380952381
+    2: 5.586394557823129
+    3: 5.402692307692307
+    4: 4.516312056737589
+    5: 3.9731225296442685
+    6: 3.6499999999999995
+  workload_category:
+    Clean:
+      1: 0.5714285714285714
+      2: 0.8
+      3: 0.72
+      4: 0.6000000000000001
+      5: 0.4666666666666667
+      6: 0.4
+    Snatch:
+      1: 0.5714285714285714
+      2: 0.8
+      3: 0.72
+      4: 0.6000000000000001
+      5: 0.4666666666666667
+      6: 0.4
+    Squat:
+      1: 1.6
+      2: 2.0
+      3: 1.84
+      4: 1.6
+      5: 1.4666666666666668
+      6: 1.2000000000000002
+    bench:
+      1: 1.8266666666666667
+      2: 1.9863945578231292
+      3: 2.122692307692308
+      4: 1.7163120567375887
+      5: 1.5731225296442688
+      6: 1.65
+  workload_daily:
+    1:
+      1: 1.9047619047619049
+      2: 2.40952380952381
+      3: 2.3138461538461534
+      4: 1.8666666666666667
+      5: 1.5818181818181816
+      6: 1.4
+    3:
+      1: 1.36
+      2: 1.4340136054421766
+      3: 1.495
+      4: 1.2829787234042553
+      5: 1.191304347826087
+      6: 1.2000000000000002
+    4:
+      1: 1.1714285714285715
+      2: 1.6
+      3: 1.44
+      4: 1.2000000000000002
+      5: 1.0
+      6: 0.8
+    5:
+      1: 0.13333333333333333
+      2: 0.14285714285714285
+      3: 0.15384615384615385
+      4: 0.16666666666666666
+      5: 0.2
+      6: 0.25

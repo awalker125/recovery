@@ -1,0 +1,268 @@
+plan:
+- category: bench
+  current_max: 117.5
+  name: Bench (Double)
+  notes:
+  - pause everything (mississippi style)
+  - dont panic
+  training_day: 1
+  weeks:
+  - amrap_target: 5
+    exercise_inol: 0.13333333333333333
+    scheme: 1x2@85%
+    set_inol: 0.13333333333333333
+    volume: '2'
+    week: 1
+    weight: '99.875'
+    weight_rounded: '100.0'
+  - amrap_target: 5
+    exercise_inol: 0.14285714285714285
+    scheme: 1x2@86%
+    set_inol: 0.14285714285714285
+    volume: '2'
+    week: 2
+    weight: '101.05'
+    weight_rounded: '100.0'
+  - amrap_target: 4
+    exercise_inol: 0.15384615384615385
+    scheme: 1x2@87%
+    set_inol: 0.15384615384615385
+    volume: '2'
+    week: 3
+    weight: '102.225'
+    weight_rounded: '102.5'
+  - amrap_target: 4
+    exercise_inol: 0.16666666666666666
+    scheme: 1x2@88%
+    set_inol: 0.16666666666666666
+    volume: '2'
+    week: 4
+    weight: '103.4'
+    weight_rounded: '102.5'
+  - amrap_target: 4
+    exercise_inol: 0.18181818181818182
+    scheme: 1x2@89%
+    set_inol: 0.18181818181818182
+    volume: '2'
+    week: 5
+    weight: '104.575'
+    weight_rounded: '105.0'
+  - amrap_target: 3
+    exercise_inol: 0.2
+    scheme: 1x2@90%
+    set_inol: 0.2
+    volume: '2'
+    week: 6
+    weight: '105.75'
+    weight_rounded: '105.0'
+- category: bench
+  current_max: 117.5
+  name: Bench (Volume)
+  notes:
+  - pause everything
+  - dont panic
+  - Do heavy double first
+  training_day: 1
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.6000000000000001
+    scheme: 3x7@65%
+    set_inol: 0.2
+    volume: '21'
+    week: 1
+    weight: '76.375'
+    weight_rounded: '77.5'
+  - amrap_target: 13
+    exercise_inol: 0.6666666666666666
+    scheme: 5x4@70%
+    set_inol: 0.13333333333333333
+    volume: '20'
+    week: 2
+    weight: '82.25'
+    weight_rounded: '82.5'
+  - amrap_target: 10
+    exercise_inol: 0.72
+    scheme: 3x6@75%
+    set_inol: 0.24
+    volume: '18'
+    week: 3
+    weight: '88.125'
+    weight_rounded: '87.5'
+  - amrap_target: 8
+    exercise_inol: 0.5
+    scheme: 5x2@80%
+    set_inol: 0.1
+    volume: '10'
+    week: 4
+    weight: '94.0'
+    weight_rounded: '95.0'
+  - amrap_target: 5
+    exercise_inol: 0.4
+    scheme: 3x2@85%
+    set_inol: 0.13333333333333333
+    volume: '6'
+    week: 5
+    weight: '99.875'
+    weight_rounded: '100.0'
+  - amrap_target: 3
+    exercise_inol: 0.4
+    scheme: 4x1@90%
+    set_inol: 0.1
+    volume: '4'
+    week: 6
+    weight: '105.75'
+    weight_rounded: '105.0'
+- category: bench
+  current_max: 100
+  name: Bands
+  notes:
+  - pause everything
+  - dont panic
+  - Speed of the chest
+  - Squeeze triceps/try to accelerate all the way to lockout
+  training_day: 3
+  weeks:
+  - amrap_target: 30
+    exercise_inol: 0.36
+    scheme: 6x3@50%
+    set_inol: 0.06
+    volume: '18'
+    week: 1
+    weight: '50.0'
+    weight_rounded: '50.0'
+  - amrap_target: 29
+    exercise_inol: 0.36734693877551017
+    scheme: 6x3@51%
+    set_inol: 0.061224489795918366
+    volume: '18'
+    week: 2
+    weight: '51.0'
+    weight_rounded: '50.0'
+  - amrap_target: 28
+    exercise_inol: 0.375
+    scheme: 6x3@52%
+    set_inol: 0.0625
+    volume: '18'
+    week: 3
+    weight: '52.0'
+    weight_rounded: '52.5'
+  - amrap_target: 27
+    exercise_inol: 0.3829787234042553
+    scheme: 6x3@53%
+    set_inol: 0.06382978723404255
+    volume: '18'
+    week: 4
+    weight: '53.0'
+    weight_rounded: '52.5'
+  - amrap_target: 26
+    exercise_inol: 0.3913043478260869
+    scheme: 6x3@54%
+    set_inol: 0.06521739130434782
+    volume: '18'
+    week: 5
+    weight: '54.0'
+    weight_rounded: '55.0'
+  - amrap_target: 25
+    exercise_inol: 0.4
+    scheme: 6x3@55%
+    set_inol: 0.06666666666666667
+    volume: '18'
+    week: 6
+    weight: '55.0'
+    weight_rounded: '55.0'
+- category: bench
+  current_max: 100
+  name: Close Grip (Max)
+  notes:
+  - pause everything
+  - dont panic
+  - Speed of the chest
+  - Squeeze triceps/try to accelerate all the way to lockout
+  training_day: 5
+  weeks:
+  - amrap_target: 5
+    exercise_inol: 0.13333333333333333
+    scheme: 1x2@85%
+    set_inol: 0.13333333333333333
+    volume: '2'
+    week: 1
+    weight: '85.0'
+    weight_rounded: '85.0'
+  - amrap_target: 5
+    exercise_inol: 0.14285714285714285
+    scheme: 1x2@86%
+    set_inol: 0.14285714285714285
+    volume: '2'
+    week: 2
+    weight: '86.0'
+    weight_rounded: '85.0'
+  - amrap_target: 4
+    exercise_inol: 0.15384615384615385
+    scheme: 1x2@87%
+    set_inol: 0.15384615384615385
+    volume: '2'
+    week: 3
+    weight: '87.0'
+    weight_rounded: '87.5'
+  - amrap_target: 4
+    exercise_inol: 0.16666666666666666
+    scheme: 1x2@88%
+    set_inol: 0.16666666666666666
+    volume: '2'
+    week: 4
+    weight: '88.0'
+    weight_rounded: '87.5'
+  - amrap_target: 3
+    exercise_inol: 0.2
+    scheme: 1x2@90%
+    set_inol: 0.2
+    volume: '2'
+    week: 5
+    weight: '90.0'
+    weight_rounded: '90.0'
+  - amrap_target: 3
+    exercise_inol: 0.25
+    scheme: 1x2@92%
+    set_inol: 0.25
+    volume: '2'
+    week: 6
+    weight: '92.0'
+    weight_rounded: '92.5'
+summary:
+  workload_all:
+    1: 1.2266666666666666
+    2: 1.3197278911564625
+    3: 1.4026923076923077
+    4: 1.2163120567375887
+    5: 1.1731225296442687
+    6: 1.25
+  workload_category:
+    bench:
+      1: 1.2266666666666666
+      2: 1.3197278911564625
+      3: 1.4026923076923077
+      4: 1.2163120567375887
+      5: 1.1731225296442687
+      6: 1.25
+  workload_daily:
+    1:
+      1: 0.7333333333333334
+      2: 0.8095238095238095
+      3: 0.8738461538461538
+      4: 0.6666666666666666
+      5: 0.5818181818181818
+      6: 0.6000000000000001
+    3:
+      1: 0.36
+      2: 0.36734693877551017
+      3: 0.375
+      4: 0.3829787234042553
+      5: 0.3913043478260869
+      6: 0.4
+    5:
+      1: 0.13333333333333333
+      2: 0.14285714285714285
+      3: 0.15384615384615385
+      4: 0.16666666666666666
+      5: 0.2
+      6: 0.25

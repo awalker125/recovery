@@ -1,7 +1,7 @@
 ---
 
 name: Andy Walker
-weight: 129
+weight: 128
 age: 38
 training_days:
   1: Monday
@@ -112,6 +112,39 @@ plan:
     notes:
       - week 7 is max out
 
+  - name: Clean Pull
+    training_day: 6
+    category: Clean
+    current_max: 170
+    #pre injury
+    #current_max: 146
+    defaults:
+      format: olympic
+      go_hard: 0
+      target_exercise_inol: 0.8
+      max_exercise_inol: 2
+      min_exercise_inol: 0.3
+      max_set_inol: 0.4
+      min_set_inol: 0.05
+      max_reps: 8
+      min_reps: 1
+      min_sets: 1
+      max_sets: 8
+    weeks:
+      - week: 1
+        intensity: 65
+      - week: 2
+        intensity: 70
+      - week: 3
+        intensity: 75
+      - week: 4
+        intensity: 80
+      - week: 5
+        intensity: 85
+      - week: 6
+        intensity: 90
+    notes:
+      - Tight
 
 #   - name: Dips 
 #     training_day: 3

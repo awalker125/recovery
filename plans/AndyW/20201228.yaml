@@ -135,6 +135,8 @@ plan:
         intensity: 65
       - week: 2
         intensity: 70
+        max_reps: 5
+        min_reps: 5
       - week: 3
         intensity: 75
       - week: 4

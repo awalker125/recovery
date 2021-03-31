@@ -1,0 +1,104 @@
+plan:
+- category: bench
+  current_max: 63
+  name: Bench (Volume)
+  notes:
+  - Week 3 Try to hit a 10 rep max on the last set if you feel good.
+  - Week 6 Try to hit a 5 rep max on the last set if you feel good.
+  - Week 8 If you feel good on first double then go up and try for a single PB
+  training_day: 1
+  weeks:
+  - amrap_target: 14
+    exercise_inol: 0.9375
+    scheme: 3x10@68%
+    set_inol: 0.3125
+    volume: '30'
+    week: 1
+    weight: '42.84'
+    weight_rounded: '43.0'
+  - amrap_target: 13
+    exercise_inol: 1.0
+    scheme: 3x10@70%
+    set_inol: 0.3333333333333333
+    volume: '30'
+    week: 2
+    weight: '44.1'
+    weight_rounded: '44.0'
+  - amrap_target: 12
+    exercise_inol: 1.0714285714285714
+    scheme: 3x10@72%
+    set_inol: 0.35714285714285715
+    volume: '30'
+    week: 3
+    weight: '45.36'
+    weight_rounded: '45.5'
+  - amrap_target: 8
+    exercise_inol: 0.6818181818181818
+    scheme: 3x5@78%
+    set_inol: 0.22727272727272727
+    volume: '15'
+    week: 4
+    weight: '49.14'
+    weight_rounded: '49.0'
+  - amrap_target: 7
+    exercise_inol: 0.75
+    scheme: 3x5@80%
+    set_inol: 0.25
+    volume: '15'
+    week: 5
+    weight: '50.4'
+    weight_rounded: '50.5'
+  - amrap_target: 7
+    exercise_inol: 0.8333333333333334
+    scheme: 3x5@82%
+    set_inol: 0.2777777777777778
+    volume: '15'
+    week: 6
+    weight: '51.66'
+    weight_rounded: '51.5'
+  - amrap_target: 3
+    exercise_inol: 0.8999999999999999
+    scheme: 3x3@90%
+    set_inol: 0.3
+    volume: '9'
+    week: 7
+    weight: '56.7'
+    weight_rounded: '56.5'
+  - amrap_target: 3
+    exercise_inol: 0.75
+    scheme: 3x2@92%
+    set_inol: 0.25
+    volume: '6'
+    week: 8
+    weight: '57.96'
+    weight_rounded: '58.0'
+summary:
+  workload_all:
+    1: 0.9375
+    2: 1.0
+    3: 1.0714285714285714
+    4: 0.6818181818181818
+    5: 0.75
+    6: 0.8333333333333334
+    7: 0.8999999999999999
+    8: 0.75
+  workload_category:
+    bench:
+      1: 0.9375
+      2: 1.0
+      3: 1.0714285714285714
+      4: 0.6818181818181818
+      5: 0.75
+      6: 0.8333333333333334
+      7: 0.8999999999999999
+      8: 0.75
+  workload_daily:
+    1:
+      1: 0.9375
+      2: 1.0
+      3: 1.0714285714285714
+      4: 0.6818181818181818
+      5: 0.75
+      6: 0.8333333333333334
+      7: 0.8999999999999999
+      8: 0.75

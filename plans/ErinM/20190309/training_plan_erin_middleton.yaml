@@ -1,0 +1,80 @@
+plan:
+- category: bench
+  current_max: 61
+  name: Bench
+  notes:
+  - pause everything
+  training_day: 1
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '39.65'
+    weight_rounded: '39.5'
+  - amrap_target: 13
+    exercise_inol: 0.8333333333333333
+    scheme: 5x5@70%
+    set_inol: 0.16666666666666666
+    volume: '25'
+    week: 2
+    weight: '42.7'
+    weight_rounded: '42.5'
+  - amrap_target: 10
+    exercise_inol: 0.96
+    scheme: 4x6@75%
+    set_inol: 0.24
+    volume: '24'
+    week: 3
+    weight: '45.75'
+    weight_rounded: '46.0'
+  - amrap_target: 7
+    exercise_inol: 0.75
+    scheme: 5x3@80%
+    set_inol: 0.15
+    volume: '15'
+    week: 4
+    weight: '48.8'
+    weight_rounded: '49.0'
+  - amrap_target: 5
+    exercise_inol: 0.6666666666666666
+    scheme: 5x2@85%
+    set_inol: 0.13333333333333333
+    volume: '10'
+    week: 5
+    weight: '51.85'
+    weight_rounded: '52.0'
+  - amrap_target: 3
+    exercise_inol: 0.2
+    scheme: 1x2@90%
+    set_inol: 0.2
+    volume: '2'
+    week: 6
+    weight: '54.9'
+    weight_rounded: '55.0'
+summary:
+  workload_all:
+    1: 0.8
+    2: 0.8333333333333333
+    3: 0.96
+    4: 0.75
+    5: 0.6666666666666666
+    6: 0.2
+  workload_category:
+    bench:
+      1: 0.8
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.75
+      5: 0.6666666666666666
+      6: 0.2
+  workload_daily:
+    1:
+      1: 0.8
+      2: 0.8333333333333333
+      3: 0.96
+      4: 0.75
+      5: 0.6666666666666666
+      6: 0.2

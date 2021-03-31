@@ -1,0 +1,58 @@
+plan:
+- category: bench
+  current_max: 195
+  name: Bench
+  notes:
+  - build up to single heavy set
+  training_day: 1
+  weeks:
+  - amrap_target: 5
+    exercise_inol: 0.3333333333333333
+    scheme: 1x5@85%
+    set_inol: 0.3333333333333333
+    volume: '5'
+    week: 1
+    weight: '165.75'
+    weight_rounded: '166.0'
+  - amrap_target: 4
+    exercise_inol: 0.3333333333333333
+    scheme: 1x4@88%
+    set_inol: 0.3333333333333333
+    volume: '4'
+    week: 2
+    weight: '171.6'
+    weight_rounded: '172.0'
+  - amrap_target: 3
+    exercise_inol: 0.3
+    scheme: 1x3@90%
+    set_inol: 0.3
+    volume: '3'
+    week: 3
+    weight: '175.5'
+    weight_rounded: '176.0'
+  - amrap_target: 2
+    exercise_inol: 0.2857142857142857
+    scheme: 1x2@93%
+    set_inol: 0.2857142857142857
+    volume: '2'
+    week: 4
+    weight: '181.35'
+    weight_rounded: '181.0'
+summary:
+  workload_all:
+    1: 0.3333333333333333
+    2: 0.3333333333333333
+    3: 0.3
+    4: 0.2857142857142857
+  workload_category:
+    bench:
+      1: 0.3333333333333333
+      2: 0.3333333333333333
+      3: 0.3
+      4: 0.2857142857142857
+  workload_daily:
+    1:
+      1: 0.3333333333333333
+      2: 0.3333333333333333
+      3: 0.3
+      4: 0.2857142857142857

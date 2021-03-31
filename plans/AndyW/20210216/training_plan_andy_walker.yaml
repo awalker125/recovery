@@ -1,0 +1,225 @@
+plan:
+- category: bench
+  current_max: 165
+  name: Bench (Volume)
+  notes:
+  - week 7 is max out
+  training_day: 2
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '107.25'
+    weight_rounded: '107.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 4x6@70%
+    set_inol: 0.2
+    volume: '24'
+    week: 2
+    weight: '115.5'
+    weight_rounded: '115.0'
+  - amrap_target: 10
+    exercise_inol: 0.8
+    scheme: 5x4@75%
+    set_inol: 0.16
+    volume: '20'
+    week: 3
+    weight: '123.75'
+    weight_rounded: '124.0'
+  - amrap_target: 7
+    exercise_inol: 0.8
+    scheme: 4x4@80%
+    set_inol: 0.2
+    volume: '16'
+    week: 4
+    weight: '132.0'
+    weight_rounded: '132.0'
+  - amrap_target: 5
+    exercise_inol: 0.8
+    scheme: 4x3@85%
+    set_inol: 0.2
+    volume: '12'
+    week: 5
+    weight: '140.25'
+    weight_rounded: '140.0'
+  - amrap_target: 3
+    exercise_inol: 0.8
+    scheme: 4x2@90%
+    set_inol: 0.2
+    volume: '8'
+    week: 6
+    weight: '148.5'
+    weight_rounded: '149.0'
+  - amrap_target: 3
+    exercise_inol: 0.75
+    scheme: 3x2@92%
+    set_inol: 0.25
+    volume: '6'
+    week: 7
+    weight: '151.8'
+    weight_rounded: '152.0'
+- category: bench
+  current_max: 96
+  name: Strict Press
+  notes:
+  - week 7 is max out
+  training_day: 6
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '62.4'
+    weight_rounded: '62.0'
+  - amrap_target: 13
+    exercise_inol: 0.8
+    scheme: 4x6@70%
+    set_inol: 0.2
+    volume: '24'
+    week: 2
+    weight: '67.2'
+    weight_rounded: '67.0'
+  - amrap_target: 10
+    exercise_inol: 0.8
+    scheme: 5x4@75%
+    set_inol: 0.16
+    volume: '20'
+    week: 3
+    weight: '72.0'
+    weight_rounded: '72.0'
+  - amrap_target: 7
+    exercise_inol: 0.8
+    scheme: 4x4@80%
+    set_inol: 0.2
+    volume: '16'
+    week: 4
+    weight: '76.8'
+    weight_rounded: '77.0'
+  - amrap_target: 5
+    exercise_inol: 0.8
+    scheme: 4x3@85%
+    set_inol: 0.2
+    volume: '12'
+    week: 5
+    weight: '81.6'
+    weight_rounded: '82.0'
+  - amrap_target: 3
+    exercise_inol: 0.8
+    scheme: 4x2@90%
+    set_inol: 0.2
+    volume: '8'
+    week: 6
+    weight: '86.4'
+    weight_rounded: '86.0'
+  - amrap_target: 3
+    exercise_inol: 0.75
+    scheme: 3x2@92%
+    set_inol: 0.25
+    volume: '6'
+    week: 7
+    weight: '88.32'
+    weight_rounded: '88.0'
+- category: Clean
+  current_max: 175
+  name: Clean Pull
+  notes:
+  - Tight
+  training_day: 6
+  weeks:
+  - amrap_target: 16
+    exercise_inol: 0.8
+    scheme: 4x7@65%
+    set_inol: 0.2
+    volume: '28'
+    week: 1
+    weight: '113.75'
+    weight_rounded: '114.0'
+  - amrap_target: 13
+    exercise_inol: 0.8333333333333333
+    scheme: 5x5@70%
+    set_inol: 0.16666666666666666
+    volume: '25'
+    week: 2
+    weight: '122.5'
+    weight_rounded: '122.0'
+  - amrap_target: 10
+    exercise_inol: 0.8
+    scheme: 5x4@75%
+    set_inol: 0.16
+    volume: '20'
+    week: 3
+    weight: '131.25'
+    weight_rounded: '131.0'
+  - amrap_target: 7
+    exercise_inol: 0.8
+    scheme: 8x2@80%
+    set_inol: 0.1
+    volume: '16'
+    week: 4
+    weight: '140.0'
+    weight_rounded: '140.0'
+  - amrap_target: 5
+    exercise_inol: 0.8
+    scheme: 6x2@85%
+    set_inol: 0.13333333333333333
+    volume: '12'
+    week: 5
+    weight: '148.75'
+    weight_rounded: '149.0'
+  - amrap_target: 3
+    exercise_inol: 0.8
+    scheme: 8x1@90%
+    set_inol: 0.1
+    volume: '8'
+    week: 6
+    weight: '157.5'
+    weight_rounded: '158.0'
+summary:
+  workload_all:
+    1: 2.4000000000000004
+    2: 2.4333333333333336
+    3: 2.4000000000000004
+    4: 2.4000000000000004
+    5: 2.4000000000000004
+    6: 2.4000000000000004
+    7: 1.5
+  workload_category:
+    Clean:
+      1: 0.8
+      2: 0.8333333333333333
+      3: 0.8
+      4: 0.8
+      5: 0.8
+      6: 0.8
+      7: 0
+    bench:
+      1: 1.6
+      2: 1.6
+      3: 1.6
+      4: 1.6
+      5: 1.6
+      6: 1.6
+      7: 1.5
+  workload_daily:
+    2:
+      1: 0.8
+      2: 0.8
+      3: 0.8
+      4: 0.8
+      5: 0.8
+      6: 0.8
+      7: 0.75
+    6:
+      1: 1.6
+      2: 1.6333333333333333
+      3: 1.6
+      4: 1.6
+      5: 1.6
+      6: 1.6
+      7: 0.75

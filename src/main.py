@@ -12,8 +12,8 @@ import math
 import jmespath
 import re
 from collections import OrderedDict
-from markdownwriter import *
-
+from markdownwriter.MarkdownWriter import MarkdownWriter
+from markdownwriter.MarkdownTable import MarkdownTable
 # Optimal INOL values per exercise for a single workout:
 # 
 # < 0.4 - too easy
@@ -29,79 +29,183 @@ from markdownwriter import *
 
 
 
-def pick_best_training_option(training_options, target_exercise_inol, go_hard=0):
+# def pick_best_training_option(training_options, target_exercise_inol, go_hard=0):
     
-    best_training_option = None
+#     best_training_option = None
     
-    for training_option in training_options:
+#     for training_option in training_options:
     
-        if best_training_option is None:
-            best_training_option = training_option
-        else:
+#         if best_training_option is None:
+#             best_training_option = training_option
+#         else:
 
-            best_difference = getInolDifference(target_exercise_inol, best_training_option['exercise_inol']);
+#             best_difference = getInolDifference(target_exercise_inol, best_training_option['exercise_inol']);
 
-            training_option_difference = getInolDifference(target_exercise_inol, training_option['exercise_inol']);
+#             training_option_difference = getInolDifference(target_exercise_inol, training_option['exercise_inol']);
             
-            if training_option_difference == best_difference:
-                logging.debug("Option {2} and {1} are the same as {0}: ".format(str(best_difference), str(training_option_difference), str(training_option['scheme'])))
+#             if training_option_difference == best_difference:
+#                 logging.debug("Option {2} and {1} are the same as {0}: ".format(str(best_difference), str(training_option_difference), str(training_option['scheme'])))
                     
-                if go_hard > 0:
-                    logging.debug("Go Hard is set. Will pick shorter harder sessions")
+#                 if go_hard > 0:
+#                     logging.debug("Go Hard is set. Will pick shorter harder sessions")
                     
-                    if training_option['set_inol'] > best_training_option['set_inol']:
-                        best_training_option = training_option
+#                     if training_option['set_inol'] > best_training_option['set_inol']:
+#                         best_training_option = training_option
             
-            if training_option_difference < best_difference:
-                logging.debug("Option {2} is better {1} < {0}: ".format(str(best_difference), str(training_option_difference), str(training_option['scheme'])))
-                best_training_option = training_option
-            else:
-                logging.debug("Option {2} is worse {1} > {0}: ".format(str(best_difference), str(training_option_difference), str(training_option['scheme'])))
+#             if training_option_difference < best_difference:
+#                 logging.debug("Option {2} is better {1} < {0}: ".format(str(best_difference), str(training_option_difference), str(training_option['scheme'])))
+#                 best_training_option = training_option
+#             else:
+#                 logging.debug("Option {2} is worse {1} > {0}: ".format(str(best_difference), str(training_option_difference), str(training_option['scheme'])))
             
-    return best_training_option         
-        
-def generate_training_options(current_max, min_reps, max_reps,intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol,rounding_format):
-    training_options = []
-    for r in range(min_reps, max_reps + 1):
-        logging.debug("using reps {0}".format(str(r)))
-        set_inol = calculate_set_inol(r, intensity)
-        logging.debug("set inol for {0} rep(s) @ {1} is {2}".format(str(r), str(intensity), str(set_inol)))
-        for s in range(min_sets, max_sets + 1):
-            exercise_inol = set_inol * s
-            volume = r * s
-            weight = current_max * (float(intensity) / 100)
+#     return best_training_option         
+
+
+# def generate_training_options(current_max, min_reps, max_reps,intensity, min_sets, max_sets, min_set_inol, max_set_inol, min_exercise_inol, max_exercise_inol,rounding_format, sets=None, reps=None):
+
+
+#     training_options = []
+#     for r in range(min_reps, max_reps + 1):
+#         logging.debug("using reps {0}".format(str(r)))
+#         set_inol = calculate_set_inol(r, intensity)
+#         logging.debug("set inol for {0} rep(s) @ {1} is {2}".format(str(r), str(intensity), str(set_inol)))
+#         for s in range(min_sets, max_sets + 1):
+#             exercise_inol = set_inol * s
+#             volume = r * s
+#             weight = current_max * (float(intensity) / 100)
             
             
-            weight_rounded = weight #Default to no rounding if there is no setting
+#             weight_rounded = weight #Default to no rounding if there is no setting
             
-            if rounding_format == "records":
-                weight_rounded = roundRecords(weight)
-            elif rounding_format == "olympic":
-                weight_rounded = roundOlympiclifting(weight)
-            elif rounding_format == "power":
-                weight_rounded = roundPowerlifting(weight)
-            else:
-                logging.warn("Unknown format {0}".format(rounding_format))
+#             if rounding_format == "records":
+#                 weight_rounded = roundRecords(weight)
+#             elif rounding_format == "olympic":
+#                 weight_rounded = roundOlympiclifting(weight)
+#             elif rounding_format == "power":
+#                 weight_rounded = roundPowerlifting(weight)
+#             else:
+#                 logging.warn("Unknown format {0}".format(rounding_format))
                 
             
-            scheme = str(s) + "x" + str(r) + "@" + str(intensity) + "%"
-            if set_inol > min_set_inol:
-                if set_inol < max_set_inol:
-                    if exercise_inol > min_exercise_inol:
-                        if exercise_inol < max_exercise_inol:
-                            training_options.append(
-                                {
-                                    "scheme":scheme,
-                                    "exercise_inol":exercise_inol,
-                                    "set_inol":set_inol,
-                                    "volume":str(volume),
-                                    "weight": str(weight),
-                                    "weight_rounded": str(weight_rounded),
-                                    #"weight_powerlifting": str(weight_powerlifting),
-                                    #"weight_olympic": str(weight_rounded)
-                                    })
+#             scheme = str(s) + "x" + str(r) + "@" + str(intensity) + "%"
+#             if set_inol > min_set_inol:
+#                 if set_inol < max_set_inol:
+#                     if exercise_inol > min_exercise_inol:
+#                         if exercise_inol < max_exercise_inol:
+#                             training_options.append(
+#                                 {
+#                                     "scheme":scheme,
+#                                     "exercise_inol":exercise_inol,
+#                                     "set_inol":set_inol,
+#                                     "volume":str(volume),
+#                                     "weight": str(weight),
+#                                     "weight_rounded": str(weight_rounded),
+#                                     #"weight_powerlifting": str(weight_powerlifting),
+#                                     #"weight_olympic": str(weight_rounded)
+#                                     })
     
-    return training_options
+#     return training_options
+
+def get_weight_rounded(weight,weight_format):
+   
+    if weight_format == "records":
+        return roundRecords(weight)
+    elif weight_format == "olympic":
+        return roundOlympiclifting(weight)
+    elif weight_format == "power":
+        return roundPowerlifting(weight)
+    else:
+        logging.warn("Unknown format {0}".format(weight_format))
+        return roundOlympiclifting(weight)
+
+# def get_training(current_max, week, weight_format):
+
+
+#     training = []
+
+#     logging.debug("week before")
+#     logging.debug(week)
+
+#     exercise_inol = 0
+#     exercise_volume = 0
+#     for s in week["sets"]:
+#         logging.debug("set before")
+#         s["set_inol"] = calculate_set_inol(s["reps"], s["intensity"])
+#         sets_inol = s["set_inol"] * s["count"]
+#         exercise_inol += sets_inol
+
+#         #Volume
+#         s["volume"] = s["reps"] * s["count"]
+#         exercise_volume += s["volume"]
+
+#         s["weight"] = current_max * (float(s["intensity"]) / 100)
+
+#         weight_rounded = s["weight"] #Default to no rounding if there is no setting
+        
+
+#         if weight_format == "records":
+#             weight_rounded = roundRecords(s["weight"])
+#         elif weight_format == "olympic":
+#             weight_rounded = roundOlympiclifting(s["weight"])
+#         elif weight_format == "power":
+#             weight_rounded = roundPowerlifting(s["weight"])
+#         else:
+#             logging.warn("Unknown format {0}".format(weight_format))
+
+#         s["weight_rounded"] = weight_rounded
+#         s["scheme"]  = str(s["count"]) + "x" + str( s["reps"]) + "@" + str(s["intensity"]) + "%"
+#         logging.debug("set after")
+#         logging.debug(s)
+
+#     logging.debug("week after")    
+#     logging.debug(week)
+
+#     # training.append({   "week": week["week"],
+#     #                     "exercise_inol":exercise_inol,
+#     #                     "exercise_volume": exercise_volume,
+#     #                     "sets": week["sets"]
+#     #                     })
+
+#     # for r in range(min_reps, max_reps + 1):
+#     #     logging.debug("using reps {0}".format(str(r)))
+#     #     set_inol = calculate_set_inol(r, intensity)
+#     #     logging.debug("set inol for {0} rep(s) @ {1} is {2}".format(str(r), str(intensity), str(set_inol)))
+#     #     for s in range(min_sets, max_sets + 1):
+#     #         exercise_inol = set_inol * s
+#     #         volume = r * s
+#     #         weight = current_max * (float(intensity) / 100)
+            
+            
+#     #         weight_rounded = weight #Default to no rounding if there is no setting
+            
+#     #         if rounding_format == "records":
+#     #             weight_rounded = roundRecords(weight)
+#     #         elif rounding_format == "olympic":
+#     #             weight_rounded = roundOlympiclifting(weight)
+#     #         elif rounding_format == "power":
+#     #             weight_rounded = roundPowerlifting(weight)
+#     #         else:
+#     #             logging.warn("Unknown format {0}".format(rounding_format))
+                
+            
+#     #         scheme = str(s) + "x" + str(r) + "@" + str(intensity) + "%"
+#     #         if set_inol > min_set_inol:
+#     #             if set_inol < max_set_inol:
+#     #                 if exercise_inol > min_exercise_inol:
+#     #                     if exercise_inol < max_exercise_inol:
+#     #                         training_options.append(
+#     #                             {
+#     #                                 "scheme":scheme,
+#     #                                 "exercise_inol":exercise_inol,
+#     #                                 "set_inol":set_inol,
+#     #                                 "volume":str(volume),
+#     #                                 "weight": str(weight),
+#     #                                 "weight_rounded": str(weight_rounded),
+#     #                                 #"weight_powerlifting": str(weight_powerlifting),
+#     #                                 #"weight_olympic": str(weight_rounded)
+#     #                                 })
+    
+#     #return training
 
 def main():
     
@@ -134,7 +238,7 @@ def main():
     (options, args) = parser.parse_args()
     
     if options.verbose:
-        print "verbose enabled"
+        print("verbose enabled")
  
     # if not options.intensity:
     #    parser.error("intensity is required")
@@ -148,9 +252,11 @@ def main():
     setupLogging(log_location, this, now, options.verbose)
 
     if os.path.isfile(options.config):
-        logging.debug("found config file {0}".format(options.config))
+        #logging.debug("found config file {0}".format(options.config))
+        logging.debug(f"found config file {options.config}")
     else:    
-        logging.error("{0} does not exist".format(options.config))
+        #logging.error("{0} does not exist".format(options.config))
+        logging.error(f"{options.config} does not exist".format(options.config))
         os.sys.exit(99)
     
 
@@ -161,7 +267,7 @@ def main():
     logging.info('this=' + this)
 
     if not ensureDir(options.output):
-        logging.fatal("{0} does not exist and could not be created".format(options.output))
+        logging.fatal(f"{options.output} does not exist and could not be created")
         sys.exit(94)
 
     config = []
@@ -198,8 +304,8 @@ def main():
         training_day = exercise["training_day"]
         # float
         current_max = exercise["current_max"]
-        # dict
-        defaults = exercise["defaults"]
+        # String
+        weight_format = exercise["format"]
         # array
         notes = exercise["notes"]
         weeks = exercise["weeks"]
@@ -212,48 +318,54 @@ def main():
         training_plan["notes"] = notes
         training_plan["weeks"] = []
         for week in weeks:
-            logging.debug("Week")
-            logging.debug(week)
-            # Merge the defaults into the overrides
-            merged_week = merge_defaults(defaults, week)
-            logging.debug("Merged Week")
-            logging.debug(merged_week)
             
-            # Generate training options
-            training_options = generate_training_options(current_max, merged_week["min_reps"], merged_week["max_reps"], merged_week["intensity"], merged_week["min_sets"], merged_week["max_sets"], merged_week["min_set_inol"], merged_week["max_set_inol"], merged_week["min_exercise_inol"], merged_week["max_exercise_inol"],merged_week["format"])
-             
-            logging.debug(training_options)
-            
-            if options.save:
-                # Sort training options
-                sorted_training_options = sorted(training_options, key=lambda k: (k['exercise_inol'], k['set_inol'], k['volume']))
-        
-                logging.debug("\n" + yaml.dump(sorted_training_options, default_flow_style=False))
-    
-                # write training options
-                output_file_name = "training_options_" + safe_string(name) + "_" + str(training_day) + "_" + str(merged_week["intensity"]) + "_" + str(merged_week["max_reps"]) + "_" + str(merged_week["max_sets"])
-      
-                output_file_path = options.output + "/" + output_file_name + ".yaml"
-                
-                with open(output_file_path, 'w') as outfile:
-                    yaml.dump(sorted_training_options, outfile, default_flow_style=False)
 
 
-            # We pick a training option 
-            best_training_option = pick_best_training_option(training_options, merged_week["target_exercise_inol"])
+
+            exercise_inol = 0
+            exercise_volume = 0
+            exercise_work = 0
+            for s in week["sets"]:
+                #INOL
+                s["set_inol"] = calculate_set_inol(s["reps"], s["intensity"])
+                sets_inol = s["set_inol"] * s["count"]
+                exercise_inol += sets_inol
+
+                #Volume Reps
+                s["volume"] = s["reps"] * s["count"]
+                exercise_volume += s["volume"]
+
+                #Weight
+                s["weight"] = current_max * (float(s["intensity"]) / 100)
+                s["weight_rounded"] = get_weight_rounded(s["weight"],weight_format)
+
+                #work
+                s["work"] = s["weight"] * s["reps"]
+                exercise_work += s["work"]
+
+                #Schema
+                #s["scheme"]  = str(s["count"]) + "x" + str( s["reps"]) + "@" + str(s["intensity"]) + "%"
+                #s["scheme"]  = f"{str(s['count'])}x{str( s['reps'])}@{str(s['intensity'])}%"
+                s["scheme"]  = f"{s['count']}x{s['reps']}@{s['intensity']}%"
+
+                #s["scheme"]  = str(s["count"]) + "x" + str( s["reps"]) + "@" + str(s["intensity"]) + "% =" + str(s["weight_rounded"]) + "kg, inol=" + str(s["set_inol"])
+
+                #Amrap target 
+                s["amrap_target"]  = calculate_target_amrap(current_max, s["intensity"])
             
-            logging.debug("found best training {0} option for week {1}s".format(str(best_training_option), str(week)))
+            week["exercise_inol"] = exercise_inol
+            week["exercise_volume"] = exercise_volume
+            week["exercise_work"] = exercise_work
+            logging.debug("Appending" + str(week))
+            training_plan["weeks"].append(week)
+            logging.debug(training_plan)
             
-            best_training_option["week"] = merged_week["week"]
-            best_training_option["amrap_target"] = calculate_target_amrap(current_max, merged_week["intensity"])
-            
-            training_plan["weeks"].append(best_training_option)
          
         full_training_plan_items.append(training_plan)
 
-
-    logging.debug("full_training_plan_items")
-    logging.debug(full_training_plan_items)    
+    logging.debug(training_plan)    
+    # logging.debug("full_training_plan_items")
+    # logging.debug(full_training_plan_items)    
 
     # sorted_full_training_plan_items = sorted(full_training_plan_items, key=lambda k: (k['training_day']))
 
@@ -281,46 +393,80 @@ def main():
     for w in summary_weeks:
         week_index = w - 1
         
-        search = jmespath.compile("[].weeks[{0}].exercise_inol".format(week_index))
-        results = search.search(full_training_plan_items)
+        search_inol = jmespath.compile(f"[].weeks[{week_index}].exercise_inol")
+        search_volume = jmespath.compile(f"[].weeks[{week_index}].exercise_volume")
+        search_work = jmespath.compile(f"[].weeks[{week_index}].exercise_work")
+        results_inol = search_inol.search(full_training_plan_items)
+        results_volume = search_volume.search(full_training_plan_items)
+        results_work = search_work.search(full_training_plan_items)
+        
         logging.debug("all results")
-        logging.debug(results)
+        logging.debug(results_inol)
+        logging.debug(results_volume)
+        logging.debug(results_work)
         
         if not w in full_training_summary["workload_all"]:
-            full_training_summary["workload_all"][w] = 0
-        #else:
-        #    logging.debug("Already init")
-        
-        for result in results:
-            full_training_summary["workload_all"][w] += result
-            logging.debug(full_training_summary["workload_all"][w])
+            full_training_summary["workload_all"][w] = dict()
+            full_training_summary["workload_all"][w]["inol"] =0
+            full_training_summary["workload_all"][w]["volume"] = 0
+            full_training_summary["workload_all"][w]["work"] =0
+
+        for result_inol in results_inol:
+            full_training_summary["workload_all"][w]["inol"] += result_inol
+            logging.debug(full_training_summary["workload_all"][w]["inol"])
+
+        for result_volume in results_volume:
+            full_training_summary["workload_all"][w]["volume"] += result_volume
+            logging.debug(full_training_summary["workload_all"][w]["volume"])
+               
+        for result_work in results_work:
+            full_training_summary["workload_all"][w]["work"] += result_work
+            logging.debug(full_training_summary["workload_all"][w]["work"])
 
     #Weekly summary broken into categories
     for c in summary_categories:
         for w in summary_weeks:
             week_index = w - 1
         
-            search = jmespath.compile("[?category=='{0}'].weeks[{1}].exercise_inol".format(c,week_index))
-            results = search.search(full_training_plan_items)
+            search_inol = jmespath.compile(f"[?category=='{c}'].weeks[{week_index}].exercise_inol")
+            search_volume = jmespath.compile(f"[?category=='{c}'].weeks[{week_index}].exercise_volume")
+            search_work = jmespath.compile(f"[?category=='{c}'].weeks[{week_index}].exercise_work")
+            results_inol = search_inol.search(full_training_plan_items)
+            results_volume = search_volume.search(full_training_plan_items)
+            results_work = search_work.search(full_training_plan_items)
+
             logging.debug("category results")
-            logging.debug(results)
+            logging.debug(results_inol)
+            logging.debug(results_volume)
+            logging.debug(results_work)
         
             if not c in full_training_summary["workload_category"]:
                 full_training_summary["workload_category"][c] = dict()
             
             if not w in full_training_summary["workload_category"][c]:
-                full_training_summary["workload_category"][c][w] = 0
+                full_training_summary["workload_category"][c][w] = dict()
+                full_training_summary["workload_category"][c][w]["inol"] =0
+                full_training_summary["workload_category"][c][w]["volume"] = 0
+                full_training_summary["workload_category"][c][w]["work"] =0
         
-            for result in results:
-                full_training_summary["workload_category"][c][w] += result
-                logging.debug(full_training_summary["workload_category"][c][w])
+            for result_inol in results_inol:
+                full_training_summary["workload_category"][c][w]["inol"] += result_inol
+                logging.debug(full_training_summary["workload_category"][c][w]["inol"])
+
+            for result_volume in results_volume:
+                full_training_summary["workload_category"][c][w]["volume"] += result_volume
+                logging.debug(full_training_summary["workload_category"][c][w]["volume"])
+
+            for result_work in results_work:
+                full_training_summary["workload_category"][c][w]["work"] += result_work
+                logging.debug(full_training_summary["workload_category"][c][w]["work"])
 
     #Weekly summary broken into days
     for d in summary_training_days:
         for w in summary_weeks:
             week_index = w - 1
         
-            search = jmespath.compile("[?training_day==`{0}`].weeks[{1}].exercise_inol".format(d,week_index))
+            search = jmespath.compile(f"[?training_day==`{d}`].weeks[{week_index}].exercise_inol")
             results = search.search(full_training_plan_items)
             logging.debug("daily results")
             logging.debug(results)
@@ -357,7 +503,8 @@ def main():
     
     # md.addSimpleLineBreak()
     
-    age_weight_string = "Age: {0} Weight: {1}".format(str(config["age"]), str(config["weight"]))
+    #age_weight_string = "Age: {0} Weight: {1}".format(str(config["age"]), str(config["weight"]))
+    age_weight_string = f"Age: {config['age']} | Weight: {config['weight']}"
     md.addParagraph(age_weight_string, 1)
     # md.addHorizontalRule()
     
@@ -373,55 +520,94 @@ def main():
                 logging.debug(x)
                 
                 md.addHeader(x["name"], 4)
-                md_category = "Category: {0}".format(str(x["category"]))
-                md.addParagraph(md_category, 1, 'bold')
+                #md_category = "Category: {0} Max: {1}".format(str(x["category"]),str(x["current_max"]))
+                md_category = f"Category: {x['category']} | Max: {x['current_max']}"
+                #md_max = "Max: {0}".format(str(x["current_max"]))
+                #md.addParagraph(md_category, 1, 'bold')
+                md.addText(md_category,"bold")
+
                 
-                summary_table = MarkdownTable([u"Weeks", u"Max"])
-                summary_table.addRow([ str(len(x["weeks"])), str(x["current_max"])])
-                md.addTable(summary_table)
+                # summary_table = MarkdownTable([u"Weeks", u"Max"])
+                # summary_table.addRow([ str(len(x["weeks"])), str(x["current_max"])])
+                # md.addTable(summary_table)
                 
                 md.addSimpleLineBreak()
-                training_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL", u"AMRAP"])
+                # training_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL", u"AMRAP"])
+                # #training_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL"])
+
+                # for w in x["weeks"]:
+                #     #week_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL"])
+                #     logging.debug(w)
+                #     for s in w["sets"]:
+                #         logging.debug(s)
+                #     #    week_table.addRow([str(w["week"]), w["scheme"], str(w["weight_rounded"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["exercise_inol"])])
+                #         #training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_rounded"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["exercise_inol"]), str(w["amrap_target"])])
+                #         training_table.addRow([str(w["week"]), s["scheme"], str(s["weight_rounded"]), str("%.2f" %  s["set_inol"]), str("%.2f" %  w["exercise_inol"]), str(s["amrap_target"])])
+                
+                # md.addTable(training_table)
+
+                # md.addParagraph("Notes", 1, 'italic')
+                # md.addList(x['notes'], False, 0)
+
+                
+                #training_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL"])
+
                 for w in x["weeks"]:
-                    
-                    
-                    
-                    training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_rounded"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["exercise_inol"]), str(w["amrap_target"])])
-                md.addTable(training_table)
+                    # week_summary_table = MarkdownTable([u"Week", u"INOL"])
+                    # week_summary_table.addRow([str(w["week"]),str("%.2f" %  w["exercise_inol"])])
+                    # md.addTable(week_summary_table)
+                    # md.addSimpleLineBreak()
+
+                    week_summary = f"Week: {w['week']} | INOL: {w['exercise_inol']:.2f} | Work {w['exercise_work']:.0f}kg | Volume {w['exercise_volume']}"
+                    md.addParagraph(week_summary, 1, 'bold')
+
+                    week_training_table = MarkdownTable([u"Sets/Reps", u"kg", u"inol", u"AMRAP"])
+
+                    #week_table = MarkdownTable([u"Week", u"Sets/Reps", u"kg", u"inol", u"INOL"])
+                    logging.debug(w)
+                    for s in w["sets"]:
+                        logging.debug(s)
+                    #    week_table.addRow([str(w["week"]), w["scheme"], str(w["weight_rounded"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["exercise_inol"])])
+                        #training_table.addRow([str(w["week"]), w["scheme"], str(w["weight_rounded"]), str("%.2f" %  w["set_inol"]), str("%.2f" %  w["exercise_inol"]), str(w["amrap_target"])])
+                        week_training_table.addRow([s["scheme"], str(s["weight_rounded"]), str("%.2f" %  s["set_inol"]), str(s["amrap_target"])])
+                
+                    md.addTable(week_training_table)
+                    md.addSimpleLineBreak()
 
                 md.addParagraph("Notes", 1, 'italic')
                 md.addList(x['notes'], False, 0)
     
+
     md.addHeader("Workload", 2)
     
     md.addHeader("All", 3)
-    workload_summary_all_table = MarkdownTable([u"Week", u"INOL"])
-    for w, i in full_training_summary["workload_all"].iteritems():
+    workload_summary_all_table = MarkdownTable([u"Week", u"INOL",u"Volume",u"Work"])
+    for w, i in full_training_summary["workload_all"].items():
         logging.debug(w)
         logging.debug(i)
-        workload_summary_all_table.addRow([str(w), str(i)])
+        workload_summary_all_table.addRow([str(w), f"{i['inol']:.2f}", f"{i['volume']}", f"{i['work']:.0f}kg"])
     md.addTable(workload_summary_all_table)
     md.addSimpleLineBreak()
     
     md.addHeader("Category", 3)
     for c in full_training_summary["workload_category"]:
         md.addHeader(c, 4)
-        workload_summary_category_table = MarkdownTable([u"Week", u"INOL"])
-        for w, i in full_training_summary["workload_category"][c].iteritems():
+        workload_summary_category_table = MarkdownTable([u"Week", u"INOL",u"Volume",u"Work"])
+        for w, i in full_training_summary["workload_category"][c].items():
             logging.debug(w)
             logging.debug(i)
-            workload_summary_category_table.addRow([str(w), str(i)])
+            workload_summary_category_table.addRow([str(w),f"{i['inol']:.2f}", f"{i['volume']}", f"{i['work']:.0f}kg"])
         md.addTable(workload_summary_category_table)
         md.addSimpleLineBreak()
         
     md.addHeader("Daily", 3)
     for d in full_training_summary["workload_daily"]:
         md.addHeader(training_days[d], 4)
-        workload_summary_daily_table = MarkdownTable([u"Week", u"INOL"])
-        for w, i in full_training_summary["workload_daily"][d].iteritems():
+        workload_summary_daily_table = MarkdownTable([u"Week", u"INOL",u"Volume",u"Work"])
+        for w, i in full_training_summary["workload_daily"][d].items():
             logging.debug(w)
             logging.debug(i)
-            workload_summary_daily_table.addRow([str(w), str(i)])
+            workload_summary_daily_table.addRow([str(w), f"{i:.2f}"])
         md.addTable(workload_summary_daily_table)
         md.addSimpleLineBreak()
     
@@ -492,7 +678,7 @@ def setupLogging(log_location, this, now, verbose):
 
     level = logging.INFO
     if verbose:
-        print "enable verbose"
+        print("enable verbose")
         level = logging.DEBUG
         # set up logging to file - see previous section for more details
     logging.basicConfig(level=level,

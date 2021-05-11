@@ -466,20 +466,38 @@ def main():
         for w in summary_weeks:
             week_index = w - 1
         
-            search = jmespath.compile(f"[?training_day==`{d}`].weeks[{week_index}].exercise_inol")
-            results = search.search(full_training_plan_items)
+            search_inol = jmespath.compile(f"[?training_day==`{d}`].weeks[{week_index}].exercise_inol")
+            search_volume = jmespath.compile(f"[?training_day==`{d}`].weeks[{week_index}].exercise_volume")
+            search_work = jmespath.compile(f"[?training_day==`{d}`].weeks[{week_index}].exercise_work")
+            results_inol = search_inol.search(full_training_plan_items)
+            results_volume = search_volume.search(full_training_plan_items)
+            results_work = search_work.search(full_training_plan_items)
+
             logging.debug("daily results")
-            logging.debug(results)
+            logging.debug(results_inol)
+            logging.debug(results_volume)
+            logging.debug(results_work)
         
             if not d in full_training_summary["workload_daily"]:
                 full_training_summary["workload_daily"][d] = dict()
             
             if not w in full_training_summary["workload_daily"][d]:
-                full_training_summary["workload_daily"][d][w] = 0
+                full_training_summary["workload_daily"][d][w] = dict()
+                full_training_summary["workload_daily"][d][w]["inol"] =0
+                full_training_summary["workload_daily"][d][w]["volume"] = 0
+                full_training_summary["workload_daily"][d][w]["work"] =0
         
-            for result in results:
-                full_training_summary["workload_daily"][d][w] += result
-                logging.debug(full_training_summary["workload_daily"][d][w])
+            for result_inol in results_inol:
+                full_training_summary["workload_daily"][d][w]["inol"] += result_inol
+                logging.debug(full_training_summary["workload_daily"][d][w]["inol"])
+
+            for result_volume in results_volume:
+                full_training_summary["workload_daily"][d][w]["volume"] += result_volume
+                logging.debug(full_training_summary["workload_daily"][d][w]["volume"])
+
+            for result_work in results_work:
+                full_training_summary["workload_daily"][d][w]["work"] += result_work
+                logging.debug(full_training_summary["workload_daily"][d][w]["work"])
 
 
     logging.debug(full_training_summary)           
@@ -607,7 +625,7 @@ def main():
         for w, i in full_training_summary["workload_daily"][d].items():
             logging.debug(w)
             logging.debug(i)
-            workload_summary_daily_table.addRow([str(w), f"{i:.2f}"])
+            workload_summary_daily_table.addRow([str(w),f"{i['inol']:.2f}", f"{i['volume']}", f"{i['work']:.0f}kg"])
         md.addTable(workload_summary_daily_table)
         md.addSimpleLineBreak()
     

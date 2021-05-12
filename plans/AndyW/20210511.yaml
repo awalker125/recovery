@@ -748,11 +748,11 @@ plan:
         sets:
           - weight: 40
             reps: 5
-            count: 2
+            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 65
             reps: 3
             count: 1
           - intensity: 65
@@ -762,12 +762,15 @@ plan:
         sets:
           - weight: 40
             reps: 5
-            count: 2
+            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 65
             reps: 3
+            count: 1
+          - weight: 75
+            reps: 2
             count: 1
           - intensity: 70
             reps: 3
@@ -776,12 +779,15 @@ plan:
         sets:
           - weight: 40
             reps: 5
-            count: 2
+            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 65
             reps: 3
+            count: 1
+          - weight: 75
+            reps: 2
             count: 1
           - intensity: 75
             reps: 3
@@ -790,12 +796,18 @@ plan:
         sets:
           - weight: 40
             reps: 5
-            count: 2
+            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 65
             reps: 3
+            count: 1
+          - weight: 75
+            reps: 2
+            count: 1
+          - weight: 85
+            reps: 1
             count: 1
           - intensity: 80
             reps: 2
@@ -804,12 +816,18 @@ plan:
         sets:
           - weight: 40
             reps: 5
-            count: 2
+            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 65
             reps: 3
+            count: 1
+          - weight: 75
+            reps: 2
+            count: 1
+          - weight: 85
+            reps: 1
             count: 1
           - intensity: 85
             reps: 1
@@ -818,12 +836,21 @@ plan:
         sets:
           - weight: 40
             reps: 5
-            count: 2
+            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 65
             reps: 3
+            count: 1
+          - weight: 75
+            reps: 2
+            count: 1
+          - weight: 85
+            reps: 1
+            count: 1
+          - weight: 95
+            reps: 1
             count: 1
           - intensity: 90
             reps: 1
@@ -832,15 +859,21 @@ plan:
         sets:
           - weight: 40
             reps: 5
-            count: 2
+            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 65
             reps: 3
             count: 1
-          - weight: 70
+          - weight: 75
             reps: 2
+            count: 1
+          - weight: 85
+            reps: 1
+            count: 1
+          - weight: 95
+            reps: 1
             count: 1
           - intensity: 90
             reps: 1

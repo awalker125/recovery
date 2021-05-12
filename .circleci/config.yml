@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: circleci/python:2.7
+      - image: circleci/python:3.6
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -48,9 +48,9 @@ jobs:
             
             #Add here to enable different subdirs for ci. These are case sensitive
             ./generate_all.sh AndyW
-            ./generate_all.sh GreggR
-            ./generate_all.sh ErinM
-            ./generate_all.sh DaveyC
+            # ./generate_all.sh GreggR
+            # ./generate_all.sh ErinM
+            # ./generate_all.sh DaveyC
       - store_artifacts:
           path: plans
           destination: plans

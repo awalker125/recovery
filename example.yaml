@@ -33,7 +33,16 @@ plan:
             count: 2
           - intensity: 78
             reps: 9
-            count: 1      
+            count: 1
+      - week: 3
+        sets:
+          - intensity: 75
+            weight: 100
+            reps: 10
+            count: 3
+          - weight: 120
+            reps: 8
+            count: 1       
     notes:
       - Assistance is curls
       - week 7 is max out

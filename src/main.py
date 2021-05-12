@@ -326,8 +326,21 @@ def main():
             exercise_volume = 0
             exercise_work = 0
             for s in week["sets"]:
+
+                if "weight" in s:
+                    logging.debug(f"weight {s['weight']} in setting. Calculating intensity...")
+                    intensity = (s['weight'] / current_max) * 100
+                    logging.debug(f"calculated intensity {intensity}")
+                    s["intensity"] = f"{intensity:.0f}"
+                    logging.debug(f"rounded intensity {s['intensity']}")
+                else:
+                    if not "intensity" in s:
+                        msg = f"Either weight or intensity is required... {s}"
+                        logging.error(msg)
+                        raise RuntimeError(msg)
+
                 #INOL
-                s["set_inol"] = calculate_set_inol(s["reps"], s["intensity"])
+                s["set_inol"] = calculate_set_inol(s["reps"], float(s["intensity"]))
                 sets_inol = s["set_inol"] * s["count"]
                 exercise_inol += sets_inol
 
@@ -336,7 +349,8 @@ def main():
                 exercise_volume += s["volume"]
 
                 #Weight
-                s["weight"] = current_max * (float(s["intensity"]) / 100)
+                if not "weight" in s:
+                    s["weight"] = current_max * (float(s["intensity"]) / 100)
                 s["weight_rounded"] = get_weight_rounded(s["weight"],weight_format)
 
                 #work

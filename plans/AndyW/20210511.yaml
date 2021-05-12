@@ -143,7 +143,7 @@ plan:
           - intensity: 98
             reps: 1
             count: 1
-          - intensity: 102
+          - intensity: 99
             reps: 1
             count: 1    
     notes:
@@ -348,9 +348,40 @@ plan:
           - weight: 150
             reps: 1
             count: 1
+      - week: 7
+        sets:
+          - weight: 62
+            reps: 10
+            count: 1
+          - weight: 72
+            reps: 9
+            count: 1
+          - weight: 82
+            reps: 8
+            count: 1
+          - weight: 92
+            reps: 7
+            count: 1
+          - weight: 102
+            reps: 6
+            count: 1
+          - weight: 112
+            reps: 5
+            count: 1
+          - weight: 122
+            reps: 4
+            count: 1
+          - weight: 132
+            reps: 3
+            count: 1
+          - weight: 142
+            reps: 2
+            count: 1
+          - weight: 152
+            reps: 1
+            count: 1
     notes:
       - Assistance is 15-20 min workout
-
 
   - name: Squat
     training_day: 3
@@ -550,74 +581,278 @@ plan:
           - weight: 150
             reps: 1
             count: 1
+      - week: 7
+        sets:
+          - weight: 62
+            reps: 10
+            count: 1
+          - weight: 72
+            reps: 9
+            count: 1
+          - weight: 82
+            reps: 8
+            count: 1
+          - weight: 92
+            reps: 7
+            count: 1
+          - weight: 102
+            reps: 6
+            count: 1
+          - weight: 112
+            reps: 5
+            count: 1
+          - weight: 122
+            reps: 4
+            count: 1
+          - weight: 132
+            reps: 3
+            count: 1
+          - weight: 142
+            reps: 2
+            count: 1
+          - weight: 152
+            reps: 1
+            count: 1
     notes:
-      - Assistance is 15-20 min workout
+      - Stretch
 
-  # - name: Snatch
-  #   training_day: 1
-  #   category: Snatch
-  #   current_max: 90
-  #   format: olympic
-  #   #Pre injury
-  #   #current_max: 122
-  #   weeks:
-  #     - week: 1
-  #       intensity: 65
-  #       target_exercise_inol: 0.6
-  #       min_reps: 5
-  #       max_reps: 5
-  #     - week: 2
-  #       intensity: 70
-  #       target_exercise_inol: 0.8
-  #       go_hard: 1
-  #     - week: 3
-  #       intensity: 75
-  #       target_exercise_inol: 0.7
-  #     - week: 4
-  #       intensity: 80
-  #       target_exercise_inol: 0.6
-  #       go_hard: 1
-  #       max_reps: 2
-  #     - week: 5
-  #       intensity: 85
-  #       target_exercise_inol: 0.5
-  #     - week: 6
-  #       intensity: 90
-  #       target_exercise_inol: 0.4
-  #   notes:
-  #     - Assistance is Ab Wheel
+  - name: Snatch
+    training_day: 1
+    category: Snatch
+    current_max: 90
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 65
+            reps: 5
+            count: 4
+      - week: 2
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 70
+            reps: 3
+            count: 8
+      - week: 3
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 75
+            reps: 3
+            count: 6
+      - week: 4
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 80
+            reps: 2
+            count: 6
+      - week: 5
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 85
+            reps: 1
+            count: 7
+      - week: 6
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 4
+      - week: 7
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - weight: 70
+            reps: 2
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 1
+          - intensity: 95
+            reps: 1
+            count: 1
+          - intensity: 98
+            reps: 1
+            count: 1
+          - intensity: 99
+            reps: 1
+            count: 1
+    notes:
+      - Assistance is Ab Wheel
 
  
-  # - name: Clean
-  #   training_day: 4
-  #   category: Clean
-  #   current_max: 112
-  #   format: olympic
-  #   #pre injury
-  #   #current_max: 146
-  #   weeks:
-  #     - week: 1
-  #       intensity: 65
-  #       target_exercise_inol: 0.6
-  #       min_reps: 5
-  #       max_reps: 5
-  #     - week: 2
-  #       intensity: 70
-  #       target_exercise_inol: 0.8
-  #       go_hard: 1
-  #     - week: 3
-  #       intensity: 75
-  #       target_exercise_inol: 0.7
-  #     - week: 4
-  #       intensity: 80
-  #       target_exercise_inol: 0.6
-  #       max_reps: 2
-  #       go_hard: 1
-  #     - week: 5
-  #       intensity: 85
-  #       target_exercise_inol: 0.5
-  #     - week: 6
-  #       intensity: 90
-  #       target_exercise_inol: 0.4
-  #   notes:
-  #     - Assistance is dips
+  - name: Clean
+    training_day: 4
+    category: Clean
+    current_max: 112
+    format: olympic
+    #pre injury
+    #current_max: 146
+    weeks:
+      - week: 1
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 65
+            reps: 5
+            count: 4
+      - week: 2
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 70
+            reps: 3
+            count: 8
+      - week: 3
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 75
+            reps: 3
+            count: 6
+      - week: 4
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 80
+            reps: 2
+            count: 6
+      - week: 5
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 85
+            reps: 1
+            count: 7
+      - week: 6
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 4
+      - week: 7
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - weight: 70
+            reps: 2
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 1
+          - intensity: 95
+            reps: 1
+            count: 1
+          - intensity: 98
+            reps: 1
+            count: 1
+          - intensity: 99
+            reps: 1
+            count: 1
+    notes:
+      - Assistance is dips

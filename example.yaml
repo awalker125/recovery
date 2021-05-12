@@ -1,0 +1,50 @@
+---
+
+name: Andy Walker
+weight: 127
+age: 38
+training_days:
+  1: Monday
+  2: Tuesday
+  3: Wednesday
+  4: Thursday
+  5: Friday
+  6: Saturday
+  7: Sunday
+plan:
+  - name: Bench (Volume)
+    training_day: 2
+    category: bench
+    current_max: 166
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - intensity: 65
+            reps: 10
+            count: 2
+          - intensity: 70
+            reps: 10
+            count: 1         
+      - week: 2
+        sets:
+          - intensity: 75
+            reps: 9
+            count: 2
+          - intensity: 78
+            reps: 9
+            count: 1
+      - week: 3
+        sets:
+          - intensity: 75
+            weight: 100
+            reps: 10
+            count: 3
+          - weight: 120
+            reps: 8
+            count: 1       
+    notes:
+      - Assistance is curls
+      - week 7 is max out
+
+ 

@@ -1,0 +1,256 @@
+---
+
+name: Andy Walker
+weight: 127
+age: 38
+training_days:
+  1: Monday
+  2: Tuesday
+  3: Wednesday
+  4: Thursday
+  5: Friday
+  6: Saturday
+  7: Sunday
+plan:
+  - name: Bench (Volume)
+    training_day: 2
+    category: bench
+    current_max: 166
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 70
+            reps: 10
+            count: 2
+          - weight: 100
+            reps: 10
+            count: 1
+          - weight: 120
+            reps: 8
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 65
+            reps: 7
+            count: 4          
+      - week: 2
+        sets:
+          - weight: 70
+            reps: 10
+            count: 2
+          - weight: 100
+            reps: 10
+            count: 1
+          - weight: 120
+            reps: 8
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 70
+            reps: 6
+            count: 4 
+      - week: 3
+        sets:
+          - weight: 70
+            reps: 10
+            count: 2
+          - weight: 100
+            reps: 10
+            count: 1
+          - weight: 120
+            reps: 8
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 75
+            reps: 4
+            count: 5 
+      - week: 4
+        sets:
+          - weight: 70
+            reps: 10
+            count: 2
+          - weight: 100
+            reps: 10
+            count: 1
+          - weight: 120
+            reps: 8
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 80
+            reps: 4
+            count: 4 
+      - week: 5
+        sets:
+          - weight: 70
+            reps: 10
+            count: 2
+          - weight: 100
+            reps: 10
+            count: 1
+          - weight: 120
+            reps: 8
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 85
+            reps: 4
+            count: 3 
+      - week: 6
+        sets:
+          - weight: 70
+            reps: 10
+            count: 2
+          - weight: 100
+            reps: 10
+            count: 1
+          - weight: 120
+            reps: 8
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 90
+            reps: 2
+            count: 4 
+      - week: 7
+        sets:
+          - weight: 70
+            reps: 10
+            count: 2
+          - weight: 100
+            reps: 10
+            count: 1
+          - weight: 120
+            reps: 8
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 1
+          - intensity: 95
+            reps: 1
+            count: 1
+          - intensity: 98
+            reps: 1
+            count: 1
+          - intensity: 102
+            reps: 1
+            count: 1    
+    notes:
+      - Assistance is curls
+      - week 7 is max out
+
+  # - name: Clean Pull
+  #   training_day: 6
+  #   category: Clean
+  #   current_max: 175
+  #   #pre injury
+  #   #current_max: 146
+  #   defaults:
+  #     format: olympic
+  #     go_hard: 0
+  #     target_exercise_inol: 0.8
+  #     max_exercise_inol: 2
+  #     min_exercise_inol: 0.3
+  #     max_set_inol: 0.4
+  #     min_set_inol: 0.05
+  #     max_reps: 8
+  #     min_reps: 1
+  #     min_sets: 1
+  #     max_sets: 8
+  #   weeks:
+  #     - week: 1
+  #       intensity: 65
+  #     - week: 2
+  #       intensity: 70
+  #       max_reps: 5
+  #       min_reps: 5
+  #     - week: 3
+  #       intensity: 75
+  #     - week: 4
+  #       intensity: 80
+  #     - week: 5
+  #       intensity: 85
+  #     - week: 6
+  #       intensity: 90
+  #   notes:
+  #     - Assistance is 15-20 min workout
+
+  # - name: Snatch
+  #   training_day: 1
+  #   category: Snatch
+  #   current_max: 90
+  #   format: olympic
+  #   #Pre injury
+  #   #current_max: 122
+  #   weeks:
+  #     - week: 1
+  #       intensity: 65
+  #       target_exercise_inol: 0.6
+  #       min_reps: 5
+  #       max_reps: 5
+  #     - week: 2
+  #       intensity: 70
+  #       target_exercise_inol: 0.8
+  #       go_hard: 1
+  #     - week: 3
+  #       intensity: 75
+  #       target_exercise_inol: 0.7
+  #     - week: 4
+  #       intensity: 80
+  #       target_exercise_inol: 0.6
+  #       go_hard: 1
+  #       max_reps: 2
+  #     - week: 5
+  #       intensity: 85
+  #       target_exercise_inol: 0.5
+  #     - week: 6
+  #       intensity: 90
+  #       target_exercise_inol: 0.4
+  #   notes:
+  #     - Assistance is Ab Wheel
+
+ 
+  # - name: Clean
+  #   training_day: 4
+  #   category: Clean
+  #   current_max: 112
+  #   format: olympic
+  #   #pre injury
+  #   #current_max: 146
+  #   weeks:
+  #     - week: 1
+  #       intensity: 65
+  #       target_exercise_inol: 0.6
+  #       min_reps: 5
+  #       max_reps: 5
+  #     - week: 2
+  #       intensity: 70
+  #       target_exercise_inol: 0.8
+  #       go_hard: 1
+  #     - week: 3
+  #       intensity: 75
+  #       target_exercise_inol: 0.7
+  #     - week: 4
+  #       intensity: 80
+  #       target_exercise_inol: 0.6
+  #       max_reps: 2
+  #       go_hard: 1
+  #     - week: 5
+  #       intensity: 85
+  #       target_exercise_inol: 0.5
+  #     - week: 6
+  #       intensity: 90
+  #       target_exercise_inol: 0.4
+  #   notes:
+  #     - Assistance is dips

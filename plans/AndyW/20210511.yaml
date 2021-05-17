@@ -126,13 +126,13 @@ plan:
             reps: 10
             count: 2
           - weight: 100
-            reps: 10
-            count: 1
-          - weight: 120
             reps: 8
             count: 1
-          - weight: 140
+          - weight: 120
             reps: 3
+            count: 1
+          - weight: 140
+            reps: 2
             count: 1
           - intensity: 90
             reps: 1

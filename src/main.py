@@ -359,7 +359,7 @@ def main():
                 s["weight_rounded"] = get_weight_rounded(s["weight"],weight_format)
 
                 #work
-                s["work"] = s["weight"] * s["reps"]
+                s["work"] = s["weight"] * s["reps"] * s["count"]
                 exercise_work += s["work"]
 
                 #Schema

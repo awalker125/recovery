@@ -15,19 +15,22 @@ from collections import OrderedDict
 from markdownwriter.MarkdownWriter import MarkdownWriter
 from markdownwriter.MarkdownTable import MarkdownTable
 
-info = """
-# Optimal INOL values per exercise for a single workout:
-# 
-# < 0.4 - too easy
-# 0.4 - 1.0 - optimal range for most athletes. An INOL value between 0.7 - 0.8 is a recommended starting point.
-# 1.0 - 2.0 - tough workout, but good occasionally, especially for loading phases
-# > 2.0 - very difficult and could lead to overtraining if performed regularly in most individuals
-# Optimal INOL values per exercise across an entire week:
-# 
-# 2.0 - easy, good for reloading, could probably benefit from greater volume occasionally
-# 2.0 - 3.0 - tougher, but doable, good for loading phases
-# 3.0 - 4.0 - very tough, good for shocking your body, but not recommended for extended periods of time
-# > 4.0 - not recommended
+inol_info_workout = """
+Optimal INOL values per exercise for a single workout:
+
+* < 0.4 - too easy
+* 0.4 - 1.0 - optimal range for most athletes. An INOL value between 0.7 - 0.8 is a recommended starting point.
+* 1.0 - 2.0 - tough workout, but good occasionally, especially for loading phases
+* > 2.0 - very difficult and could lead to overtraining if performed regularly in most individuals
+"""
+
+inol_info_weekly = """
+Optimal INOL values per exercise across an entire week:
+
+* 2.0 - easy, good for reloading, could probably benefit from greater volume occasionally
+* 2.0 - 3.0 - tougher, but doable, good for loading phases
+* 3.0 - 4.0 - very tough, good for shocking your body, but not recommended for extended periods of time
+* > 4.0 - not recommended
 """
 
 
@@ -646,7 +649,10 @@ def main():
         md.addSimpleLineBreak()
     
     md.addHeader("Info",2)
-    md.addText(info)
+    md.addHeader("Workout", 3)
+    md.addText(inol_info_workout)
+    md.addHeader("Weekly", 3)
+    md.addText(inol_info_weekly)
     
     ### OUTPUT ###
     file_md.write(md.getStream())

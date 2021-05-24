@@ -15,7 +15,7 @@ plan:
   - name: Bench (Volume)
     training_day: 2
     category: bench
-    current_max: 166
+    current_max: 158
     format: olympic
     weeks:
       - week: 1

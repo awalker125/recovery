@@ -24,9 +24,6 @@ plan:
             reps: 10
             count: 2
           - weight: 100
-            reps: 10
-            count: 1
-          - weight: 120
             reps: 8
             count: 1
           - intensity: 65
@@ -44,9 +41,6 @@ plan:
             reps: 10
             count: 2
           - weight: 100
-            reps: 10
-            count: 1
-          - weight: 120
             reps: 8
             count: 1
           - intensity: 70

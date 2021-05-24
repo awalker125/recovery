@@ -14,6 +14,8 @@ import re
 from collections import OrderedDict
 from markdownwriter.MarkdownWriter import MarkdownWriter
 from markdownwriter.MarkdownTable import MarkdownTable
+
+info = """
 # Optimal INOL values per exercise for a single workout:
 # 
 # < 0.4 - too easy
@@ -26,7 +28,7 @@ from markdownwriter.MarkdownTable import MarkdownTable
 # 2.0 - 3.0 - tougher, but doable, good for loading phases
 # 3.0 - 4.0 - very tough, good for shocking your body, but not recommended for extended periods of time
 # > 4.0 - not recommended
-
+"""
 
 
 # def pick_best_training_option(training_options, target_exercise_inol, go_hard=0):
@@ -643,6 +645,8 @@ def main():
         md.addTable(workload_summary_daily_table)
         md.addSimpleLineBreak()
     
+    md.addHeader("Info",2)
+    md.addText(info)
     
     ### OUTPUT ###
     file_md.write(md.getStream())

@@ -654,6 +654,9 @@ plan:
           - intensity: 69
             reps: 5
             count: 1
+          - intensity: 72
+            reps: 5
+            count: 1
       - week: 2
         sets:
           - weight: 40

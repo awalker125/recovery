@@ -13,7 +13,7 @@ training_days:
   7: Sunday
 plan:
   - name: Bench (Volume)
-    training_day: 2
+    training_day: 1
     category: bench
     current_max: 158
     format: olympic
@@ -629,9 +629,9 @@ plan:
       - Stretch
 
   - name: Snatch
-    training_day: 1
+    training_day: 2
     category: Snatch
-    current_max: 90
+    current_max: 87
     format: olympic
     weeks:
       - week: 1
@@ -642,12 +642,18 @@ plan:
           - weight: 50
             reps: 5
             count: 1
-          - weight: 60
-            reps: 3
-            count: 1
-          - intensity: 65
+          - intensity: 60
             reps: 5
-            count: 4
+            count: 1
+          - intensity: 63
+            reps: 5
+            count: 1
+          - intensity: 66
+            reps: 5
+            count: 1
+          - intensity: 69
+            reps: 5
+            count: 1
       - week: 2
         sets:
           - weight: 40

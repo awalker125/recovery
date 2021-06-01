@@ -819,9 +819,21 @@ plan:
           - weight: 65
             reps: 3
             count: 1
-          - intensity: 65
+          - intensity: 60
             reps: 5
-            count: 4
+            count: 1
+          - intensity: 63
+            reps: 5
+            count: 1
+          - intensity: 66
+            reps: 5
+            count: 1
+          - intensity: 69
+            reps: 5
+            count: 1
+          - intensity: 72
+            reps: 5
+            count: 1
       - week: 2
         sets:
           - weight: 40
@@ -836,9 +848,27 @@ plan:
           - weight: 75
             reps: 2
             count: 1
-          - intensity: 70
+          - intensity: 65
             reps: 3
-            count: 8
+            count: 1
+          - intensity: 67
+            reps: 3
+            count: 1
+          - intensity: 69
+            reps: 3
+            count: 1
+          - intensity: 71
+            reps: 3
+            count: 1
+          - intensity: 73
+            reps: 3
+            count: 1
+          - intensity: 75
+            reps: 3
+            count: 1
+          - intensity: 77
+            reps: 3
+            count: 1
       - week: 3
         sets:
           - weight: 40
@@ -853,9 +883,18 @@ plan:
           - weight: 75
             reps: 2
             count: 1
+          - intensity: 65
+            reps: 3
+            count: 1
+          - intensity: 70
+            reps: 3
+            count: 1
           - intensity: 75
             reps: 3
-            count: 6
+            count: 1
+          - intensity: 80
+            reps: 2
+            count: 4
       - week: 4
         sets:
           - weight: 40
@@ -873,9 +912,24 @@ plan:
           - weight: 85
             reps: 1
             count: 1
+          - intensity: 70
+            reps: 2
+            count: 1
+          - intensity: 75
+            reps: 2
+            count: 1
           - intensity: 80
             reps: 2
-            count: 6
+            count: 1
+          - intensity: 82
+            reps: 2
+            count: 1
+          - intensity: 84
+            reps: 2
+            count: 1
+          - intensity: 86
+            reps: 2
+            count: 1
       - week: 5
         sets:
           - weight: 40

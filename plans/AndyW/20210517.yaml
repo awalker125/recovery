@@ -16,7 +16,7 @@ plan:
     training_day: 1
     category: bench
     current_max: 158
-    format: olympic
+    format: power
     weeks:
       - week: 1
         sets:
@@ -176,134 +176,44 @@ plan:
     weeks:
       - week: 1
         sets:
-          - weight: 50
+          - weight: 40
             reps: 10
             count: 1
-          - weight: 60
+          - weight: 56
+            reps: 10
+            count: 1
+          - weight: 68
             reps: 9
             count: 1
-          - weight: 70
+          - weight: 78
             reps: 8
             count: 1
-          - weight: 80
+          - weight: 88
             reps: 7
             count: 1
-          - weight: 90
+          - weight: 98
             reps: 6
             count: 1
-          - weight: 100
+          - weight: 108
             reps: 5
             count: 1
-          - weight: 110
+          - weight: 118
             reps: 4
             count: 1
-          - weight: 120
+          - weight: 128
             reps: 3
             count: 1
-          - weight: 130
+          - weight: 138
             reps: 2
             count: 1
-          - weight: 140
+          - weight: 148
             reps: 1
             count: 1
       - week: 2
         sets:
-          - weight: 52
+          - weight: 40
             reps: 10
             count: 1
-          - weight: 62
-            reps: 9
-            count: 1
-          - weight: 72
-            reps: 8
-            count: 1
-          - weight: 82
-            reps: 7
-            count: 1
-          - weight: 92
-            reps: 6
-            count: 1
-          - weight: 102
-            reps: 5
-            count: 1
-          - weight: 112
-            reps: 4
-            count: 1
-          - weight: 122
-            reps: 3
-            count: 1
-          - weight: 132
-            reps: 2
-            count: 1
-          - weight: 142
-            reps: 1
-            count: 1
-      - week: 3
-        sets:
-          - weight: 54
-            reps: 10
-            count: 1
-          - weight: 64
-            reps: 9
-            count: 1
-          - weight: 74
-            reps: 8
-            count: 1
-          - weight: 84
-            reps: 7
-            count: 1
-          - weight: 94
-            reps: 6
-            count: 1
-          - weight: 104
-            reps: 5
-            count: 1
-          - weight: 114
-            reps: 4
-            count: 1
-          - weight: 124
-            reps: 3
-            count: 1
-          - weight: 134
-            reps: 2
-            count: 1
-          - weight: 144
-            reps: 1
-            count: 1
-      - week: 4
-        sets:
-          - weight: 56
-            reps: 10
-            count: 1
-          - weight: 66
-            reps: 9
-            count: 1
-          - weight: 76
-            reps: 8
-            count: 1
-          - weight: 86
-            reps: 7
-            count: 1
-          - weight: 96
-            reps: 6
-            count: 1
-          - weight: 106
-            reps: 5
-            count: 1
-          - weight: 116
-            reps: 4
-            count: 1
-          - weight: 126
-            reps: 3
-            count: 1
-          - weight: 136
-            reps: 2
-            count: 1
-          - weight: 146
-            reps: 1
-            count: 1
-      - week: 5
-        sets:
           - weight: 58
             reps: 10
             count: 1
@@ -334,7 +244,7 @@ plan:
           - weight: 148
             reps: 1
             count: 1
-      - week: 6
+      - week: 3
         sets:
           - weight: 60
             reps: 10
@@ -366,7 +276,7 @@ plan:
           - weight: 150
             reps: 1
             count: 1
-      - week: 7
+      - week: 4
         sets:
           - weight: 62
             reps: 10
@@ -396,6 +306,102 @@ plan:
             reps: 2
             count: 1
           - weight: 152
+            reps: 1
+            count: 1
+      - week: 5
+        sets:
+          - weight: 64
+            reps: 10
+            count: 1
+          - weight: 74
+            reps: 9
+            count: 1
+          - weight: 84
+            reps: 8
+            count: 1
+          - weight: 94
+            reps: 7
+            count: 1
+          - weight: 104
+            reps: 6
+            count: 1
+          - weight: 114
+            reps: 5
+            count: 1
+          - weight: 124
+            reps: 4
+            count: 1
+          - weight: 134
+            reps: 3
+            count: 1
+          - weight: 144
+            reps: 2
+            count: 1
+          - weight: 154
+            reps: 1
+            count: 1
+      - week: 6
+        sets:
+          - weight: 66
+            reps: 10
+            count: 1
+          - weight: 76
+            reps: 9
+            count: 1
+          - weight: 86
+            reps: 8
+            count: 1
+          - weight: 96
+            reps: 7
+            count: 1
+          - weight: 106
+            reps: 6
+            count: 1
+          - weight: 116
+            reps: 5
+            count: 1
+          - weight: 126
+            reps: 4
+            count: 1
+          - weight: 136
+            reps: 3
+            count: 1
+          - weight: 146
+            reps: 2
+            count: 1
+          - weight: 156
+            reps: 1
+            count: 1
+      - week: 7
+        sets:
+          - weight: 68
+            reps: 10
+            count: 1
+          - weight: 78
+            reps: 9
+            count: 1
+          - weight: 88
+            reps: 8
+            count: 1
+          - weight: 98
+            reps: 7
+            count: 1
+          - weight: 108
+            reps: 6
+            count: 1
+          - weight: 118
+            reps: 5
+            count: 1
+          - weight: 128
+            reps: 4
+            count: 1
+          - weight: 138
+            reps: 3
+            count: 1
+          - weight: 148
+            reps: 2
+            count: 1
+          - weight: 158
             reps: 1
             count: 1
     notes:
@@ -409,134 +415,44 @@ plan:
     weeks:
       - week: 1
         sets:
-          - weight: 50
+          - weight: 40
             reps: 10
             count: 1
-          - weight: 60
+          - weight: 56
+            reps: 10
+            count: 1
+          - weight: 68
             reps: 9
             count: 1
-          - weight: 70
+          - weight: 78
             reps: 8
             count: 1
-          - weight: 80
+          - weight: 88
             reps: 7
             count: 1
-          - weight: 90
+          - weight: 98
             reps: 6
             count: 1
-          - weight: 100
+          - weight: 108
             reps: 5
             count: 1
-          - weight: 110
+          - weight: 118
             reps: 4
             count: 1
-          - weight: 120
+          - weight: 128
             reps: 3
             count: 1
-          - weight: 130
+          - weight: 138
             reps: 2
             count: 1
-          - weight: 140
+          - weight: 148
             reps: 1
             count: 1
       - week: 2
         sets:
-          - weight: 52
+          - weight: 40
             reps: 10
             count: 1
-          - weight: 62
-            reps: 9
-            count: 1
-          - weight: 72
-            reps: 8
-            count: 1
-          - weight: 82
-            reps: 7
-            count: 1
-          - weight: 92
-            reps: 6
-            count: 1
-          - weight: 102
-            reps: 5
-            count: 1
-          - weight: 112
-            reps: 4
-            count: 1
-          - weight: 122
-            reps: 3
-            count: 1
-          - weight: 132
-            reps: 2
-            count: 1
-          - weight: 142
-            reps: 1
-            count: 1
-      - week: 3
-        sets:
-          - weight: 54
-            reps: 10
-            count: 1
-          - weight: 64
-            reps: 9
-            count: 1
-          - weight: 74
-            reps: 8
-            count: 1
-          - weight: 84
-            reps: 7
-            count: 1
-          - weight: 94
-            reps: 6
-            count: 1
-          - weight: 104
-            reps: 5
-            count: 1
-          - weight: 114
-            reps: 4
-            count: 1
-          - weight: 124
-            reps: 3
-            count: 1
-          - weight: 134
-            reps: 2
-            count: 1
-          - weight: 144
-            reps: 1
-            count: 1
-      - week: 4
-        sets:
-          - weight: 56
-            reps: 10
-            count: 1
-          - weight: 66
-            reps: 9
-            count: 1
-          - weight: 76
-            reps: 8
-            count: 1
-          - weight: 86
-            reps: 7
-            count: 1
-          - weight: 96
-            reps: 6
-            count: 1
-          - weight: 106
-            reps: 5
-            count: 1
-          - weight: 116
-            reps: 4
-            count: 1
-          - weight: 126
-            reps: 3
-            count: 1
-          - weight: 136
-            reps: 2
-            count: 1
-          - weight: 146
-            reps: 1
-            count: 1
-      - week: 5
-        sets:
           - weight: 58
             reps: 10
             count: 1
@@ -567,7 +483,7 @@ plan:
           - weight: 148
             reps: 1
             count: 1
-      - week: 6
+      - week: 3
         sets:
           - weight: 60
             reps: 10
@@ -599,7 +515,7 @@ plan:
           - weight: 150
             reps: 1
             count: 1
-      - week: 7
+      - week: 4
         sets:
           - weight: 62
             reps: 10
@@ -629,6 +545,102 @@ plan:
             reps: 2
             count: 1
           - weight: 152
+            reps: 1
+            count: 1
+      - week: 5
+        sets:
+          - weight: 64
+            reps: 10
+            count: 1
+          - weight: 74
+            reps: 9
+            count: 1
+          - weight: 84
+            reps: 8
+            count: 1
+          - weight: 94
+            reps: 7
+            count: 1
+          - weight: 104
+            reps: 6
+            count: 1
+          - weight: 114
+            reps: 5
+            count: 1
+          - weight: 124
+            reps: 4
+            count: 1
+          - weight: 134
+            reps: 3
+            count: 1
+          - weight: 144
+            reps: 2
+            count: 1
+          - weight: 154
+            reps: 1
+            count: 1
+      - week: 6
+        sets:
+          - weight: 66
+            reps: 10
+            count: 1
+          - weight: 76
+            reps: 9
+            count: 1
+          - weight: 86
+            reps: 8
+            count: 1
+          - weight: 96
+            reps: 7
+            count: 1
+          - weight: 106
+            reps: 6
+            count: 1
+          - weight: 116
+            reps: 5
+            count: 1
+          - weight: 126
+            reps: 4
+            count: 1
+          - weight: 136
+            reps: 3
+            count: 1
+          - weight: 146
+            reps: 2
+            count: 1
+          - weight: 156
+            reps: 1
+            count: 1
+      - week: 7
+        sets:
+          - weight: 68
+            reps: 10
+            count: 1
+          - weight: 78
+            reps: 9
+            count: 1
+          - weight: 88
+            reps: 8
+            count: 1
+          - weight: 98
+            reps: 7
+            count: 1
+          - weight: 108
+            reps: 6
+            count: 1
+          - weight: 118
+            reps: 5
+            count: 1
+          - weight: 128
+            reps: 4
+            count: 1
+          - weight: 138
+            reps: 3
+            count: 1
+          - weight: 148
+            reps: 2
+            count: 1
+          - weight: 158
             reps: 1
             count: 1
     notes:

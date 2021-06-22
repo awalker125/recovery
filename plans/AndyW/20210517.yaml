@@ -762,9 +762,27 @@ plan:
           - weight: 60
             reps: 3
             count: 1
+          - intensity: 80
+            reps: 2
+            count: 1
           - intensity: 85
             reps: 1
-            count: 7
+            count: 1
+          - intensity: 86
+            reps: 1
+            count: 1
+          - intensity: 87
+            reps: 1
+            count: 1
+          - intensity: 88
+            reps: 1
+            count: 1
+          - intensity: 89
+            reps: 1
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 2
       - week: 6
         sets:
           - weight: 40
@@ -776,9 +794,30 @@ plan:
           - weight: 60
             reps: 3
             count: 1
+          - intensity: 80
+            reps: 2
+            count: 1
+          - intensity: 85
+            reps: 1
+            count: 1
           - intensity: 90
             reps: 1
-            count: 4
+            count: 1
+          - intensity: 91
+            reps: 1
+            count: 1
+          - intensity: 92
+            reps: 1
+            count: 1
+          - intensity: 93
+            reps: 1
+            count: 1
+          - intensity: 94
+            reps: 1
+            count: 1
+          - intensity: 95
+            reps: 1
+            count: 1
       - week: 7
         sets:
           - weight: 40
@@ -790,8 +829,11 @@ plan:
           - weight: 60
             reps: 3
             count: 1
-          - weight: 70
+          - intensity: 80
             reps: 2
+            count: 1
+          - intensity: 85
+            reps: 1
             count: 1
           - intensity: 90
             reps: 1
@@ -941,15 +983,30 @@ plan:
           - weight: 65
             reps: 3
             count: 1
-          - weight: 75
+          - intensity: 80
             reps: 2
             count: 1
-          - weight: 85
+          - intensity: 85
             reps: 1
             count: 1
           - intensity: 85
             reps: 1
-            count: 7
+            count: 1
+          - intensity: 86
+            reps: 1
+            count: 1
+          - intensity: 87
+            reps: 1
+            count: 1
+          - intensity: 88
+            reps: 1
+            count: 1
+          - intensity: 89
+            reps: 1
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 2
       - week: 6
         sets:
           - weight: 40
@@ -961,18 +1018,30 @@ plan:
           - weight: 65
             reps: 3
             count: 1
-          - weight: 75
+          - intensity: 80
             reps: 2
             count: 1
-          - weight: 85
-            reps: 1
-            count: 1
-          - weight: 95
+          - intensity: 85
             reps: 1
             count: 1
           - intensity: 90
             reps: 1
-            count: 4
+            count: 1
+          - intensity: 91
+            reps: 1
+            count: 1
+          - intensity: 92
+            reps: 1
+            count: 1
+          - intensity: 93
+            reps: 1
+            count: 1
+          - intensity: 94
+            reps: 1
+            count: 1
+          - intensity: 95
+            reps: 1
+            count: 1
       - week: 7
         sets:
           - weight: 40
@@ -984,13 +1053,10 @@ plan:
           - weight: 65
             reps: 3
             count: 1
-          - weight: 75
+          - intensity: 80
             reps: 2
             count: 1
-          - weight: 85
-            reps: 1
-            count: 1
-          - weight: 95
+          - intensity: 85
             reps: 1
             count: 1
           - intensity: 90

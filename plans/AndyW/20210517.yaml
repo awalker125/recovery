@@ -983,6 +983,9 @@ plan:
           - weight: 65
             reps: 3
             count: 1
+          - weight: 75
+            reps: 2
+            count: 1
           - intensity: 80
             reps: 2
             count: 1
@@ -1018,6 +1021,9 @@ plan:
           - weight: 65
             reps: 3
             count: 1
+          - weight: 75
+            reps: 2
+            count: 1
           - intensity: 80
             reps: 2
             count: 1
@@ -1052,6 +1058,9 @@ plan:
             count: 1
           - weight: 65
             reps: 3
+            count: 1
+          - weight: 75
+            reps: 2
             count: 1
           - intensity: 80
             reps: 2

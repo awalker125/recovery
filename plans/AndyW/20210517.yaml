@@ -202,7 +202,7 @@ plan:
         pig:
           weight: 64
           increment: 10
-      - week: 7
+      - week: 8
         pig:
           weight: 66
           increment: 10  
@@ -243,7 +243,7 @@ plan:
         pig:
           weight: 78
           increment: 10
-      - week: 7
+      - week: 8
         pig:
           weight: 80
           increment: 10  

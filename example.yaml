@@ -42,7 +42,11 @@ plan:
             count: 3
           - weight: 120
             reps: 8
-            count: 1       
+            count: 1
+      - week: 3
+        pig:
+          weight: 40
+          increment: 5  
     notes:
       - Assistance is curls
       - week 7 is max out

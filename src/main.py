@@ -336,6 +336,33 @@ def main():
             exercise_inol = 0
             exercise_volume = 0
             exercise_work = 0
+
+            #If its pig it special pig squats we dynamically generate
+            if "pig" in week:
+                week["sets"] = []
+                
+                if not "weight" in week["pig"]:
+                    msg = f"Weight is required for ping... {week}"
+                    logging.error(msg)
+                    raise RuntimeError(msg)
+                else:
+                    pig_weight = week["pig"]["weight"]
+                
+                if not "increment" in week["pig"]:
+                    pig_increment = 10
+                else:
+                    pig_increment = week["pig"]["increment"]
+                
+                for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+                    gs = dict()
+                    extra = (i - 1) * pig_increment    # Should be 0 on set 1 and 100 on set 10 if increment is 10
+                    gs['weight'] = pig_weight + extra
+                    gs['reps'] = 11 - i
+                    gs['count'] = 1
+                    week["sets"].append(gs)
+
+
+
             for s in week["sets"]:
 
                 if "weight" in s:

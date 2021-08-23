@@ -319,7 +319,14 @@ def main():
         weight_format = exercise["format"]
         # array
         notes = exercise["notes"]
-        weeks = exercise["weeks"]
+        if "russian1" in exercise:
+            weeks = []
+        elif "russian2" in exercise:
+            weeks = []
+        elif "russian3" in exercise:
+            weeks = []
+        else:
+            weeks = exercise["weeks"]
         
         training_plan = dict()
         training_plan["training_day"] = training_day

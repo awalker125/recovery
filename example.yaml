@@ -50,5 +50,16 @@ plan:
     notes:
       - Assistance is curls
       - week 7 is max out
+  - name: Squat
+    training_day: 1
+    category: bench
+    current_max: 166
+    format: olympic
+    russian1:
+      weight: 100
+    notes:
+      - Assistance is curls
+      - week 7 is max out
+
 
  

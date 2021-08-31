@@ -16,7 +16,7 @@ plan:
     training_day: 1
     category: bench
     current_max: 165
-    format: power
+    format: olympic
     weeks:
       - week: 1
         pig:

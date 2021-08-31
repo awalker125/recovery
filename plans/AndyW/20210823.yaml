@@ -20,33 +20,37 @@ plan:
     weeks:
       - week: 1
         pig:
-          weight: 52
+          weight: 62
           increment: 10  
       - week: 2
         pig:
-          weight: 62
+          weight: 64
           increment: 10 
       - week: 3
         pig:
-          weight: 64
+          weight: 66
           increment: 10    
       - week: 4
         pig:
-          weight: 66
+          weight: 68
           increment: 10  
       - week: 5
         pig:
-          weight: 68
+          weight: 70
           increment: 10 
       - week: 6
         sets:
         pig:
-          weight: 70
+          weight: 72
           increment: 10 
       - week: 7
         pig:
-          weight: 72
-          increment: 10   
+          weight: 74
+          increment: 10
+      - week: 8
+        pig:
+          weight: 76
+          increment: 10      
     notes:
       - Assistance is push down & hamstring curls
   - name: Clean Pull

@@ -20,36 +20,36 @@ plan:
     weeks:
       - week: 1
         pig:
-          weight: 62
+          weight: 52
           increment: 10  
       - week: 2
         pig:
-          weight: 64
+          weight: 62
           increment: 10 
       - week: 3
         pig:
-          weight: 66
+          weight: 64
           increment: 10    
       - week: 4
         pig:
-          weight: 68
+          weight: 66
           increment: 10  
       - week: 5
         pig:
-          weight: 70
+          weight: 68
           increment: 10 
       - week: 6
         sets:
         pig:
-          weight: 72
+          weight: 70
           increment: 10 
       - week: 7
         pig:
-          weight: 74
+          weight: 72
           increment: 10
       - week: 8
         pig:
-          weight: 76
+          weight: 74
           increment: 10      
     notes:
       - Assistance is push down & hamstring curls
@@ -138,7 +138,7 @@ plan:
   - name: Snatch
     training_day: 2
     category: Snatch
-    current_max: 87
+    current_max: 93
     format: olympic
     weeks:
       - week: 1
@@ -343,7 +343,7 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 112
+    current_max: 117
     format: olympic
     #pre injury
     #current_max: 146

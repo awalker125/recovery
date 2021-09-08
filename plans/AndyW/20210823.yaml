@@ -102,35 +102,35 @@ plan:
     weeks:
       - week: 1
         pig:
-          weight: 66
+          weight: 84
           increment: 10
       - week: 2
         pig:
-          weight: 68
+          weight: 86
           increment: 10
       - week: 3
         pig:
-          weight: 70
+          weight: 88
           increment: 10
       - week: 4
         pig:
-          weight: 72
+          weight: 90
           increment: 10
       - week: 5
         pig:
-          weight: 74
+          weight: 92
           increment: 10 
       - week: 6
         pig:
-          weight: 76
+          weight: 94
           increment: 10  
       - week: 7
         pig:
-          weight: 78
+          weight: 96
           increment: 10
       - week: 8
         pig:
-          weight: 80
+          weight: 98
           increment: 10  
     notes:
       - Stretch

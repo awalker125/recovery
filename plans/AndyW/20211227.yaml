@@ -128,17 +128,14 @@ plan:
   #     - Assistance is 15-20 min workout
 
 
-  - name: Snatch Pull (531)
+  - name: Clean Pull (531)
     training_day: 2
-    category: Snatch
+    category: Clean
     current_max: 160  #Training max assumed in %
     format: olympic
     weeks:
     - week: 1
       sets:
-        - weight: 70
-          reps: 8
-          count: 2
         - intensity: 58.5
           reps: 5
           count: 1
@@ -150,9 +147,6 @@ plan:
           count: 1
     - week: 2
       sets:
-        - weight: 70
-          reps: 8
-          count: 2
         - intensity: 63
           reps: 3
           count: 1
@@ -164,9 +158,6 @@ plan:
           count: 1
     - week: 3
       sets:
-        - weight: 70
-          reps: 8
-          count: 2
         - intensity: 67.5
           reps: 5
           count: 1
@@ -443,9 +434,6 @@ plan:
     weeks:
     - week: 1
       sets:
-        - weight: 70
-          reps: 8
-          count: 2
         - intensity: 58.5
           reps: 5
           count: 1
@@ -457,9 +445,6 @@ plan:
           count: 1
     - week: 2
       sets:
-        - weight: 70
-          reps: 8
-          count: 2
         - intensity: 63
           reps: 3
           count: 1
@@ -471,9 +456,6 @@ plan:
           count: 1
     - week: 3
       sets:
-        - weight: 70
-          reps: 8
-          count: 2
         - intensity: 67.5
           reps: 5
           count: 1

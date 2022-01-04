@@ -58,13 +58,13 @@ plan:
           reps: 8
           count: 2
         - intensity: 67.5
-          reps: 3
+          reps: 5
           count: 1
         - intensity: 76.5
           reps: 3
           count: 1
         - intensity: 85.5
-          reps: 3
+          reps: 1
           count: 1
         - intensity: 40
           reps: 10
@@ -85,46 +85,110 @@ plan:
           count: 5    
     notes:
       - Assistance is push down & hamstring curls
-  - name: Clean Pull
-    training_day: 6
-    category: Clean
-    current_max: 160
+
+  # - name: Clean Pull
+  #   training_day: 6
+  #   category: Clean
+  #   current_max: 160
+  #   format: olympic
+  #   weeks:
+  #     - week: 1
+  #       pig:
+  #         weight: 52
+  #         increment: 10
+  #     - week: 2
+  #       pig:
+  #         weight: 54
+  #         increment: 10
+  #     - week: 3
+  #       pig:
+  #         weight: 56
+  #         increment: 10
+  #     - week: 4
+  #       pig:
+  #         weight: 58
+  #         increment: 10
+  #     - week: 5
+  #       pig:
+  #         weight: 60
+  #         increment: 10 
+  #     - week: 6
+  #       pig:
+  #         weight: 62
+  #         increment: 10  
+  #     - week: 7
+  #       pig:
+  #         weight: 64
+  #         increment: 10
+  #     - week: 8
+  #       pig:
+  #         weight: 66
+  #         increment: 10  
+  #   notes:
+  #     - Assistance is 15-20 min workout
+
+
+  - name: Snatch Pull (531)
+    training_day: 2
+    category: Snatch
+    current_max: 160  #Training max assumed in %
     format: olympic
     weeks:
-      - week: 1
-        pig:
-          weight: 52
-          increment: 10
-      - week: 2
-        pig:
-          weight: 54
-          increment: 10
-      - week: 3
-        pig:
-          weight: 56
-          increment: 10
-      - week: 4
-        pig:
-          weight: 58
-          increment: 10
-      - week: 5
-        pig:
-          weight: 60
-          increment: 10 
-      - week: 6
-        pig:
-          weight: 62
-          increment: 10  
-      - week: 7
-        pig:
-          weight: 64
-          increment: 10
-      - week: 8
-        pig:
-          weight: 66
-          increment: 10  
+    - week: 1
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - intensity: 58.5
+          reps: 5
+          count: 1
+        - intensity: 67.5
+          reps: 5
+          count: 1
+        - intensity: 76.5
+          reps: 5
+          count: 1
+    - week: 2
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - intensity: 63
+          reps: 3
+          count: 1
+        - intensity: 72
+          reps: 3
+          count: 1
+        - intensity: 81
+          reps: 3
+          count: 1
+    - week: 3
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - intensity: 67.5
+          reps: 5
+          count: 1
+        - intensity: 76.5
+          reps: 3
+          count: 1
+        - intensity: 85.5
+          reps: 1
+          count: 1
+    - week: 4
+      sets:
+        - intensity: 36
+          reps: 5
+          count: 1
+        - intensity: 45
+          reps: 5
+          count: 1
+        - intensity: 54
+          reps: 5
+          count: 1   
     notes:
-      - Assistance is 15-20 min workout
+      - Stop when cant hold good form not failure
 
   - name: Squat
     training_day: 3
@@ -370,6 +434,68 @@ plan:
             count: 1
     notes:
       - Assistance is Ab Wheel
+
+  - name: Snatch Pull (531)
+    training_day: 2
+    category: Snatch
+    current_max: 103
+    format: olympic
+    weeks:
+    - week: 1
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - intensity: 58.5
+          reps: 5
+          count: 1
+        - intensity: 67.5
+          reps: 5
+          count: 1
+        - intensity: 76.5
+          reps: 5
+          count: 1
+    - week: 2
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - intensity: 63
+          reps: 3
+          count: 1
+        - intensity: 72
+          reps: 3
+          count: 1
+        - intensity: 81
+          reps: 3
+          count: 1
+    - week: 3
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - intensity: 67.5
+          reps: 5
+          count: 1
+        - intensity: 76.5
+          reps: 3
+          count: 1
+        - intensity: 85.5
+          reps: 1
+          count: 1
+    - week: 4
+      sets:
+        - intensity: 36
+          reps: 5
+          count: 1
+        - intensity: 45
+          reps: 5
+          count: 1
+        - intensity: 54
+          reps: 5
+          count: 1   
+    notes:
+      - Stop when cant hold good form not failure
 
  
   - name: Clean

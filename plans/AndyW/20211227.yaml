@@ -129,7 +129,7 @@ plan:
 
 
   - name: Clean Pull (531)
-    training_day: 2
+    training_day: 6
     category: Clean
     current_max: 160  #Training max assumed in %
     format: olympic

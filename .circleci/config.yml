@@ -48,7 +48,7 @@ jobs:
             
             #Add here to enable different subdirs for ci. These are case sensitive
             ./generate_all.sh AndyW
-            # ./generate_all.sh GreggR
+            ./generate_all.sh GreggR
             ./generate_all.sh ErinM
             # ./generate_all.sh DaveyC
       - store_artifacts:

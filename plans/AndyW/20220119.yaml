@@ -214,6 +214,7 @@ plan:
             reps: 10
             count: 5 
     notes:
+      - DT
       - Stretch
 
   - name: Snatch

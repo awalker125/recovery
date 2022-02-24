@@ -192,6 +192,9 @@ plan:
         - weight: 70
           reps: 8
           count: 2
+        - weight: 90
+          reps: 5
+          count: 1
         - intensity: 58.5
           reps: 5
           count: 1
@@ -209,6 +212,9 @@ plan:
         - weight: 70
           reps: 8
           count: 2
+        - weight: 90
+          reps: 5
+          count: 1
         - intensity: 63
           reps: 3
           count: 1
@@ -226,6 +232,9 @@ plan:
         - weight: 70
           reps: 8
           count: 2
+        - weight: 90
+          reps: 5
+          count: 1
         - intensity: 67.5
           reps: 5
           count: 1
@@ -281,7 +290,7 @@ plan:
     #         count: 5 
     notes:
       - DT
-      - Stretch
+      - Last set is lunges per leg
 
   - name: Snatch
     training_day: 2

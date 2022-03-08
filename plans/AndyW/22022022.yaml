@@ -235,6 +235,9 @@ plan:
         - weight: 90
           reps: 5
           count: 1
+        - weight: 110
+          reps: 5
+          count: 1
         - intensity: 67.5
           reps: 5
           count: 1
@@ -295,7 +298,7 @@ plan:
   - name: Snatch
     training_day: 2
     category: Snatch
-    current_max: 93
+    current_max: 96
     format: olympic
     weeks:
       - week: 1
@@ -553,7 +556,7 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 117
+    current_max: 124
     format: olympic
     #pre injury
     #current_max: 146

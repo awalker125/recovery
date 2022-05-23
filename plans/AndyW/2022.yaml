@@ -607,6 +607,8 @@ plan:
             reps: 3
             count: 1
           - intensity: 77
+            reps: 3
+            count: 1
       - week: 3
         sets:
           - weight: 40
@@ -668,6 +670,8 @@ plan:
             reps: 3
             count: 1
           - intensity: 77
+            reps: 3
+            count: 1
       - week: 6
         sets:
           - weight: 40

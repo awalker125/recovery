@@ -300,72 +300,72 @@ plan:
     category: Snatch
     current_max: 96
     format: olympic
-    weeks:
-    - week: 1
-      sets:
-        - weight: 40
-          reps: 5
-          count: 2
-        - intensity: 58.5
-          reps: 5
-          count: 1
-        - intensity: 67.5
-          reps: 5
-          count: 1
-        - intensity: 76.5
-          reps: 5
-          count: 1
-        - weight: 55
-          reps: 55
-          count: 1
-    - week: 2
-      sets:
-        - weight: 40
-          reps: 5
-          count: 2
-        - intensity: 63
-          reps: 3
-          count: 1
-        - intensity: 72
-          reps: 3
-          count: 1
-        - intensity: 81
-          reps: 3
-          count: 1
-        - weight: 60
-          reps: 60
-          count: 1
-    - week: 3
-      sets:
-        - weight: 40
-          reps: 5
-          count: 2
-        - intensity: 67.5
-          reps: 5
-          count: 1
-        - intensity: 76.5
-          reps: 3
-          count: 1
-        - intensity: 85.5
-          reps: 1
-          count: 1
-        - weight: 65
-          reps: 65
-          count: 1
-    - week: 4
-      sets:
-        - intensity: 36
-          reps: 5
-          count: 1
-        - intensity: 45
-          reps: 5
-          count: 1
-        - intensity: 54
-          reps: 5
-          count: 1
-        - weight: 50
-          reps: 50
-          count: 1 
+    # weeks:
+    # - week: 1
+    #   sets:
+    #     - weight: 40
+    #       reps: 5
+    #       count: 2
+    #     - intensity: 58.5
+    #       reps: 5
+    #       count: 1
+    #     - intensity: 67.5
+    #       reps: 5
+    #       count: 1
+    #     - intensity: 76.5
+    #       reps: 5
+    #       count: 1
+    #     - weight: 55
+    #       reps: 55
+    #       count: 1
+    # - week: 2
+    #   sets:
+    #     - weight: 40
+    #       reps: 5
+    #       count: 2
+    #     - intensity: 63
+    #       reps: 3
+    #       count: 1
+    #     - intensity: 72
+    #       reps: 3
+    #       count: 1
+    #     - intensity: 81
+    #       reps: 3
+    #       count: 1
+    #     - weight: 60
+    #       reps: 60
+    #       count: 1
+    # - week: 3
+    #   sets:
+    #     - weight: 40
+    #       reps: 5
+    #       count: 2
+    #     - intensity: 67.5
+    #       reps: 5
+    #       count: 1
+    #     - intensity: 76.5
+    #       reps: 3
+    #       count: 1
+    #     - intensity: 85.5
+    #       reps: 1
+    #       count: 1
+    #     - weight: 65
+    #       reps: 65
+    #       count: 1
+    # - week: 4
+    #   sets:
+    #     - intensity: 36
+    #       reps: 5
+    #       count: 1
+    #     - intensity: 45
+    #       reps: 5
+    #       count: 1
+    #     - intensity: 54
+    #       reps: 5
+    #       count: 1
+    #     - weight: 50
+    #       reps: 50
+    #       count: 1 
     # weeks:
     #   - week: 1
     #     sets:
@@ -562,8 +562,189 @@ plan:
     #       - intensity: 99
     #         reps: 1
     #         count: 1
+    weeks:
+      - week: 1
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - intensity: 60
+            reps: 5
+            count: 1
+          - intensity: 65
+            reps: 5
+            count: 1
+          - intensity: 70
+            reps: 5
+            count: 1
+          - intensity: 71
+            reps: 5
+            count: 1
+          - intensity: 72
+            reps: 5
+            count: 1
+      - week: 2
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - intensity: 65
+            reps: 3
+            count: 1
+          - intensity: 70
+            reps: 3
+            count: 1
+          - intensity: 75
+            reps: 3
+            count: 1
+          - intensity: 76
+            reps: 3
+            count: 1
+          - intensity: 77
+      - week: 3
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - intensity: 65
+            reps: 2
+            count: 1
+          - intensity: 70
+            reps: 2
+            count: 1
+          - intensity: 75
+            reps: 2
+            count: 1
+          - intensity: 80
+            reps: 2
+            count: 1
+          - intensity: 81
+            reps: 2
+            count: 1
+          - intensity: 82
+            reps: 2
+            count: 1
+      - week: 4
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 50
+            reps: 5
+            count: 1
+          - intensity: 55
+            reps: 5
+            count: 1
+      - week: 5
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - intensity: 65
+            reps: 3
+            count: 1
+          - intensity: 70
+            reps: 3
+            count: 1
+          - intensity: 75
+            reps: 3
+            count: 1
+          - intensity: 76
+            reps: 3
+            count: 1
+          - intensity: 77
+      - week: 6
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - intensity: 65
+            reps: 2
+            count: 1
+          - intensity: 70
+            reps: 2
+            count: 1
+          - intensity: 75
+            reps: 2
+            count: 1
+          - intensity: 80
+            reps: 2
+            count: 1
+          - intensity: 81
+            reps: 2
+            count: 1
+          - intensity: 82
+            reps: 2
+            count: 1
+      - week: 7
+        sets:
+          - weight: 40
+            reps: 5
+            count: 2
+          - weight: 50
+            reps: 5
+            count: 1
+          - intensity: 65
+            reps: 2
+            count: 1
+          - intensity: 70
+            reps: 2
+            count: 1
+          - intensity: 75
+            reps: 2
+            count: 1
+          - intensity: 80
+            reps: 1
+            count: 1
+          - intensity: 85
+            reps: 1
+            count: 1
+          - intensity: 86
+            reps: 1
+            count: 1
+          - intensity: 87
+            reps: 1
+            count: 1
+          - intensity: 88
+            reps: 1
+            count: 1
+          - intensity: 89
+            reps: 1
+            count: 1
+      - week: 8
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 50
+            reps: 5
+            count: 1
+          - intensity: 55
+            reps: 5
+            count: 1
     notes:
-      - Assistance is Ab Wheel
+      - Assistance is Ab Wheel and glute bridges
 
   - name: Snatch Pull (531)
     training_day: 2

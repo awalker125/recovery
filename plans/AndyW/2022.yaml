@@ -14,7 +14,7 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    current_max: 175
+    current_max: 177
     format: olympic
     weeks:
       - week: 1
@@ -88,7 +88,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 198
+    current_max: 200
     format: olympic
     weeks:
       - week: 1
@@ -169,7 +169,7 @@ plan:
             reps: 50
             count: 1
     notes:
-      - Assitance is wall ball front squats and lunges. 55/60/65/50 total reps split into sets where needed
+      - Assistance is wall ball front squats and lunges. 55/60/65/50 total reps split into sets where needed
 
   - name: Snatch
     training_day: 2
@@ -193,13 +193,7 @@ plan:
             count: 1
           - intensity: 70
             reps: 5
-            count: 1
-          - intensity: 71
-            reps: 5
-            count: 1
-          - intensity: 72
-            reps: 5
-            count: 1
+            count: 3
       - week: 2
         sets:
           - weight: 40
@@ -216,13 +210,7 @@ plan:
             count: 1
           - intensity: 75
             reps: 3
-            count: 1
-          - intensity: 76
-            reps: 3
-            count: 1
-          - intensity: 77
-            reps: 3
-            count: 1
+            count: 3
       - week: 3
         sets:
           - weight: 40
@@ -242,13 +230,7 @@ plan:
             count: 1
           - intensity: 80
             reps: 2
-            count: 1
-          - intensity: 81
-            reps: 2
-            count: 1
-          - intensity: 82
-            reps: 2
-            count: 1
+            count: 3
       - week: 4
         sets:
           - weight: 40
@@ -272,20 +254,17 @@ plan:
             reps: 5
             count: 1
           - intensity: 65
-            reps: 3
+            reps: 2
             count: 1
           - intensity: 70
-            reps: 3
+            reps: 2
             count: 1
           - intensity: 75
-            reps: 3
+            reps: 2
             count: 1
-          - intensity: 76
-            reps: 3
-            count: 1
-          - intensity: 77
-            reps: 3
-            count: 1
+          - intensity: 80
+            reps: 2
+            count: 3
       - week: 6
         sets:
           - weight: 40
@@ -306,12 +285,9 @@ plan:
           - intensity: 80
             reps: 2
             count: 1
-          - intensity: 81
-            reps: 2
-            count: 1
-          - intensity: 82
-            reps: 2
-            count: 1
+          - intensity: 85
+            reps: 1
+            count: 3
       - week: 7
         sets:
           - weight: 40
@@ -335,18 +311,9 @@ plan:
           - intensity: 85
             reps: 1
             count: 1
-          - intensity: 86
+          - intensity: 90
             reps: 1
-            count: 1
-          - intensity: 87
-            reps: 1
-            count: 1
-          - intensity: 88
-            reps: 1
-            count: 1
-          - intensity: 89
-            reps: 1
-            count: 1
+            count: 2
       - week: 8
         sets:
           - weight: 40
@@ -391,13 +358,7 @@ plan:
             count: 1
           - intensity: 70
             reps: 5
-            count: 1
-          - intensity: 71
-            reps: 5
-            count: 1
-          - intensity: 72
-            reps: 5
-            count: 1
+            count: 3
       - week: 2
         sets:
           - weight: 40
@@ -417,13 +378,7 @@ plan:
             count: 1
           - intensity: 75
             reps: 3
-            count: 1
-          - intensity: 76
-            reps: 3
-            count: 1
-          - intensity: 77
-            reps: 3
-            count: 1
+            count: 3
       - week: 3
         sets:
           - weight: 40
@@ -446,13 +401,7 @@ plan:
             count: 1
           - intensity: 80
             reps: 2
-            count: 1
-          - intensity: 81
-            reps: 2
-            count: 1
-          - intensity: 82
-            reps: 2
-            count: 1
+            count: 3
       - week: 4
         sets:
           - weight: 40
@@ -476,23 +425,20 @@ plan:
             reps: 5
             count: 1
           - weight: 70
-            reps: 5
-            count: 3
-          - intensity: 65
             reps: 3
+            count: 1
+          - intensity: 65
+            reps: 2
             count: 1
           - intensity: 70
-            reps: 3
+            reps: 2
             count: 1
           - intensity: 75
-            reps: 3
+            reps: 2
             count: 1
-          - intensity: 76
-            reps: 3
-            count: 1
-          - intensity: 77
-            reps: 3
-            count: 1
+          - intensity: 80
+            reps: 2
+            count: 3
       - week: 6
         sets:
           - weight: 40
@@ -516,12 +462,9 @@ plan:
           - intensity: 80
             reps: 2
             count: 1
-          - intensity: 81
-            reps: 2
-            count: 1
-          - intensity: 82
-            reps: 2
-            count: 1
+          - intensity: 85
+            reps: 1
+            count: 3
       - week: 7
         sets:
           - weight: 40
@@ -543,23 +486,14 @@ plan:
             reps: 2
             count: 1
           - intensity: 80
-            reps: 1
+            reps: 2
             count: 1
           - intensity: 85
             reps: 1
             count: 1
-          - intensity: 86
+          - intensity: 90
             reps: 1
-            count: 1
-          - intensity: 87
-            reps: 1
-            count: 1
-          - intensity: 88
-            reps: 1
-            count: 1
-          - intensity: 89
-            reps: 1
-            count: 1
+            count: 2
       - week: 8
         sets:
           - weight: 40

@@ -14,7 +14,7 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    current_max: 181
+    current_max: 183
     format: olympic
     weeks:
       - week: 1
@@ -88,7 +88,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 204
+    current_max: 206
     format: olympic
     weeks:
       - week: 1
@@ -514,7 +514,7 @@ plan:
   - name: Strict Press (531)
     training_day: 4
     category: bench
-    current_max: 98
+    current_max: 100
     format: olympic
     weeks:
       - week: 1

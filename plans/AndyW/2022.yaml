@@ -14,7 +14,7 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    current_max: 185
+    current_max: 187
     format: olympic
     weeks:
       - week: 1
@@ -22,6 +22,9 @@ plan:
           - weight: 70
             reps: 8
             count: 2
+          - weight: 100
+            reps: 5
+            count: 1
           - intensity: 58.5
             reps: 5
             count: 1
@@ -39,6 +42,9 @@ plan:
           - weight: 70
             reps: 8
             count: 2
+          - weight: 100
+            reps: 5
+            count: 1
           - intensity: 63
             reps: 3
             count: 1
@@ -56,6 +62,9 @@ plan:
           - weight: 70
             reps: 8
             count: 2
+          - weight: 100
+            reps: 5
+            count: 1
           - intensity: 67.5
             reps: 5
             count: 1
@@ -88,7 +97,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 208
+    current_max: 210
     format: olympic
     weeks:
       - week: 1
@@ -96,7 +105,7 @@ plan:
           - weight: 70
             reps: 8
             count: 2
-          - weight: 90
+          - weight: 110
             reps: 5
             count: 1
           - intensity: 58.5
@@ -116,7 +125,7 @@ plan:
           - weight: 70
             reps: 8
             count: 2
-          - weight: 90
+          - weight: 110
             reps: 5
             count: 1
           - intensity: 63
@@ -136,9 +145,6 @@ plan:
           - weight: 70
             reps: 8
             count: 2
-          - weight: 90
-            reps: 5
-            count: 1
           - weight: 110
             reps: 5
             count: 1
@@ -514,13 +520,16 @@ plan:
   - name: Strict Press (531)
     training_day: 4
     category: bench
-    current_max: 102
+    current_max: 104
     format: olympic
     weeks:
       - week: 1
         sets:
           - weight: 40
             reps: 8
+            count: 1
+          - weight: 50
+            reps: 5
             count: 1
           - intensity: 58.5
             reps: 5
@@ -536,6 +545,9 @@ plan:
           - weight: 40
             reps: 8
             count: 1
+          - weight: 50
+            reps: 5
+            count: 1
           - intensity: 63
             reps: 3
             count: 1
@@ -549,6 +561,12 @@ plan:
         sets:
           - weight: 40
             reps: 8
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
             count: 1
           - intensity: 67.5
             reps: 5
@@ -571,5 +589,5 @@ plan:
             reps: 5
             count: 1
     notes:
-      - Assistance is 10 Curls + 10 Push ups x5. 12kg/14kg/17kg/10kg
+      - Follow with Dips, Curls and Pull Ups
       - Skips 550/600/650/500

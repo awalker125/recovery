@@ -14,7 +14,7 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    current_max: 187
+    current_max: 189
     format: olympic
     weeks:
       - week: 1
@@ -97,7 +97,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 210
+    current_max: 212
     format: olympic
     weeks:
       - week: 1
@@ -520,7 +520,8 @@ plan:
   - name: Strict Press (531)
     training_day: 4
     category: bench
-    current_max: 104
+    #current_max: 104 #Failed at 104. Got all reps at 102 08/12/2022
+    current_max: 90
     format: olympic
     weeks:
       - week: 1

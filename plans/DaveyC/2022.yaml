@@ -15,7 +15,7 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    current_max: 179
+    current_max: 181
     format: olympic
     weeks:
     - week: 1

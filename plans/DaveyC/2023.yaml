@@ -1,0 +1,97 @@
+---
+
+name: Davey Coyle
+weight: 120
+age: 46
+training_days:
+  1: Monday
+  2: Tuesday
+  3: Wednesday
+  4: Thursday
+  5: Friday
+  6: Saturday
+  7: Sunday
+plan:
+  - name: Bench (531)
+    training_day: 1
+    category: bench
+    # current_max: 181 did not fail but came close
+    current_max: 170
+    format: olympic
+    weeks:
+    - week: 1
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - weight: 100
+          reps: 5
+          count: 1
+        - intensity: 58.5
+          reps: 5
+          count: 1
+        - intensity: 67.5
+          reps: 5
+          count: 1
+        - intensity: 76.5
+          reps: 5
+          count: 1
+        - weight: 60
+          reps: 50
+          count: 1
+    - week: 2
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - weight: 100
+          reps: 5
+          count: 1
+        - intensity: 63
+          reps: 3
+          count: 1
+        - intensity: 72
+          reps: 3
+          count: 1
+        - intensity: 81
+          reps: 3
+          count: 1
+        - weight: 65
+          reps: 50
+          count: 1
+    - week: 3
+      sets:
+        - weight: 70
+          reps: 8
+          count: 2
+        - weight: 100
+          reps: 5
+          count: 1
+        - intensity: 67.5
+          reps: 5
+          count: 1
+        - intensity: 76.5
+          reps: 3
+          count: 1
+        - intensity: 85.5
+          reps: 1
+          count: 1
+        - weight: 70
+          reps: 50
+          count: 1
+    - week: 4
+      sets:
+        - intensity: 36
+          reps: 5
+          count: 1
+        - intensity: 45
+          reps: 5
+          count: 1
+        - intensity: 54
+          reps: 5
+          count: 1
+        - weight: 55
+          reps: 50
+          count: 1   
+    notes:
+      - Assistance is push down

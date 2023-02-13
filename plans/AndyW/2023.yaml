@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 189 #failed at 189 best was about 172 based on reps with no creatine
-    current_max: 170
+    current_max: 172
     format: olympic
     weeks:
       - week: 1
@@ -98,7 +98,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 214
+    current_max: 216
     format: olympic
     weeks:
       - week: 1
@@ -518,78 +518,78 @@ plan:
   #   notes:
   #     - Assistance is DT 45/50/55/40
 
-  - name: Strict Press (531)
-    training_day: 4
-    category: bench
-    #current_max: 104 #Failed at 104. Got all reps at 102 08/12/2022
-    current_max: 92
-    format: olympic
-    weeks:
-      - week: 1
-        sets:
-          - weight: 40
-            reps: 8
-            count: 1
-          - weight: 50
-            reps: 5
-            count: 1
-          - intensity: 58.5
-            reps: 5
-            count: 1
-          - intensity: 67.5
-            reps: 5
-            count: 1
-          - intensity: 76.5
-            reps: 5
-            count: 1
-      - week: 2
-        sets:
-          - weight: 40
-            reps: 8
-            count: 1
-          - weight: 50
-            reps: 5
-            count: 1
-          - intensity: 63
-            reps: 3
-            count: 1
-          - intensity: 72
-            reps: 3
-            count: 1
-          - intensity: 81
-            reps: 3
-            count: 1
-      - week: 3
-        sets:
-          - weight: 40
-            reps: 8
-            count: 1
-          - weight: 50
-            reps: 5
-            count: 1
-          - weight: 60
-            reps: 3
-            count: 1
-          - intensity: 67.5
-            reps: 5
-            count: 1
-          - intensity: 76.5
-            reps: 3
-            count: 1
-          - intensity: 85.5
-            reps: 1
-            count: 1
-      - week: 4
-        sets:
-          - intensity: 36
-            reps: 5
-            count: 1
-          - intensity: 45
-            reps: 5
-            count: 1
-          - intensity: 54
-            reps: 5
-            count: 1
-    notes:
-      - Follow with Dips, Curls and Pull Ups
-      - Skips 550/600/650/500
+  # - name: Strict Press (531)
+  #   training_day: 4
+  #   category: bench
+  #   #current_max: 104 #Failed at 104. Got all reps at 102 08/12/2022
+  #   current_max: 92
+  #   format: olympic
+  #   weeks:
+  #     - week: 1
+  #       sets:
+  #         - weight: 40
+  #           reps: 8
+  #           count: 1
+  #         - weight: 50
+  #           reps: 5
+  #           count: 1
+  #         - intensity: 58.5
+  #           reps: 5
+  #           count: 1
+  #         - intensity: 67.5
+  #           reps: 5
+  #           count: 1
+  #         - intensity: 76.5
+  #           reps: 5
+  #           count: 1
+  #     - week: 2
+  #       sets:
+  #         - weight: 40
+  #           reps: 8
+  #           count: 1
+  #         - weight: 50
+  #           reps: 5
+  #           count: 1
+  #         - intensity: 63
+  #           reps: 3
+  #           count: 1
+  #         - intensity: 72
+  #           reps: 3
+  #           count: 1
+  #         - intensity: 81
+  #           reps: 3
+  #           count: 1
+  #     - week: 3
+  #       sets:
+  #         - weight: 40
+  #           reps: 8
+  #           count: 1
+  #         - weight: 50
+  #           reps: 5
+  #           count: 1
+  #         - weight: 60
+  #           reps: 3
+  #           count: 1
+  #         - intensity: 67.5
+  #           reps: 5
+  #           count: 1
+  #         - intensity: 76.5
+  #           reps: 3
+  #           count: 1
+  #         - intensity: 85.5
+  #           reps: 1
+  #           count: 1
+  #     - week: 4
+  #       sets:
+  #         - intensity: 36
+  #           reps: 5
+  #           count: 1
+  #         - intensity: 45
+  #           reps: 5
+  #           count: 1
+  #         - intensity: 54
+  #           reps: 5
+  #           count: 1
+  #   notes:
+  #     - Follow with Dips, Curls and Pull Ups
+  #     - Skips 550/600/650/500

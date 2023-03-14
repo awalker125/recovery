@@ -118,13 +118,13 @@ plan:
             count: 3
       - week: 4
         sets:
-          - intensity: 20
+          - weight: 20
             reps: 5
             count: 1
-          - intensity: 22.5
+          - weight: 22.5
             reps: 5
             count: 1
-          - intensity: 25
+          - weight: 25
             reps: 5
             count: 1
     notes:

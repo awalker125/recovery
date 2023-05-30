@@ -110,10 +110,10 @@ plan:
           - weight: 110
             reps: 3
             count: 1
-          - intensity: 130
+          - weight: 130
             reps: 2
             count: 1
-          - intensity: 140
+          - weight: 140
             reps: 2
             count: 1
           - intensity: 82.5 # Basically -10 for close -10 for dubs minus 10 week 1
@@ -127,13 +127,13 @@ plan:
           - weight: 110
             reps: 3
             count: 1
-          - intensity: 130
+          - weight: 130
             reps: 2
             count: 1
-          - intensity: 140
+          - weight: 140
             reps: 2
             count: 1
-          - intensity: 150
+          - weight: 150
             reps: 2
             count: 1
           - intensity: 86 # Basically -10 for close -10 for dubs minus 5 week 2
@@ -147,13 +147,13 @@ plan:
           - weight: 110
             reps: 3
             count: 1
-          - intensity: 130
+          - weight: 130
             reps: 2
             count: 1
-          - intensity: 140
+          - weight: 140
             reps: 2
             count: 1
-          - intensity: 150
+          - weight: 150
             reps: 2
             count: 1
           - intensity: 89 # Basically -10 for close -10 for dubs 
@@ -164,10 +164,10 @@ plan:
           - weight: 70
             reps: 5
             count: 2
-          - intensity: 75
+          - weight: 75
             reps: 5
             count: 1
-          - intensity: 80
+          - weight: 80
             reps: 5
             count: 1
     notes:

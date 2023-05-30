@@ -116,7 +116,7 @@ plan:
           - weight: 140
             reps: 2
             count: 1
-          - intensity: 82.5 # Basically -10 for close -10 for dubs minus 10 week 1
+          - intensity: 83 # Basically -10 for close -10 for dubs minus 10 week 1
             reps: 2
             count: 1
       - week: 2

@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 189 #failed at 189 best was about 172 based on reps with no creatine
-    current_max: 187.5
+    current_max: 190
     format: power
     weeks:
       - week: 1
@@ -99,7 +99,7 @@ plan:
   - name: Close Grip (Doubles)
     training_day: 4
     category: bench
-    current_max: 187.5
+    current_max: 190
     format: power
     weeks:
       - week: 1
@@ -174,45 +174,45 @@ plan:
       - Pull ups unassisted
 
 
-  - name: Incline Dumbells
-    training_day: 1
-    category: bench
-    current_max: 60
-    format: olympic
-    weeks:
-      - week: 1
-        sets:
-          - weight: 40
-            reps: 6
-            count: 3
-      - week: 2
-        sets:
-          - weight: 45
-            reps: 4
-            count: 3
-      - week: 3
-        sets:
-          - weight: 50
-            reps: 2
-            count: 3
-      - week: 4
-        sets:
-          - weight: 20
-            reps: 5
-            count: 1
-          - weight: 22.5
-            reps: 5
-            count: 1
-          - weight: 25
-            reps: 5
-            count: 1
-    notes:
-      - Last set AMRAP
+  # - name: Incline Dumbells
+  #   training_day: 1
+  #   category: bench
+  #   current_max: 60
+  #   format: olympic
+  #   weeks:
+  #     - week: 1
+  #       sets:
+  #         - weight: 40
+  #           reps: 6
+  #           count: 3
+  #     - week: 2
+  #       sets:
+  #         - weight: 45
+  #           reps: 4
+  #           count: 3
+  #     - week: 3
+  #       sets:
+  #         - weight: 50
+  #           reps: 2
+  #           count: 3
+  #     - week: 4
+  #       sets:
+  #         - weight: 20
+  #           reps: 5
+  #           count: 1
+  #         - weight: 22.5
+  #           reps: 5
+  #           count: 1
+  #         - weight: 25
+  #           reps: 5
+  #           count: 1
+  #   notes:
+  #     - Last set AMRAP
 
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 226
+    current_max: 228
     format: olympic
     weeks:
       - week: 1

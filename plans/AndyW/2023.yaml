@@ -1,7 +1,7 @@
 ---
 name: Andy Walker
-weight: 127
-age: 40
+weight: 129
+age: 41
 training_days:
   1: Monday
   2: Tuesday
@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 189 #failed at 189 best was about 172 based on reps with no creatine
-    current_max: 190
+    current_max: 192.5
     format: power
     weeks:
       - week: 1
@@ -99,7 +99,7 @@ plan:
   - name: Close Grip (Doubles)
     training_day: 4
     category: bench
-    current_max: 190
+    current_max: 192.5
     format: power
     weeks:
       - week: 1
@@ -212,7 +212,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 228
+    current_max: 230
     format: olympic
     weeks:
       - week: 1

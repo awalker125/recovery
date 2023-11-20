@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 189 #failed at 189 best was about 172 based on reps with no creatine
-    current_max: 195
+    current_max: 197.5
     format: power
     weeks:
       - week: 1
@@ -35,7 +35,7 @@ plan:
           - intensity: 76.5
             reps: 5
             count: 1
-          - weight: 60
+          - weight: 70
             reps: 50
             count: 1
       - week: 2
@@ -55,7 +55,7 @@ plan:
           - intensity: 81
             reps: 3
             count: 1
-          - weight: 65
+          - weight: 70
             reps: 50
             count: 1
       - week: 3
@@ -65,6 +65,9 @@ plan:
             count: 2
           - weight: 100
             reps: 5
+            count: 1
+          - weight: 120
+            reps: 2
             count: 1
           - intensity: 67.5
             reps: 5
@@ -212,7 +215,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 232
+    current_max: 234
     format: olympic
     weeks:
       - week: 1

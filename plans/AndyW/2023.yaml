@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 189 #failed at 189 best was about 172 based on reps with no creatine
-    current_max: 197.5
+    current_max: 200
     format: power
     weeks:
       - week: 1
@@ -102,7 +102,7 @@ plan:
   - name: Close Grip (Doubles)
     training_day: 4
     category: bench
-    current_max: 195
+    current_max: 200
     format: power
     weeks:
       - week: 1
@@ -215,7 +215,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 234
+    current_max: 236
     format: olympic
     weeks:
       - week: 1

@@ -14,8 +14,7 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    # current_max: 189 #failed at 189 best was about 172 based on reps with no creatine
-    current_max: 202.5
+    current_max: 205
     format: power
     weeks:
       - week: 1

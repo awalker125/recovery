@@ -14,8 +14,8 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    # current_max: 202.5 #failed at 20.25 hit a 180 in comp in november
-    current_max: 177.5
+    # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
+    current_max: 180
     format: power
     weeks:
       - week: 1
@@ -99,82 +99,82 @@ plan:
       - Assistance incline dumbells
 
 
-  - name: Close Grip (Doubles)
-    training_day: 4
-    category: bench
-    current_max: 177.5
-    format: power
-    weeks:
-      - week: 1
-        sets:
-          - weight: 70
-            reps: 5
-            count: 2
-          - weight: 110
-            reps: 3
-            count: 1
-          - weight: 130
-            reps: 2
-            count: 1
-          - weight: 140
-            reps: 2
-            count: 1
-          - intensity: 83 # Basically -10 for close -10 for dubs minus 10 week 1
-            reps: 2
-            count: 1
-      - week: 2
-        sets:
-          - weight: 70
-            reps: 5
-            count: 2
-          - weight: 110
-            reps: 3
-            count: 1
-          - weight: 130
-            reps: 2
-            count: 1
-          - weight: 140
-            reps: 2
-            count: 1
-          - weight: 150
-            reps: 2
-            count: 1
-          - intensity: 86 # Basically -10 for close -10 for dubs minus 5 week 2
-            reps: 2
-            count: 1
-      - week: 3
-        sets:
-          - weight: 70
-            reps: 5
-            count: 2
-          - weight: 110
-            reps: 3
-            count: 1
-          - weight: 130
-            reps: 2
-            count: 1
-          - weight: 140
-            reps: 2
-            count: 1
-          - weight: 150
-            reps: 2
-            count: 1
-          - intensity: 89 # Basically -10 for close -10 for dubs 
-            reps: 2
-            count: 1
-      - week: 4
-        sets:
-          - weight: 70
-            reps: 5
-            count: 2
-          - weight: 75
-            reps: 5
-            count: 1
-          - weight: 80
-            reps: 5
-            count: 1
-    notes:
-      - Pull ups unassisted
+  # - name: Close Grip (Doubles)
+  #   training_day: 4
+  #   category: bench
+  #   current_max: 177.5
+  #   format: power
+  #   weeks:
+  #     - week: 1
+  #       sets:
+  #         - weight: 70
+  #           reps: 5
+  #           count: 2
+  #         - weight: 110
+  #           reps: 3
+  #           count: 1
+  #         - weight: 130
+  #           reps: 2
+  #           count: 1
+  #         - weight: 140
+  #           reps: 2
+  #           count: 1
+  #         - intensity: 83 # Basically -10 for close -10 for dubs minus 10 week 1
+  #           reps: 2
+  #           count: 1
+  #     - week: 2
+  #       sets:
+  #         - weight: 70
+  #           reps: 5
+  #           count: 2
+  #         - weight: 110
+  #           reps: 3
+  #           count: 1
+  #         - weight: 130
+  #           reps: 2
+  #           count: 1
+  #         - weight: 140
+  #           reps: 2
+  #           count: 1
+  #         - weight: 150
+  #           reps: 2
+  #           count: 1
+  #         - intensity: 86 # Basically -10 for close -10 for dubs minus 5 week 2
+  #           reps: 2
+  #           count: 1
+  #     - week: 3
+  #       sets:
+  #         - weight: 70
+  #           reps: 5
+  #           count: 2
+  #         - weight: 110
+  #           reps: 3
+  #           count: 1
+  #         - weight: 130
+  #           reps: 2
+  #           count: 1
+  #         - weight: 140
+  #           reps: 2
+  #           count: 1
+  #         - weight: 150
+  #           reps: 2
+  #           count: 1
+  #         - intensity: 89 # Basically -10 for close -10 for dubs 
+  #           reps: 2
+  #           count: 1
+  #     - week: 4
+  #       sets:
+  #         - weight: 70
+  #           reps: 5
+  #           count: 2
+  #         - weight: 75
+  #           reps: 5
+  #           count: 1
+  #         - weight: 80
+  #           reps: 5
+  #           count: 1
+  #   notes:
+  #     - Pull ups unassisted
 
 
   # - name: Incline Dumbells
@@ -215,7 +215,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 240
+    current_max: 242
     format: olympic
     weeks:
       - week: 1
@@ -246,7 +246,7 @@ plan:
           - weight: 110
             reps: 5
             count: 1
-          - weight: 130
+          - weight: 140
             reps: 3
             count: 1
           - intensity: 63
@@ -269,7 +269,7 @@ plan:
           - weight: 110
             reps: 5
             count: 1
-          - weight: 130
+          - weight: 140
             reps: 3
             count: 1
           - intensity: 67.5

@@ -409,7 +409,7 @@ plan:
             reps: 2
             count: 1
     notes:
-      - Warmup ia single leg squats on plates
+      - Warmup is single leg squats on plates
       - Assistance is burpees 3x10 E2MOM 
 
 
@@ -421,16 +421,13 @@ plan:
     weeks:
       - week: 1
         sets:
-          - weight: 40
-            reps: 5
-            count: 1
-          - weight: 45
-            reps: 5
-            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 55
+          - weight: 57
+            reps: 5
+            count: 1
+          - weight: 63
             reps: 5
             count: 1
           - intensity: 58.5
@@ -444,20 +441,11 @@ plan:
             count: 1
       - week: 2
         sets:
-          - weight: 40
-            reps: 5
-            count: 1
-          - weight: 45
-            reps: 5
-            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 55
-            reps: 3
-            count: 1
-          - weight: 60
-            reps: 3
+          - weight: 57
+            reps: 5
             count: 1
           - intensity: 63
             reps: 3
@@ -470,24 +458,15 @@ plan:
             count: 1
       - week: 3
         sets:
-          - weight: 40
-            reps: 5
-            count: 1
-          - weight: 45
-            reps: 5
-            count: 1
           - weight: 50
             reps: 5
             count: 1
-          - weight: 55
-            reps: 3
+          - weight: 57
+            reps: 5
             count: 1
-          - weight: 60
+          - weight: 63
             reps: 3
-            count: 1
-          - weight: 65
-            reps: 1
-            count: 1            
+            count: 1        
           - intensity: 67.5
             reps: 1
             count: 1
@@ -499,15 +478,15 @@ plan:
             count: 1
       - week: 4
         sets:
-          - weight: 40
-            reps: 5
-            count: 1
-          - weight: 45
-            reps: 5
-            count: 1
           - weight: 50
             reps: 5
-            count: 1         
+            count: 1
+          - weight: 57
+            reps: 5
+            count: 1
+          - weight: 63
+            reps: 3
+            count: 1      
           - intensity: 67.5
             reps: 2
             count: 1
@@ -521,7 +500,7 @@ plan:
             reps: 2
             count: 1
     notes:
-      - Warmup ia single leg squats on plates
+      - Warmup is glute bridges
       - Assistance is burpees 3x10 E2MOM 
 
   # - name: Snatch

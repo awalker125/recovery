@@ -96,7 +96,7 @@ plan:
             reps: 50
             count: 1
     notes:
-      - Assistance incline dumbells
+      - Assistance pull downs
 
 
   # - name: Close Grip (Doubles)
@@ -299,8 +299,7 @@ plan:
           #   reps: 50
           #   count: 1
     notes:
-      - Assistance is wall ball front squats and lunges. 55/60/65/50 total reps split into sets where needed
-
+      - Warmup is big 3
 
   - name: Snatch
     training_day: 2
@@ -406,9 +405,119 @@ plan:
           - intensity: 70
             reps: 1
             count: 1
+    notes:
+      - Warmup ia single leg squats on plates
+      - Assistance is burpees 3x10 E2MOM 
 
 
-            
+  - name: Clean
+    training_day: 4
+    category: Clean
+    current_max: 100
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 55
+            reps: 5
+            count: 1
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+      - week: 2
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 55
+            reps: 3
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+      - week: 3
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 55
+            reps: 3
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - weight: 65
+            reps: 1
+            count: 1            
+          - intensity: 67.5
+            reps: 1
+            count: 1
+          - intensity: 76.5
+            reps: 1
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+      - week: 4
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+          - intensity: 64
+            reps: 1
+            count: 1
+          - intensity: 70
+            reps: 1
+            count: 1
+    notes:
+      - Warmup ia single leg squats on plates
+      - Assistance is burpees 3x10 E2MOM 
+
   # - name: Snatch
   #   training_day: 2
   #   category: Snatch

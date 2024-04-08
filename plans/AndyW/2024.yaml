@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
-    current_max: 180
+    current_max: 182.5
     format: power
     weeks:
       - week: 1
@@ -215,7 +215,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 242
+    current_max: 244
     format: olympic
     weeks:
       - week: 1
@@ -302,7 +302,113 @@ plan:
       - Assistance is wall ball front squats and lunges. 55/60/65/50 total reps split into sets where needed
 
 
+  - name: Snatch
+    training_day: 2
+    category: Snatch
+    current_max: 80
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 55
+            reps: 5
+            count: 1
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+      - week: 2
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 55
+            reps: 3
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+      - week: 3
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 55
+            reps: 3
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - weight: 65
+            reps: 1
+            count: 1            
+          - intensity: 67.5
+            reps: 1
+            count: 1
+          - intensity: 76.5
+            reps: 1
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+      - week: 4
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+          - intensity: 64
+            reps: 1
+            count: 1
+          - intensity: 70
+            reps: 1
+            count: 1
 
+
+            
   # - name: Snatch
   #   training_day: 2
   #   category: Snatch

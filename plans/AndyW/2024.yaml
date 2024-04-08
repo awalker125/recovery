@@ -390,20 +390,23 @@ plan:
           - weight: 40
             reps: 5
             count: 1
-          - intensity: 36
+          - weight: 45
             reps: 5
             count: 1
-          - intensity: 45
+          - weight: 50
             reps: 5
+            count: 1         
+          - intensity: 67.5
+            reps: 2
             count: 1
-          - intensity: 54
-            reps: 5
+          - intensity: 72.5
+            reps: 2
             count: 1
-          - intensity: 64
-            reps: 1
+          - intensity: 77.5
+            reps: 2
             count: 1
-          - intensity: 70
-            reps: 1
+          - intensity: 80
+            reps: 2
             count: 1
     notes:
       - Warmup ia single leg squats on plates
@@ -499,20 +502,23 @@ plan:
           - weight: 40
             reps: 5
             count: 1
-          - intensity: 36
+          - weight: 45
             reps: 5
             count: 1
-          - intensity: 45
+          - weight: 50
             reps: 5
+            count: 1         
+          - intensity: 67.5
+            reps: 2
             count: 1
-          - intensity: 54
-            reps: 5
+          - intensity: 72.5
+            reps: 2
             count: 1
-          - intensity: 64
-            reps: 1
+          - intensity: 77.5
+            reps: 2
             count: 1
-          - intensity: 70
-            reps: 1
+          - intensity: 80
+            reps: 2
             count: 1
     notes:
       - Warmup ia single leg squats on plates

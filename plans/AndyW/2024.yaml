@@ -427,9 +427,6 @@ plan:
           - weight: 57
             reps: 5
             count: 1
-          - weight: 63
-            reps: 5
-            count: 1
           - intensity: 58.5
             reps: 5
             count: 1

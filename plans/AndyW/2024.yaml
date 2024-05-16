@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
-    current_max: 182.5
+    current_max: 185
     format: power
     weeks:
       - week: 1
@@ -304,7 +304,7 @@ plan:
   - name: Snatch
     training_day: 2
     category: Snatch
-    current_max: 80
+    current_max: 82
     format: olympic
     weeks:
       - week: 1
@@ -313,12 +313,6 @@ plan:
             reps: 5
             count: 1
           - weight: 45
-            reps: 5
-            count: 1
-          - weight: 50
-            reps: 5
-            count: 1
-          - weight: 55
             reps: 5
             count: 1
           - intensity: 58.5
@@ -338,15 +332,6 @@ plan:
           - weight: 45
             reps: 5
             count: 1
-          - weight: 50
-            reps: 5
-            count: 1
-          - weight: 55
-            reps: 3
-            count: 1
-          - weight: 60
-            reps: 3
-            count: 1
           - intensity: 63
             reps: 3
             count: 1
@@ -365,17 +350,8 @@ plan:
             reps: 5
             count: 1
           - weight: 50
-            reps: 5
-            count: 1
-          - weight: 55
             reps: 3
-            count: 1
-          - weight: 60
-            reps: 3
-            count: 1
-          - weight: 65
-            reps: 1
-            count: 1            
+            count: 1 
           - intensity: 67.5
             reps: 1
             count: 1
@@ -394,7 +370,7 @@ plan:
             reps: 5
             count: 1
           - weight: 50
-            reps: 5
+            reps: 3
             count: 1         
           - intensity: 67.5
             reps: 2
@@ -416,7 +392,7 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 100
+    current_max: 102
     format: olympic
     weeks:
       - week: 1
@@ -441,7 +417,7 @@ plan:
           - weight: 50
             reps: 5
             count: 1
-          - weight: 57
+          - weight: 60
             reps: 5
             count: 1
           - intensity: 63
@@ -458,12 +434,9 @@ plan:
           - weight: 50
             reps: 5
             count: 1
-          - weight: 57
-            reps: 5
-            count: 1
-          - weight: 63
+          - weight: 60
             reps: 3
-            count: 1        
+            count: 1    
           - intensity: 67.5
             reps: 1
             count: 1
@@ -478,12 +451,9 @@ plan:
           - weight: 50
             reps: 5
             count: 1
-          - weight: 57
-            reps: 5
-            count: 1
-          - weight: 63
+          - weight: 60
             reps: 3
-            count: 1      
+            count: 1   
           - intensity: 67.5
             reps: 2
             count: 1

@@ -14,7 +14,7 @@ plan:
   - name: Bench (531)
     training_day: 1
     category: bench
-    current_max: 105
+    current_max: 110
     format: power
     weeks:
       - week: 1

@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
-    current_max: 185
+    current_max: 187.5
     format: power
     weeks:
       - week: 1
@@ -215,7 +215,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 244
+    current_max: 246
     format: olympic
     weeks:
       - week: 1
@@ -304,7 +304,7 @@ plan:
   - name: Snatch
     training_day: 2
     category: Snatch
-    current_max: 82
+    current_max: 84
     format: olympic
     weeks:
       - week: 1
@@ -392,7 +392,7 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 102
+    current_max: 104
     format: olympic
     weeks:
       - week: 1

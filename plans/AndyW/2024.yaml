@@ -98,6 +98,68 @@ plan:
     notes:
       - Assistance pull downs
 
+  - name: Push Press (531)
+    training_day: 4
+    category: bench
+    current_max: 85
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 40
+            reps: 8
+            count: 2
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+
+      - week: 2
+        sets:
+          - weight: 40
+            reps: 8
+            count: 2
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+      - week: 3
+        sets:
+          - weight: 40
+            reps: 8
+            count: 2
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 3
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+      - week: 4
+        sets:
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+    notes:
+      - Ab Roller if time
 
   # - name: Close Grip (Doubles)
   #   training_day: 4
@@ -159,7 +221,7 @@ plan:
   #         - weight: 150
   #           reps: 2
   #           count: 1
-  #         - intensity: 89 # Basically -10 for close -10 for dubs 
+  #         - intensity: 89 # Basically -10 for close -10 for dubs
   #           reps: 2
   #           count: 1
   #     - week: 4
@@ -175,7 +237,6 @@ plan:
   #           count: 1
   #   notes:
   #     - Pull ups unassisted
-
 
   # - name: Incline Dumbells
   #   training_day: 1
@@ -351,7 +412,7 @@ plan:
             count: 1
           - weight: 50
             reps: 3
-            count: 1 
+            count: 1
           - intensity: 67.5
             reps: 1
             count: 1
@@ -371,7 +432,7 @@ plan:
             count: 1
           - weight: 50
             reps: 3
-            count: 1         
+            count: 1
           - intensity: 67.5
             reps: 2
             count: 1
@@ -386,8 +447,7 @@ plan:
             count: 1
     notes:
       - Warmup is single leg squats on plates
-      - Assistance is burpees 3x10 E2MOM 
-
+      - Assistance is burpees 3x10 E2MOM
 
   - name: Clean
     training_day: 4
@@ -436,7 +496,7 @@ plan:
             count: 1
           - weight: 60
             reps: 3
-            count: 1    
+            count: 1
           - intensity: 67.5
             reps: 1
             count: 1
@@ -453,7 +513,7 @@ plan:
             count: 1
           - weight: 60
             reps: 3
-            count: 1   
+            count: 1
           - intensity: 67.5
             reps: 2
             count: 1
@@ -468,7 +528,7 @@ plan:
             count: 1
     notes:
       - Warmup is glute bridges
-      - Assistance is burpees 3x10 E2MOM 
+      - Assistance is burpees 3x10 E2MOM
 
   # - name: Snatch
   #   training_day: 2

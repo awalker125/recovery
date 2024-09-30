@@ -15,7 +15,8 @@ plan:
     training_day: 1
     category: bench
     # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
-    current_max: 192.5
+    # After restart at 177.5 failed at 192.5. Been feeling tired and stress and incosistent. Moving back to 160 to hopefully build momentum
+    current_max: 160
     format: power
     weeks:
       - week: 1
@@ -35,8 +36,8 @@ plan:
           - intensity: 76.5
             reps: 5
             count: 1
-          - weight: 72.5
-            reps: 50
+          - weight: 100
+            reps: 20
             count: 1
       - week: 2
         sets:
@@ -55,8 +56,8 @@ plan:
           - intensity: 81
             reps: 3
             count: 1
-          - weight: 72.5
-            reps: 50
+          - weight: 100
+            reps: 20
             count: 1
       - week: 3
         sets:
@@ -78,8 +79,8 @@ plan:
           - intensity: 85.5
             reps: 1
             count: 1
-          - weight: 72.5
-            reps: 50
+          - weight: 100
+            reps: 20
             count: 1
       - week: 4
         sets:
@@ -92,7 +93,7 @@ plan:
           - intensity: 54
             reps: 5
             count: 1
-          - weight: 72.5
+          - weight: 50
             reps: 50
             count: 1
     notes:

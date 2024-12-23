@@ -16,7 +16,7 @@ plan:
     category: bench
     # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
     # After restart at 177.5 failed at 192.5. Been feeling tired and stress and incosistent. Moving back to 160 to hopefully build momentum
-    current_max: 165
+    current_max: 167.5
     format: power
     weeks:
       - week: 1
@@ -277,7 +277,7 @@ plan:
   - name: Squat
     training_day: 3
     category: Squat
-    current_max: 254
+    current_max: 256
     format: olympic
     weeks:
       - week: 1
@@ -366,7 +366,7 @@ plan:
   - name: Snatch
     training_day: 2
     category: Snatch
-    current_max: 92
+    current_max: 94
     format: olympic
     weeks:
       - week: 1
@@ -456,7 +456,7 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 110
+    current_max: 112
     format: olympic
     weeks:
       - week: 1

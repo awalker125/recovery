@@ -1,0 +1,426 @@
+---
+name: Andy Walker
+weight: 132
+age: 41
+training_days:
+  1: Monday
+  2: Tuesday
+  3: Wednesday
+  4: Thursday
+  5: Friday
+  6: Saturday
+  7: Sunday
+plan:
+  - name: Bench (531)
+    training_day: 1
+    category: bench
+    # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
+    # After restart at 177.5 failed at 192.5. Been feeling tired and stress and incosistent. Moving back to 160 to hopefully build momentum
+    current_max: 170
+    format: power
+    weeks:
+      - week: 1
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - weight: 100
+            reps: 5
+            count: 1
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+          - weight: 100
+            reps: 20
+            count: 1
+      - week: 2
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - weight: 100
+            reps: 5
+            count: 1
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+          - weight: 100
+            reps: 20
+            count: 1
+      - week: 3
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - weight: 100
+            reps: 5
+            count: 1
+          - weight: 120
+            reps: 2
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 3
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+          - weight: 100
+            reps: 20
+            count: 1
+      - week: 4
+        sets:
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 50
+            count: 1
+    notes:
+      - Assistance pull downs
+
+  - name: Squat (box)
+    training_day: 3
+    category: Squat
+    current_max: 258
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - weight: 110
+            reps: 5
+            count: 1
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+          # - weight: 55
+          #   reps: 55
+          #   count: 1
+      - week: 2
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - weight: 110
+            reps: 5
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+          # - weight: 60
+          #   reps: 60
+          #   count: 1
+      - week: 3
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - weight: 110
+            reps: 5
+            count: 1
+          - weight: 140
+            reps: 3
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 3
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+          # - weight: 65
+          #   reps: 65
+          #   count: 1
+      - week: 4
+        sets:
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+          # - weight: 50
+          #   reps: 50
+          #   count: 1
+    notes:
+      - Warmup is big 3
+
+  - name: Snatch
+    training_day: 2
+    category: Snatch
+    current_max: 96
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+      - week: 2
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+      - week: 3
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 3
+            count: 1
+          - intensity: 67.5
+            reps: 1
+            count: 1
+          - intensity: 76.5
+            reps: 1
+            count: 1
+          - intensity: 80.5
+            reps: 1
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+      - week: 4
+        sets:
+          - weight: 40
+            reps: 5
+            count: 1
+          - weight: 45
+            reps: 5
+            count: 1
+          - weight: 50
+            reps: 3
+            count: 1
+          - intensity: 67.5
+            reps: 2
+            count: 1
+          - intensity: 72.5
+            reps: 2
+            count: 1
+          - intensity: 77.5
+            reps: 2
+            count: 1
+          - intensity: 80
+            reps: 2
+            count: 1
+    notes:
+      - Warmup is single leg squats on plates
+      - Assistance is burpees 3x10 E2MOM
+
+  - name: Clean
+    training_day: 4
+    category: Clean
+    current_max: 114
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 55
+            reps: 5
+            count: 1
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+      - week: 2
+        sets:
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 5
+            count: 1
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+      - week: 3
+        sets:
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 67.5
+            reps: 1
+            count: 1
+          - intensity: 76.5
+            reps: 1
+            count: 1
+          - intensity: 80.5
+            reps: 1
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+      - week: 4
+        sets:
+          - weight: 50
+            reps: 5
+            count: 1
+          - weight: 60
+            reps: 3
+            count: 1
+          - intensity: 67.5
+            reps: 2
+            count: 1
+          - intensity: 72.5
+            reps: 2
+            count: 1
+          - intensity: 77.5
+            reps: 2
+            count: 1
+          - intensity: 80
+            reps: 2
+            count: 1
+    notes:
+      - Warmup is glute bridges
+      - Assistance is burpees 3x10 E2MOM
+
+  - name: Squat (full)
+    training_day: 6
+    category: Squat
+    current_max: 140
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - intensity: 58.5
+            reps: 5
+            count: 1
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 5
+            count: 1
+      - week: 2
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - intensity: 63
+            reps: 3
+            count: 1
+          - intensity: 72
+            reps: 3
+            count: 1
+          - intensity: 81
+            reps: 3
+            count: 1
+      - week: 3
+        sets:
+          - weight: 70
+            reps: 8
+            count: 2
+          - intensity: 67.5
+            reps: 5
+            count: 1
+          - intensity: 76.5
+            reps: 3
+            count: 1
+          - intensity: 85.5
+            reps: 1
+            count: 1
+
+      - week: 4
+        sets:
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+    notes:
+      - Maybe some pulls to finish

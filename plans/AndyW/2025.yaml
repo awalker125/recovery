@@ -16,7 +16,7 @@ plan:
     category: bench
     # current_max: 202.5 #failed at 202.5 hit a 180 in comp in november. Restarted a 177.5
     # After restart at 177.5 failed at 192.5. Been feeling tired and stress and incosistent. Moving back to 160 to hopefully build momentum
-    current_max: 175
+    current_max: 177.5
     format: power
     weeks:
       - week: 1

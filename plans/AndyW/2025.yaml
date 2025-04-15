@@ -192,88 +192,61 @@ plan:
   - name: Snatch
     training_day: 2
     category: Snatch
-    current_max: 98
+    current_max: 75
     format: olympic
     weeks:
       - week: 1
         sets:
           - weight: 40
             reps: 5
-            count: 1
-          - weight: 45
-            reps: 5
-            count: 1
-          - intensity: 58.5
-            reps: 5
-            count: 1
-          - intensity: 67.5
-            reps: 5
-            count: 1
-          - intensity: 76.5
-            reps: 5
-            count: 1
+            count: 2
+          - intensity: 80
+            reps: 2
+            count: 5
       - week: 2
         sets:
           - weight: 40
             reps: 5
+            count: 2
+          - weight: 60
+            reps: 2
             count: 1
-          - weight: 45
-            reps: 5
-            count: 1
-          - intensity: 63
-            reps: 3
-            count: 1
-          - intensity: 72
-            reps: 3
-            count: 1
-          - intensity: 81
-            reps: 3
-            count: 1
+          - intensity: 85
+            reps: 2
+            count: 5
       - week: 3
         sets:
           - weight: 40
             reps: 5
+            count: 2
+          - weight: 60
+            reps: 2
             count: 1
-          - weight: 45
-            reps: 5
-            count: 1
-          - weight: 50
-            reps: 3
-            count: 1
-          - intensity: 67.5
-            reps: 1
-            count: 1
-          - intensity: 76.5
-            reps: 1
-            count: 1
-          - intensity: 80.5
-            reps: 1
-            count: 1
-          - intensity: 85.5
-            reps: 1
-            count: 1
+          - intensity: 90
+            reps: 2
+            count: 3
       - week: 4
         sets:
           - weight: 40
             reps: 5
-            count: 1
-          - weight: 45
-            reps: 5
-            count: 1
-          - weight: 50
-            reps: 3
-            count: 1
-          - intensity: 67.5
+            count: 2
+          - weight: 60
             reps: 2
             count: 1
-          - intensity: 72.5
-            reps: 2
+          - intensity: 85
+            reps: 1
             count: 1
-          - intensity: 77.5
-            reps: 2
+          - intensity: 90
+            reps: 1
             count: 1
-          - intensity: 80
-            reps: 2
+          - intensity: 95
+            reps: 1
+            count: 1
+          - intensity: 100
+            reps: 1
+            count: 1
+          - intensity: 105
+            reps: 1
             count: 1
     notes:
       - Warmup is single leg squats on plates
@@ -282,82 +255,64 @@ plan:
   - name: Clean
     training_day: 4
     category: Clean
-    current_max: 116
+    current_max: 94
     format: olympic
     weeks:
       - week: 1
         sets:
           - weight: 50
             reps: 5
-            count: 1
-          - weight: 55
-            reps: 5
-            count: 1
-          - intensity: 58.5
-            reps: 5
-            count: 1
-          - intensity: 67.5
-            reps: 5
-            count: 1
-          - intensity: 76.5
-            reps: 5
-            count: 1
-      - week: 2
-        sets:
-          - weight: 50
-            reps: 5
-            count: 1
-          - weight: 60
-            reps: 5
-            count: 1
-          - intensity: 63
-            reps: 3
-            count: 1
-          - intensity: 72
-            reps: 3
-            count: 1
-          - intensity: 81
-            reps: 3
-            count: 1
-      - week: 3
-        sets:
-          - weight: 50
-            reps: 5
-            count: 1
-          - weight: 60
-            reps: 3
-            count: 1
-          - intensity: 67.5
-            reps: 1
-            count: 1
-          - intensity: 76.5
-            reps: 1
-            count: 1
-          - intensity: 80.5
-            reps: 1
-            count: 1
-          - intensity: 85.5
-            reps: 1
-            count: 1
-      - week: 4
-        sets:
-          - weight: 50
-            reps: 5
-            count: 1
-          - weight: 60
-            reps: 3
-            count: 1
-          - intensity: 67.5
-            reps: 2
-            count: 1
-          - intensity: 72.5
-            reps: 2
-            count: 1
-          - intensity: 77.5
+            count: 2
+          - weight: 70
             reps: 2
             count: 1
           - intensity: 80
             reps: 2
+            count: 5
+      - week: 2
+        sets:
+          - weight: 50
+            reps: 5
+            count: 2
+          - weight: 70
+            reps: 2
+            count: 1
+          - intensity: 85
+            reps: 2
+            count: 5
+      - week: 3
+        sets:
+          - weight: 50
+            reps: 5
+            count: 2
+          - weight: 70
+            reps: 2
+            count: 1
+          - intensity: 90
+            reps: 2
+            count: 3
+      - week: 4
+        sets:
+          - weight: 50
+            reps: 5
+            count: 2
+          - weight: 70
+            reps: 2
+            count: 1
+          - intensity: 85
+            reps: 1
+            count: 1
+          - intensity: 90
+            reps: 1
+            count: 1
+          - intensity: 95
+            reps: 1
+            count: 1
+          - intensity: 100
+            reps: 1
+            count: 1
+          - intensity: 105
+            reps: 1
             count: 1
     notes:
       - Warmup is glute bridges

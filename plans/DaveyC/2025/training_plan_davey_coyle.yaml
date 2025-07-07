@@ -1,0 +1,312 @@
+plan:
+- category: bench
+  current_max: 202.5
+  name: Bench (531)
+  notes:
+  - Assistance pull downs
+  training_day: 1
+  weeks:
+  - exercise_inol: 1.247953767510593
+    exercise_volume: 56
+    exercise_work: 5770.3125
+    sets:
+    - amrap_target: 56
+      count: 2
+      intensity: '35'
+      reps: 8
+      scheme: 2x8@35%
+      set_inol: 0.12307692307692308
+      volume: 16
+      weight: 70
+      weight_rounded: 70.0
+      work: 1120
+    - amrap_target: 31
+      count: 1
+      intensity: '49'
+      reps: 5
+      scheme: 1x5@49%
+      set_inol: 0.09803921568627451
+      volume: 5
+      weight: 100
+      weight_rounded: 100.0
+      work: 500
+    - amrap_target: 21
+      count: 1
+      intensity: 58.5
+      reps: 5
+      scheme: 1x5@58.5%
+      set_inol: 0.12048192771084337
+      volume: 5
+      weight: 118.46249999999999
+      weight_rounded: 117.5
+      work: 592.3125
+    - amrap_target: 14
+      count: 1
+      intensity: 67.5
+      reps: 5
+      scheme: 1x5@67.5%
+      set_inol: 0.15384615384615385
+      volume: 5
+      weight: 136.6875
+      weight_rounded: 137.5
+      work: 683.4375
+    - amrap_target: 9
+      count: 1
+      intensity: 76.5
+      reps: 5
+      scheme: 1x5@76.5%
+      set_inol: 0.2127659574468085
+      volume: 5
+      weight: 154.9125
+      weight_rounded: 155.0
+      work: 774.5625
+    - amrap_target: 28
+      count: 1
+      intensity: '52'
+      reps: 20
+      scheme: 1x20@52%
+      set_inol: 0.4166666666666667
+      volume: 20
+      weight: 105
+      weight_rounded: 105.0
+      work: 2100
+    week: 1
+  - exercise_inol: 1.106978403572831
+    exercise_volume: 50
+    exercise_work: 5032.2
+    sets:
+    - amrap_target: 56
+      count: 2
+      intensity: '35'
+      reps: 8
+      scheme: 2x8@35%
+      set_inol: 0.12307692307692308
+      volume: 16
+      weight: 70
+      weight_rounded: 70.0
+      work: 1120
+    - amrap_target: 31
+      count: 1
+      intensity: '49'
+      reps: 5
+      scheme: 1x5@49%
+      set_inol: 0.09803921568627451
+      volume: 5
+      weight: 100
+      weight_rounded: 100.0
+      work: 500
+    - amrap_target: 18
+      count: 1
+      intensity: 63
+      reps: 3
+      scheme: 1x3@63%
+      set_inol: 0.08108108108108109
+      volume: 3
+      weight: 127.575
+      weight_rounded: 127.5
+      work: 382.725
+    - amrap_target: 12
+      count: 1
+      intensity: 72
+      reps: 3
+      scheme: 1x3@72%
+      set_inol: 0.10714285714285714
+      volume: 3
+      weight: 145.79999999999998
+      weight_rounded: 145.0
+      work: 437.4
+    - amrap_target: 7
+      count: 1
+      intensity: 81
+      reps: 3
+      scheme: 1x3@81%
+      set_inol: 0.15789473684210525
+      volume: 3
+      weight: 164.025
+      weight_rounded: 165.0
+      work: 492.07500000000005
+    - amrap_target: 28
+      count: 1
+      intensity: '52'
+      reps: 20
+      scheme: 1x20@52%
+      set_inol: 0.4166666666666667
+      volume: 20
+      weight: 105
+      weight_rounded: 105.0
+      work: 2100
+    week: 2
+  - exercise_inol: 1.1601114618672836
+    exercise_volume: 52
+    exercise_work: 5281.3125
+    sets:
+    - amrap_target: 56
+      count: 2
+      intensity: '35'
+      reps: 8
+      scheme: 2x8@35%
+      set_inol: 0.12307692307692308
+      volume: 16
+      weight: 70
+      weight_rounded: 70.0
+      work: 1120
+    - amrap_target: 31
+      count: 1
+      intensity: '49'
+      reps: 5
+      scheme: 1x5@49%
+      set_inol: 0.09803921568627451
+      volume: 5
+      weight: 100
+      weight_rounded: 100.0
+      work: 500
+    - amrap_target: 21
+      count: 1
+      intensity: '59'
+      reps: 2
+      scheme: 1x2@59%
+      set_inol: 0.04878048780487805
+      volume: 2
+      weight: 120
+      weight_rounded: 120.0
+      work: 240
+    - amrap_target: 14
+      count: 1
+      intensity: 67.5
+      reps: 5
+      scheme: 1x5@67.5%
+      set_inol: 0.15384615384615385
+      volume: 5
+      weight: 136.6875
+      weight_rounded: 137.5
+      work: 683.4375
+    - amrap_target: 9
+      count: 1
+      intensity: 76.5
+      reps: 3
+      scheme: 1x3@76.5%
+      set_inol: 0.1276595744680851
+      volume: 3
+      weight: 154.9125
+      weight_rounded: 155.0
+      work: 464.73749999999995
+    - amrap_target: 5
+      count: 1
+      intensity: 85.5
+      reps: 1
+      scheme: 1x1@85.5%
+      set_inol: 0.06896551724137931
+      volume: 1
+      weight: 173.1375
+      weight_rounded: 172.5
+      work: 173.1375
+    - amrap_target: 28
+      count: 1
+      intensity: '52'
+      reps: 20
+      scheme: 1x20@52%
+      set_inol: 0.4166666666666667
+      volume: 20
+      weight: 105
+      weight_rounded: 105.0
+      work: 2100
+    week: 3
+  - exercise_inol: 0.6943964097496707
+    exercise_volume: 35
+    exercise_work: 3466.875
+    sets:
+    - amrap_target: 53
+      count: 1
+      intensity: 36
+      reps: 5
+      scheme: 1x5@36%
+      set_inol: 0.078125
+      volume: 5
+      weight: 72.89999999999999
+      weight_rounded: 72.5
+      work: 364.49999999999994
+    - amrap_target: 37
+      count: 1
+      intensity: 45
+      reps: 5
+      scheme: 1x5@45%
+      set_inol: 0.09090909090909091
+      volume: 5
+      weight: 91.125
+      weight_rounded: 90.0
+      work: 455.625
+    - amrap_target: 26
+      count: 1
+      intensity: 54
+      reps: 5
+      scheme: 1x5@54%
+      set_inol: 0.10869565217391304
+      volume: 5
+      weight: 109.35000000000001
+      weight_rounded: 110.0
+      work: 546.75
+    - amrap_target: 28
+      count: 1
+      intensity: '52'
+      reps: 20
+      scheme: 1x20@52%
+      set_inol: 0.4166666666666667
+      volume: 20
+      weight: 105
+      weight_rounded: 105.0
+      work: 2100
+    week: 4
+summary:
+  workload_all:
+    1:
+      inol: 1.247953767510593
+      volume: 56
+      work: 5770.3125
+    2:
+      inol: 1.106978403572831
+      volume: 50
+      work: 5032.2
+    3:
+      inol: 1.1601114618672836
+      volume: 52
+      work: 5281.3125
+    4:
+      inol: 0.6943964097496707
+      volume: 35
+      work: 3466.875
+  workload_category:
+    bench:
+      1:
+        inol: 1.247953767510593
+        volume: 56
+        work: 5770.3125
+      2:
+        inol: 1.106978403572831
+        volume: 50
+        work: 5032.2
+      3:
+        inol: 1.1601114618672836
+        volume: 52
+        work: 5281.3125
+      4:
+        inol: 0.6943964097496707
+        volume: 35
+        work: 3466.875
+  workload_daily:
+    1:
+      1:
+        inol: 1.247953767510593
+        volume: 56
+        work: 5770.3125
+      2:
+        inol: 1.106978403572831
+        volume: 50
+        work: 5032.2
+      3:
+        inol: 1.1601114618672836
+        volume: 52
+        work: 5281.3125
+      4:
+        inol: 0.6943964097496707
+        volume: 35
+        work: 3466.875

@@ -99,6 +99,41 @@ plan:
     notes:
       - Assistance pull downs
 
+  - name: Bench (close grip)
+    training_day: 4
+    category: bench
+    current_max: 150
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - intensity: 70
+            reps: 9
+            count: 2
+      - week: 2
+        sets:
+          - intensity: 75
+            reps: 5
+            count: 3
+      - week: 3
+        sets:
+          - intensity: 80
+            reps: 6
+            count: 2
+      - week: 4
+        sets:
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+    notes:
+      - Warmup to daily max then percentages based on that
+
   - name: Squat (box)
     training_day: 3
     category: Squat
@@ -197,176 +232,19 @@ plan:
     weeks:
       - week: 1
         sets:
-          - weight: 40
-            reps: 5
-            count: 2
+          - intensity: 75
+            reps: 3
+            count: 5
+      - week: 2
+        sets:
           - intensity: 80
             reps: 2
-            count: 5
-      - week: 2
-        sets:
-          - weight: 40
-            reps: 5
-            count: 2
-          - weight: 60
-            reps: 2
-            count: 1
-          - intensity: 85
-            reps: 2
-            count: 5
+            count: 6
       - week: 3
         sets:
-          - weight: 40
-            reps: 5
-            count: 2
-          - weight: 60
-            reps: 2
-            count: 1
-          - intensity: 90
-            reps: 2
+          - intensity: 85
+            reps: 1
             count: 3
-      - week: 4
-        sets:
-          - weight: 40
-            reps: 5
-            count: 2
-          - weight: 60
-            reps: 2
-            count: 1
-          - intensity: 85
-            reps: 1
-            count: 1
-          - intensity: 90
-            reps: 1
-            count: 1
-          - intensity: 95
-            reps: 1
-            count: 1
-          - intensity: 100
-            reps: 1
-            count: 1
-          - intensity: 105
-            reps: 1
-            count: 1
-    notes:
-      - Warmup is single leg squats on plates
-      - Assistance is burpees 3x10 E2MOM
-
-  - name: Clean
-    training_day: 4
-    category: Clean
-    current_max: 94
-    format: olympic
-    weeks:
-      - week: 1
-        sets:
-          - weight: 50
-            reps: 5
-            count: 2
-          - weight: 70
-            reps: 2
-            count: 1
-          - intensity: 80
-            reps: 2
-            count: 5
-      - week: 2
-        sets:
-          - weight: 50
-            reps: 5
-            count: 2
-          - weight: 70
-            reps: 2
-            count: 1
-          - intensity: 85
-            reps: 2
-            count: 5
-      - week: 3
-        sets:
-          - weight: 50
-            reps: 5
-            count: 2
-          - weight: 70
-            reps: 2
-            count: 1
-          - intensity: 90
-            reps: 2
-            count: 3
-      - week: 4
-        sets:
-          - weight: 50
-            reps: 5
-            count: 2
-          - weight: 70
-            reps: 2
-            count: 1
-          - intensity: 85
-            reps: 1
-            count: 1
-          - intensity: 90
-            reps: 1
-            count: 1
-          - intensity: 95
-            reps: 1
-            count: 1
-          - intensity: 100
-            reps: 1
-            count: 1
-          - intensity: 105
-            reps: 1
-            count: 1
-    notes:
-      - Warmup is glute bridges
-      - Assistance is burpees 3x10 E2MOM
-
-  - name: Squat (full)
-    training_day: 6
-    category: Squat
-    current_max: 140
-    format: olympic
-    weeks:
-      - week: 1
-        sets:
-          - weight: 70
-            reps: 8
-            count: 2
-          - intensity: 58.5
-            reps: 5
-            count: 1
-          - intensity: 67.5
-            reps: 5
-            count: 1
-          - intensity: 76.5
-            reps: 5
-            count: 1
-      - week: 2
-        sets:
-          - weight: 70
-            reps: 8
-            count: 2
-          - intensity: 63
-            reps: 3
-            count: 1
-          - intensity: 72
-            reps: 3
-            count: 1
-          - intensity: 81
-            reps: 3
-            count: 1
-      - week: 3
-        sets:
-          - weight: 70
-            reps: 8
-            count: 2
-          - intensity: 67.5
-            reps: 5
-            count: 1
-          - intensity: 76.5
-            reps: 3
-            count: 1
-          - intensity: 85.5
-            reps: 1
-            count: 1
-
       - week: 4
         sets:
           - intensity: 36
@@ -379,4 +257,75 @@ plan:
             reps: 5
             count: 1
     notes:
-      - Maybe some pulls to finish
+      - Warmup to daily max then percentages based on that
+
+  - name: Clean
+    training_day: 4
+    category: Clean
+    current_max: 90
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - intensity: 75
+            reps: 3
+            count: 5
+      - week: 2
+        sets:
+          - intensity: 80
+            reps: 2
+            count: 6
+      - week: 3
+        sets:
+          - intensity: 85
+            reps: 1
+            count: 3
+      - week: 4
+        sets:
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+    notes:
+      - Warmup to daily max then percentages based on that
+
+  - name: Deadlift
+    training_day: 7
+    category: Squat
+    current_max: 110
+    format: olympic
+    weeks:
+      - week: 1
+        sets:
+          - intensity: 75
+            reps: 3
+            count: 5
+      - week: 2
+        sets:
+          - intensity: 80
+            reps: 2
+            count: 6
+      - week: 3
+        sets:
+          - intensity: 85
+            reps: 1
+            count: 3
+      - week: 4
+        sets:
+          - intensity: 36
+            reps: 5
+            count: 1
+          - intensity: 45
+            reps: 5
+            count: 1
+          - intensity: 54
+            reps: 5
+            count: 1
+    notes:
+      - Warmup to daily max then percentages based on that
+

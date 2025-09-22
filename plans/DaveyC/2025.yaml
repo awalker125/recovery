@@ -15,7 +15,7 @@ plan:
     training_day: 1
     category: bench
     #current_max: 205 dropped back at 205
-    current_max: 197.5
+    current_max: 195
     format: power
     weeks:
       - week: 1
